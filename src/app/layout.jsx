@@ -21,22 +21,26 @@ const myFont = localFont({
 		{
 			path: '../../public/CentraNo2-Thin.ttf',
 			weight: '100',
+			style: 'normal',
 		},
 		{
 			path: '../../public/CentraNo2-Light.otf',
 			weight: '300',
+			style: 'normal',
 		},
 		{
 			path: '../../public/CentraNo2-Bold.ttf',
 			weight: '700',
+			style: 'normal',
 		},
-		// {
-		// 	path: '../../public/CentraNo2-ExtraBold.ttf',
-		// 	weight: '800',
-		// },
+		{
+			path: '../../public/CentraNo2-Extrabold.ttf',
+			weight: '800',
+		},
 		{
 			path: '../../public/CentraNo2-Black.ttf',
 			weight: '900',
+			style: 'normal',
 		},
 	],
 })
