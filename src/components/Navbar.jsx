@@ -6,7 +6,7 @@ import Link from 'next/link'
 import { links } from '@/utils/data'
 import { cn } from '@/lib/utils'
 import { useActiveSectionStore } from '@/store/active-section-store'
-import { Logo } from '@/components/Logo'
+import { Logo } from '@/components/(Hero)/Logo'
 
 export function Navbar() {
 	const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -63,7 +63,7 @@ export function Navbar() {
 										stiffness: 380,
 										damping: 70,
 									}}
-									className="absolute -inset-x-4 -bottom-[1px] h-px bg-gradient-to-r from-teal-500/0 via-purple-500/40 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/40 dark:to-purple-400/0"
+									className="absolute -inset-x-4 -bottom-[1px] h-[2px] bg-gradient-to-r from-teal-500/0 via-purple-500/40 to-purple-500/0 dark:from-purple-400/0 dark:via-purple-400/40 dark:to-purple-400/0"
 								></motion.span>
 							)}
 						</li>
@@ -71,7 +71,7 @@ export function Navbar() {
 				</ul>
 			</nav>
 
-			<Logo className="m-auto" />
+			<Logo className="m-auto invisible" />
 		</motion.header>
 	)
 }

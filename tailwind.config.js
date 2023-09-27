@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
 	darkMode: ['class'],
 	content: [
@@ -57,11 +59,6 @@ module.exports = {
 				sm: 'calc(var(--radius) - 4px)',
 			},
 
-			backgroundImage: {
-				'gradient-circle':
-					'radial-gradient(circle farthest-side at 50% 180%,#df27f7,rgba(241,146,229,0))',
-			},
-
 			keyframes: {
 				// Shadcn Animation
 				'accordion-down': {
@@ -85,10 +82,6 @@ module.exports = {
 				'flip': {
 					from: { transform: 'rotateY(0deg)' },
 					to: { transform: 'rotateY(180deg)' },
-				},
-				'slowfade2': {
-					from: { opacity: 0 },
-					to: { opacity: 1 },
 				},
 				'dropdownHight': {
 					from: { height: '0%' },
@@ -181,6 +174,7 @@ module.exports = {
 				'slidedown': 'slidedown 1s ease-in-out',
 				'slidedown2': 'slidedown2 1.8s ease-in-out',
 				'slidelefttranfrom': 'slidelefttranfrom 1.5s ease-in-out',
+				'slidelefttranfromslow': 'slidelefttranfrom 6s ease-in-out',
 				'slideleft': 'slideleft 1.2s ease-in-out',
 				'slideleftT2': 'slideleft 1s ease-in-out',
 				'slideleftT3': 'slideleft 1.3s ease-in-out',
@@ -234,9 +228,46 @@ module.exports = {
 				1250: '1250px',
 				1260: '1260px',
 				1280: '1280px',
+				1296: '1296px',
 				1300: '1300px',
+				1660: '1660px',
+			},
+
+			transitionDelay: {
+				2000: '2000ms',
+			},
+
+			transitionDuration: {
+				400: '400ms',
+				600: '600ms',
+				650: '650ms',
+			},
+
+			backgroundImage: {
+				'gradient-circle':
+					'radial-gradient(circle farthest-side at 50% 180%,#df27f7,rgba(241,146,229,0))',
+			},
+
+			textShadow: {
+				sm: '0 1px 2px var(--tw-shadow-color)',
+				md: '0 2px 4px var(--tw-shadow-color)',
+				xmd: '0 4px 8px var(--tw-shadow-color)',
+				lg: '0 8px 16px var(--tw-shadow-color)',
 			},
 		},
 	},
-	plugins: [require('tailwindcss-animate')],
+	plugins: [
+		require('tailwindcss-animate'),
+		// Add text-shadow to Tailwind
+		plugin(function ({ matchUtilities, theme }) {
+			matchUtilities(
+				{
+					'text-shadow': (value) => ({
+						textShadow: value,
+					}),
+				},
+				{ values: theme('textShadow') }
+			)
+		}),
+	],
 }

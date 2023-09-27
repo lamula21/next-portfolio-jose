@@ -3,7 +3,9 @@ import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 
 /**
- * A custom React hook that uses the `useInView` hook from the `react-intersection-observer` library to detect when an element is in view.
+ * A custom React hook that uses the `useInView` hook from the `react-intersection-observer` library to detect when a element (section) is in view.
+ * When the element is in view, it sets the active section in the zustand store.
+ * The active section is used to update the navbar effects.
  * @param {string} sectionName - The name of the section to track.
  * @param {number} [threshold=0.75] - The percentage that needs to be visible to trigger the `inView` state change. Defaults to `0.75`.
  * @returns {{ref: React.RefObject<any>}} - An object containing a React ref object.

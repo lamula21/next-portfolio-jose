@@ -1,4 +1,10 @@
 import { GradIcon } from '@/components/icons'
+import MongoCrud from '../../public/next-mongo-crud.png'
+import PrismaCrud from '../../public/next-prisma-crud.png'
+import SqlCrud from '../../public/next-sql-crud.png'
+import Twitter from '../../public/next-twitter-supabase.png'
+import Technical from '../../public/react-test-55k.png'
+import Quizlet from '../../public/react-zustand-quizlet.png'
 
 export const links = [
 	{
@@ -60,7 +66,7 @@ export const experiencesData = [
 		location: 'Orlando, FL',
 		description:
 			'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
-		//icon: React.createElement(CgWorkAlt),
+		icon: MongoCrud,
 		date: '2019 - 2021',
 	},
 	{
@@ -68,7 +74,7 @@ export const experiencesData = [
 		location: 'Houston, TX',
 		description:
 			"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-		// icon: React.createElement(FaReact),
+		icon: PrismaCrud,
 		date: '2021 - present',
 	},
 ]
@@ -79,21 +85,21 @@ export const projectsData = [
 		description:
 			'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
 		tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
-		// imageUrl: corpcommentImg,
+		imageUrl: SqlCrud,
 	},
 	{
 		title: 'rmtDev',
 		description:
 			'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
 		tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
-		// imageUrl: rmtdevImg,
+		imageUrl: Twitter,
 	},
 	{
 		title: 'Word Analytics',
 		description:
 			'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
 		tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
-		// imageUrl: wordanalyticsImg,
+		imageUrl: Quizlet,
 	},
 ]
 

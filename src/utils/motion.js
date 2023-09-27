@@ -16,6 +16,27 @@ export const textVariant = (delay) => {
 	}
 }
 
+export const fadeInIcons = (direction, type, delay, duration) => {
+	return {
+		hidden: {
+			x: direction === 'left' ? 10 : direction === 'right' ? -10 : 0,
+			y: direction === 'up' ? 10 : direction === 'down' ? -10 : 0,
+			opacity: 0,
+		},
+		show: {
+			x: 0,
+			y: 0,
+			opacity: 1,
+			transition: {
+				type: type,
+				delay: delay,
+				duration: duration,
+				ease: 'easeOut',
+			},
+		},
+	}
+}
+
 export const fadeIn = (direction, type, delay, duration) => {
 	return {
 		hidden: {
@@ -66,7 +87,7 @@ export const slideIn = (direction, type, delay, duration) => {
 			x: 0,
 			y: 0,
 			transition: {
-				type: type,
+				type: type, // 'spring', 'tween', 'just', 'keyframes', 'inertia', 'decay', 'none'
 				delay: delay,
 				duration: duration,
 				ease: 'easeOut',
