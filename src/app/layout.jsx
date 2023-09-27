@@ -30,10 +30,10 @@ const myFont = localFont({
 			path: '../../public/CentraNo2-Bold.ttf',
 			weight: '700',
 		},
-		{
-			path: '../../public/CentraNo2-ExtraBold.ttf',
-			weight: '800',
-		},
+		// {
+		// 	path: '../../public/CentraNo2-ExtraBold.ttf',
+		// 	weight: '800',
+		// },
 		{
 			path: '../../public/CentraNo2-Black.ttf',
 			weight: '900',
