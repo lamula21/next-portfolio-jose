@@ -190,9 +190,10 @@ module.exports = {
 				'dropdownHight': 'dropdownHight 0.4s  ease',
 				'dropupHight': 'dropupHight 1s ease-in-out',
 				'wave': 'wave 1.2s linear infinite',
-				'slowfade': 'slowfade 3.5s ease-in-out',
+				'slowfade': 'slowfade 2.2s ease-in-out',
 				'slowfade2': 'slowfade2 1.5s ease-in-out',
 				'slowfade3': 'slowfade2 0.7s ease-in-out',
+				'fadeIn': 'slowfade 3.0s ease-in-out',
 				'shake': 'shake 0.1s linear infinite',
 				'slowfadehidden': 'slowfadehidden 2s ease-in-out',
 				'spin-slow': 'spin 8s linear infinite',
@@ -243,9 +244,13 @@ module.exports = {
 				650: '650ms',
 			},
 
+			// #df27f7
+			// #2731f7
 			backgroundImage: {
 				'gradient-circle':
 					'radial-gradient(circle farthest-side at 50% 180%,#df27f7,rgba(241,146,229,0))',
+				'blue-gradient-circle':
+					'radial-gradient(circle farthest-side at 50% 180%,#2731f7,rgba(241,146,229,0))',
 			},
 
 			textShadow: {

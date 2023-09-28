@@ -1,7 +1,8 @@
 'use client'
+import { cn } from '@/lib/utils'
 import { useEffect, useRef } from 'react'
 
-export function GradientButton() {
+export function GradientButton({ title, className }) {
 	const lottieRef = useRef(null)
 
 	useEffect(() => {
@@ -12,10 +13,12 @@ export function GradientButton() {
 		<a
 			href="#projects"
 			id="button-primary"
-			className="relative overflow-hidden border border-t-[#ffffff0d] rounded-xl px-[20px] py-4 text-white font-bold cursor-pointer transition-shadow duration-400 select-none bg-gradient-circle backdrop-brightness-150 
-			backdrop-blur-sm animate-slideleftT4 hover-effect"
+			className={cn(
+				'relative overflow-hidden border border-t-[#ffffff0d] rounded-xl px-[20px] py-4 text-white font-bold cursor-pointer transition-shadow duration-400 select-none bg-blue-gradient-circle backdrop-brightness-150 backdrop-blur-sm blue-hover-effect',
+				className
+			)}
 		>
-			Start learing Now!
+			{title}
 			<lottie-player
 				ref={lottieRef}
 				autoplay

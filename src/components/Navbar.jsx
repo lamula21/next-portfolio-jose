@@ -13,12 +13,7 @@ export function Navbar() {
 		useActiveSectionStore()
 
 	return (
-		<motion.header
-			layoutId="asd"
-			initial={{ y: -100, x: '0%', opacity: 0 }}
-			animate={{ y: 0, x: '0%', opacity: 1 }}
-			className="w-full h-[4.5rem] fixed shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 flex items-center justify-between"
-		>
+		<header className="w-full h-[4.5rem] fixed shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 flex items-center justify-between">
 			<Logo className="m-auto" />
 
 			{/* // */}
@@ -72,6 +67,6 @@ export function Navbar() {
 			</nav>
 
 			<Logo className="m-auto invisible" />
-		</motion.header>
+		</header>
 	)
 }

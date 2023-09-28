@@ -13,6 +13,8 @@ import { ContactIcons } from '@/components/(Hero)/ContactIcons'
 import { ReactCanvas } from './ReactCanvas'
 import { useSectionInView } from '@/lib/hooks'
 import { GradientButton } from '@/components/GradientButton'
+import { MainButton } from '@/components/MainButton'
+import { DownloadIcon } from '@/components/icons'
 
 function Hero() {
 	const lottieRef = useRef(null)
@@ -47,7 +49,7 @@ function Hero() {
 
 						<DynamicToolTip />
 
-						<span className="absolute top-0 left-0 w-full h-full rounded-full hover:border-r-[2px] transition-all hover:border-r-blue-600 hover:animate-spin-slow"></span>
+						<span className="absolute opacity-0 transition-400 group-hover:opacity-100 group-hover:transition-opacity top-0 left-0 w-full h-full rounded-full border-r-[2px] border-r-blue-600 animate-spin-slow"></span>
 					</motion.div>
 
 					{/* Contact Icons */}
@@ -63,7 +65,7 @@ function Hero() {
 							the best
 						</span>{' '}
 					</span>
-					<span className="translate-y-[-20px] animate-slideleftT2 align-top">
+					<span className="translate-y-[-20px] align-top">
 						Project experience
 					</span>
 				</div>
@@ -75,7 +77,10 @@ function Hero() {
 					more. All in one place!
 				</p>
 
-				<GradientButton />
+				<div className="flex gap-5 animate-slowfade">
+					<GradientButton title="Let's Connect!" />
+					<MainButton title="Download CV" icon={DownloadIcon} />
+				</div>
 			</div>
 
 			{/* animate-slidelefttranfromslow */}

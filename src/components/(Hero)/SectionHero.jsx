@@ -41,7 +41,7 @@ export function SectionHero() {
 	// }, [])
 
 	return (
-		<section className="relative w-full h-screen shadow-lg shadow-[#030014]/50 bg-[url('/bg-light.svg')] bg-cover flex flex-col overflow-hidden items-center justify-start  px-[15px] ">
+		<section className="relative w-full h-full 370:h-screen shadow-lg shadow-[#030014]/50 bg-[url('/bg-light.svg')] bg-cover flex flex-col overflow-hidden items-center justify-start  px-[15px] ">
 			<Blackhole />
 
 			<Hero />
