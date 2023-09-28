@@ -28,6 +28,16 @@ export function Project({ title, description, tags, imageUrl }) {
 					<p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
 						{description}
 					</p>
+					<ul className="flex sm:hidden flex-wrap mt-4 gap-2 sm:mt-auto">
+						{tags.map((tag, index) => (
+							<li
+								className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+								key={index}
+							>
+								{tag}
+							</li>
+						))}
+					</ul>
 				</div>
 
 				<Image
@@ -48,7 +58,7 @@ export function Project({ title, description, tags, imageUrl }) {
         group-even:right-[initial] group-even:-left-40"
 				/>
 
-				<div className="overlay absolute w-full h-full flex flex-col justify-center top-0 left-0 bg-overlay-gradient opacity-0 group-hover/overlay:opacity-100 transition-opacity duration-500 ease-in-out pointer-events-none">
+				<div className="overlay absolute w-full h-full hidden sm:flex flex-col justify-center top-0 left-0 bg-overlay-gradient opacity-0 group-hover/overlay:opacity-100 transition-opacity duration-500 ease-in-out pointer-events-none">
 					<div className="relative w-full h-full">
 						<ul className="absolute flex flex-wrap w-[45%] left-10 bottom-7  group-even:left-[initial] group-even:right-10 group-even:justify-end gap-y-2 gap-x-2">
 							{tags.map((tag, index) => (
