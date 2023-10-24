@@ -5,7 +5,14 @@ import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { cn } from '@/lib/utils'
 
-export function Project({ title, description, tags, imageUrl }) {
+export function Project({
+	title,
+	description,
+	tags,
+	imageUrl,
+	children,
+	className,
+}) {
 	const ref = useRef(null)
 	const { scrollYProgress } = useScroll({
 		target: ref,
@@ -16,13 +23,6 @@ export function Project({ title, description, tags, imageUrl }) {
 	// when x is 0, translate should be 50. When x is 100, opacity should be 0.
 	const translateYProgress = useTransform(scrollYProgress, [0, 0.75], [70, 0])
 
-	const textref = useRef(null)
-	const { scrollYProgress: scrollText } = useScroll({
-		target: ref,
-		offset: ['0.37 1', '1.33 1'],
-	})
-	const opacityTextProgess = useTransform(scrollYProgress, [0.48, 1], [0, 1])
-
 	return (
 		<motion.div
 			ref={ref}
@@ -32,24 +32,20 @@ export function Project({ title, description, tags, imageUrl }) {
 				translateY: translateYProgress,
 				backdropFilter: 'blur(4px)',
 			}}
-			className="group relative overflow-hidden p-[1px] rounded-lg "
+			className="group relative overflow-hidden p-[1px] rounded-lg"
 		>
 			{/* Project Card */}
 			<section
 				className={cn(
-					'group/overlay relative flex gap-20 p-12 bg-gray-100 border border-white/10 rounded-lg overflow-hidden transition backdrop-blur-sm max-w-[42rem] lg:max-w-[60rem] sm:h-[20rem] lg:h-[30rem] dark:text-white dark:bg-white/10 hover:bg-gray-200 hover:transition-shadow duration-500 hover:duration-600'
+					'group/overlay relative flex gap-20 p-12 bg-gray-100 border border-white/10 rounded-lg overflow-hidden transition backdrop-blur-sm max-w-[42rem] lg:max-w-[60rem] sm:h-[20rem] lg:h-[30rem] dark:text-white dark:bg-white/10 hover:bg-gray-200 hover:transition-shadow duration-500 hover:duration-600 hover:shadow-lg hover:shadow-indigo-800',
+					className
 				)}
 			>
 				<div className="sm:max-w-[50%] flex flex-col lg:justify-center h-full sm:group-even:order-2 sm:group-even:max-w-[45%]">
 					<h3 className="text-2xl lg:text-5xl font-semibold">{title}</h3>
-					<motion.p
-						style={{
-							opacity: opacityTextProgess,
-						}}
-						className="mt-2 leading-relaxed text-gray-700 lg:text-lg dark:text-white/70"
-					>
+					<p className="mt-2 leading-relaxed text-gray-700 lg:text-lg dark:text-white/70">
 						{description}
-					</motion.p>
+					</p>
 					<ul className="flex sm:hidden flex-wrap mt-4 gap-2 sm:mt-auto">
 						{tags.map((tag, index) => (
 							<li
@@ -97,6 +93,8 @@ export function Project({ title, description, tags, imageUrl }) {
 					</div>
 				</div>
 			</section>
+
+			{children}
 		</motion.div>
 	)
 }

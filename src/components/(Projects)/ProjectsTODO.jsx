@@ -1,11 +1,33 @@
 'use client'
-import React from 'react'
+import React, { useRef } from 'react'
+import SqlCrud from '../../../public/next-sql-crud.png'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 import { projectsData } from '@/utils/data'
 import { useSectionInView } from '@/lib/hooks'
 import { Project } from './Project'
 
 export function Projects() {
+	// const firstref = useRef(null)
+	const lastref = useRef(null)
+
+	// const { scrollYProgress } = useScroll({
+	// 	target: firstref,
+	// 	offset: ['0.37 1', '1.33 1'],
+	// })
+	// const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1])
+
+	const { scrollYProgress } = useScroll({
+		target: lastref,
+		offset: ['0.37 1', '1.33 1'],
+	})
+	const translateXProgress = useTransform(scrollYProgress, [0, 1], [-650, 1200])
+	const translateYProgress = useTransform(
+		scrollYProgress,
+		[0, 0.8, 1],
+		[-650, 100, 900]
+	)
+
 	// 0.5 = observer located from bottom + 50% of screen
 	// 0.25 = observer located from bottom + 25% of screen
 	const { ref } = useSectionInView('Projects', 0.5)
@@ -27,6 +49,23 @@ export function Projects() {
 			</h1>
 
 			<div className="mt-20 flex flex-col gap-14">
+				<Project
+					title="SQL Crud"
+					description="HELOooooooooooooooooooo adsd a dad ds aasdds"
+					tags={['xd']}
+					imageUrl={SqlCrud}
+					className="dark:bg-[rgba(0,0,0,0.99)] p-[1px]"
+				>
+					<motion.div
+						ref={lastref}
+						style={{
+							translateX: translateXProgress,
+							translateY: translateYProgress,
+						}}
+						className="absolute gradient-glow top-0 left-0 -z-10 blur-3xl"
+					></motion.div>
+				</Project>
+
 				{projectsData.map((project, index) => (
 					<React.Fragment key={index}>
 						<Project {...project} />
