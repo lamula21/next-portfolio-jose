@@ -29,7 +29,7 @@ export function Reels({ stories }) {
 
 					<DialogContent
 						withCloseButton={false}
-						className="h-[95%] min-w-[225px] w-[32rem] border border-neutral-700 rounded-lg p-0 bg-white/0"
+						className="h-[95%] min-w-[225px] w-[28rem] border border-neutral-700 rounded-lg p-0 bg-white/0"
 					>
 						<Story
 							topic={story.topic}
