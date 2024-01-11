@@ -1,5 +1,7 @@
+import { useUrl } from "@/hooks/useUrl"
+
 export async function getStories() {
-	return await (
-		await fetch("http://localhost:3000/stories/stories.json")
-	).json()
+	const BASE_URL = useUrl()
+
+	return await (await fetch(`${BASE_URL}/stories/stories.json`)).json()
 }
