@@ -11,7 +11,7 @@ export function ButtonList() {
 					<div className="background-2" />
 					<div className="background-3" />
 				</div> */}
-				Let's Connect!
+				{"Let's Connect!"}
 				<ContactIcon className="w-4 h-4 group-hover:translate-x-[1px] group-hover:translate-y-[-1px] transition" />
 			</GradientButton>
 
