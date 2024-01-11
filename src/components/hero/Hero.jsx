@@ -1,16 +1,14 @@
 // import { ReactCanvas } from './ReactCanvas'
+// import { SectionMotion } from '../SectionMotion'
 import { Profile } from "./Profile"
 import { Title } from "./Title"
 import { DynamicDescription } from "./DynamicDescription"
 import { ButtonList } from "./ButtonList"
 import { Reels } from "@/features/reels/Reels"
 import { HeroSectionRef } from "@/components/sections/HeroSectionRef"
-import { getStories } from "@/services/getStories"
-// import { SectionMotion } from '../SectionMotion'
+import { stories } from "@/data/stories"
 
 export async function Hero() {
-	const { data: stories } = await getStories()
-
 	return (
 		<section className="relative w-full h-screen flex flex-col items-center justify-start px-[15px]">
 			{/* <Blackhole /> */}
