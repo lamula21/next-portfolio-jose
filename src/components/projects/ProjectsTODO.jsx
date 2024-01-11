@@ -3,9 +3,9 @@ import React, { useRef } from 'react'
 import SqlCrud from '../../../public/next-sql-crud.png'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
-import { projectsData } from '@/utils/data'
-import { useSectionInView } from '@/lib/hooks'
-import { Project } from './Project'
+import { projectsData } from '@/data/config'
+import { useSectionInView } from '@/hooks/useSectionInView'
+import { Project } from './ProjectTODO'
 
 export function Projects() {
 	// const firstref = useRef(null)

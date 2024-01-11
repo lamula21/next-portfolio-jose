@@ -1,16 +1,23 @@
-import { SectionHero } from '@/components/(Hero)/SectionHero'
-import { Projects } from '@/components/(Projects)/Projects'
+// import { SectionHero } from "@/components/hero/SectionHero"
+import { Hero } from "@/components/hero/Hero"
+import { Projects } from "@/components/projects/Projects"
 
-export default function Home() {
+export default async function Home() {
 	return (
-		<main className="w-full h-full">
-			<div className=" w-auto h-auto m-auto ">
-				<SectionHero />
+		<main className="relative w-full h-full">
+			<Hero />
 
-				<Projects />
-				{/* <Section_3 /> */}
-				{/* <Section_4 /> */}
-			</div>
+			<Projects />
+
+			{/* Skills  /> */}
+
+			{/* Experience /> */}
+
+			{/* Services /> */}
+
+			{/* Contact /> */}
+
+			{/* Footer /> */}
 		</main>
 	)
 }

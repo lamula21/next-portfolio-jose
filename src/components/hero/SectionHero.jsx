@@ -1,7 +1,5 @@
-'use client'
-
-import { Blackhole } from '@/components/(Hero)/Blackhole'
-import Hero from '@/components/(Hero)/Hero'
+import { Blackhole } from "@/components/hero/Blackhole"
+import Hero from "@/components/hero/Hero"
 
 // import SignupProvider from './SignupProvider'
 // import {
@@ -41,13 +39,15 @@ export function SectionHero() {
 	// }, [])
 
 	return (
-		<section className="relative w-full h-full 370:h-screen shadow-lg shadow-[#030014]/50 bg-[url('/bg-light.svg')] bg-cover flex flex-col overflow-hidden items-center justify-start  px-[15px] ">
-			<Blackhole />
+		<section className="relative w-full h-screen flex flex-col items-center justify-start px-[15px]">
+			{/* <Blackhole /> */}
 
 			<Hero />
 			{/* {Signup ? <SignupProvider /> : <div></div>} Sign up modal */}
 			{/* {Mobilemenu ? <MobileMenu /> : <div></div>} open modal*/}
 			{/* {ImageSrc.data ? <Scale_Image src_data={ImageSrc} /> : <div></div>} */}
+
+			<div className="absolute w-full h-[1000px] left-0 right-0 top-0 overflow-visible -z-10  shadow-lg shadow-[#030014]/50 bg-[url('/bg-light.svg')] bg-cover"></div>
 		</section>
 	)
 }

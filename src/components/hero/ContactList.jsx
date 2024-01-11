@@ -4,9 +4,9 @@ import { GithubIcon } from '@/components/icons'
 import { AtIcon, DiscordIcon, LinkedInIcon, XIcon } from '@/components/icons'
 import { fadeInIcons } from '@/utils/motion'
 
-export function ContactIcons() {
+export function ContactList() {
 	return (
-		<div className="relative h-full flex items-end gap-3">
+		<div className="relative h-auto flex items-end gap-3">
 			<motion.div
 				variants={fadeInIcons('left', 'spring', 2.5, 0)}
 				className="p-2 backdrop-blur-sm bg-white/10 rounded-full hover:shadow-xl hover:shadow-blue-600 transition duration-300 cursor-pointer"

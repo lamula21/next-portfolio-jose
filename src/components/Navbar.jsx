@@ -3,21 +3,21 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-import { links } from '@/utils/data'
+import { links } from '@/data/config'
 import { cn } from '@/lib/utils'
-import { useActiveSectionStore } from '@/store/active-section-store'
-import { Logo } from '@/components/(Hero)/Logo'
+import { useActiveSectionStore } from '@/store/activeSession'
+import { Logo } from '@/components/hero/Logo'
+import { ChevronUp } from 'lucide-react'
 
 export function Navbar() {
 	const { activeSection, setActiveSection, setTimeOfLastClick } =
 		useActiveSectionStore()
 
 	return (
-		<header className="w-full h-[4.5rem] fixed shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 flex items-center justify-between">
-			<Logo className="m-auto" />
+		<header className="w-full h-[4.5rem] fixed shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 flex items-center justify-center">
+			{/* <Logo className="m-auto" /> */}
 
-			{/* // */}
-			<nav className="h-[2.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3rem] sm:w-[33rem] sm:rounded-full dark:bg-[#0300145e] dark:border-[#7042f861] dark:bg-opacity-75">
+			<nav className="h-[2.5rem] w-auto px-6 rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3rem] sm:max-w-[40rem] sm:rounded-full dark:bg-[#0300145e] dark:border-[#7042f861] dark:bg-opacity-75">
 				<ul className="h-full flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-semibold text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
 					{links.map((link) => (
 						<li
@@ -26,7 +26,7 @@ export function Navbar() {
 						>
 							<Link
 								className={cn(
-									'flex w-full items-center justify-center px-3 py-3 text-sm text-black hover:text-black transition dark:text-gray-300 dark:hover:text-gray-50 cursor-pointer animate-slowfade',
+									'flex w-full items-center justify-center p-3 text-sm text-black hover:text-black transition dark:text-gray-300 dark:hover:text-gray-50 cursor-pointer animate-slowfade',
 									activeSection === link.name &&
 										'text-gray-950 dark:text-gray-200'
 								)}
@@ -36,7 +36,12 @@ export function Navbar() {
 									setTimeOfLastClick(Date.now())
 								}}
 							>
-								{link.name}
+								<div className="flex items-center gap-1">
+									{link.name}
+									{link.name === 'More' && (
+										<ChevronUp className="block h-full rotate-180" />
+									)}
+								</div>
 
 								{link.name === activeSection && (
 									<motion.span
@@ -50,6 +55,7 @@ export function Navbar() {
 									></motion.span>
 								)}
 							</Link>
+
 							{link.name === activeSection && (
 								<motion.span
 									layoutId="activeSectionLine"
@@ -66,7 +72,7 @@ export function Navbar() {
 				</ul>
 			</nav>
 
-			<Logo className="m-auto invisible" />
+			{/* <Logo className="m-auto invisible" /> */}
 		</header>
 	)
 }

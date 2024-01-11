@@ -27,6 +27,10 @@ export const links = [
 		name: 'Contact',
 		hash: '#contact',
 	},
+	{
+		name: 'More',
+		hash: '#more',
+	},
 ]
 
 export const links_navigation = [

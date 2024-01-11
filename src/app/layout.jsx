@@ -1,4 +1,4 @@
-import './globals.css'
+import '@/assets/globals.css'
 import { Inter, Cedarville_Cursive } from 'next/font/google'
 import localFont from 'next/font/local'
 
@@ -62,7 +62,8 @@ export default function RootLayout({ children }) {
 			>
 				<Navbar />
 				<StarsCanvas />
-				<Provider>{children}</Provider>
+				{children}
+				{/* <Provider>{children}</Provider> */}
 				<TailwindIndicator />
 			</body>
 		</html>

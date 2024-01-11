@@ -139,12 +139,120 @@ export const DownloadIcon = ({ className }) => (
 		strokeLinecap="round"
 		strokeLinejoin="round"
 	>
-		<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-		<path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2"></path>
-		<path d="M7 11l5 5l5 -5"></path>
-		<path d="M12 4l0 12"></path>
+		<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+		<path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+		<path d="M7 11l5 5l5 -5" />
+		<path d="M12 4l0 12" />
 	</svg>
 )
+
+export const ContactIcon = ({ className }) => (
+	<svg className={className} width="1em" height="1em" viewBox="0 0 1792 1792">
+		<path
+			fill="currentColor"
+			d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45q-14 8-31 8q-11 0-24-5l-453-185l-242 295q-18 23-49 23q-13 0-22-4q-19-7-30.5-23.5T640 1728v-349l864-1059l-1069 925l-395-162q-37-14-40-55q-2-40 32-59L1696 9q15-9 32-9q20 0 36 11"
+		/>
+	</svg>
+)
+
+export const CoffeeIcon = ({ className }) => (
+	<svg className={className} width="1em" height="1em" viewBox="0 0 24 24">
+		<g
+			fill="none"
+			stroke="currentColor"
+			strokeLinecap="round"
+			strokeLinejoin="round"
+			strokeWidth="2"
+		>
+			<path
+				fill="currentColor"
+				fillOpacity="0"
+				strokeDasharray="48"
+				strokeDashoffset="48"
+				d="M17 9v9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V9z"
+			>
+				<animate
+					fill="freeze"
+					attributeName="stroke-dashoffset"
+					dur="0.6s"
+					values="48;0"
+				/>
+				<animate
+					fill="freeze"
+					attributeName="fill-opacity"
+					begin="0.8s"
+					dur="0.15s"
+					values="0;0.3"
+				/>
+			</path>
+			<path
+				strokeDasharray="14"
+				strokeDashoffset="14"
+				d="M17 14H20C20.55 14 21 13.55 21 13V10C21 9.45 20.55 9 20 9H17"
+			>
+				<animate
+					fill="freeze"
+					attributeName="stroke-dashoffset"
+					begin="0.6s"
+					dur="0.2s"
+					values="14;28"
+				/>
+			</path>
+		</g>
+		<mask id="IconifyId18ce49d7e19baefac11">
+			<path
+				fill="none"
+				stroke="#fff"
+				strokeWidth="2"
+				d="M8 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4M12 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4M16 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4"
+			>
+				<animateMotion
+					calcMode="linear"
+					dur="3s"
+					path="M0 0v-8"
+					repeatCount="indefinite"
+				/>
+			</path>
+		</mask>
+		<rect
+			width="24"
+			height="0"
+			y="7"
+			fill="currentColor"
+			mask="url(#IconifyId18ce49d7e19baefac11)"
+		>
+			<animate
+				fill="freeze"
+				attributeName="y"
+				begin="0.8s"
+				dur="0.6s"
+				values="7;2"
+			/>
+			<animate
+				fill="freeze"
+				attributeName="height"
+				begin="0.8s"
+				dur="0.6s"
+				values="0;5"
+			/>
+		</rect>
+	</svg>
+)
+
+export function VerifiedIcon({ className }) {
+	return (
+		<svg width="1em" height="1em" viewBox="0 0 24 24" className={className}>
+			<g fill="none">
+				<path
+					fillRule="evenodd"
+					clipRule="evenodd"
+					d="M10.054 2.344a3 3 0 0 1 3.892 0l1.271 1.084a1 1 0 0 0 .57.236l1.665.133a3 3 0 0 1 2.751 2.751l.133 1.666a1 1 0 0 0 .236.569l1.084 1.271a3 3 0 0 1 0 3.892l-1.084 1.271a1 1 0 0 0-.236.57l-.133 1.665a3 3 0 0 1-2.751 2.751l-1.666.133a1 1 0 0 0-.569.236l-1.271 1.084a3 3 0 0 1-3.892 0l-1.271-1.084a1 1 0 0 0-.57-.236l-1.665-.133a3 3 0 0 1-2.751-2.751l-.133-1.666a1 1 0 0 0-.236-.569l-1.084-1.271a3 3 0 0 1 0-3.892l1.084-1.271a1 1 0 0 0 .236-.57l.133-1.665a3 3 0 0 1 2.751-2.751l1.666-.133a1 1 0 0 0 .569-.236l1.271-1.084zm5.653 8.363a1 1 0 0 0-1.414-1.414L11 12.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4z"
+					fill="currentColor"
+				/>
+			</g>
+		</svg>
+	)
+}
 
 // export const CVIcon = ({ className }) => (
 // 		<svg

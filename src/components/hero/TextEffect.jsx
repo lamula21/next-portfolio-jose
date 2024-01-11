@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { dynamicText } from '@/utils/text'
+import { dynamicText } from '@/data/text'
 
 export default function TextEffect() {
 	const [loopNum, setLoopNum] = useState(0)

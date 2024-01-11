@@ -71,14 +71,20 @@
 		scroll-behavior: smooth;
 	}
 	* {
-		@apply border-border;
+		@apply border-border box-border;
 	}
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background text-foreground min-h-screen;
 	}
 
 	#cursive {
 		font-family: var(--font-cedarville);
+	}
+}
+
+@layer utilities {
+	.text-gradient-white {
+		@apply text-transparent bg-clip-text bg-gradient-to-b from-[#fff] to-[rgba(255,255,255,.75)];
 	}
 }
 
@@ -128,7 +134,7 @@
 			rgba(60, 8, 126, 0.32) 100%
 		),
 		rgba(113, 47, 255, 0.12); */
-	content: '';
+	content: "";
 	inset: 0;
 	@apply w-full h-full absolute rounded-lg;
 	box-shadow: inset 0 0 12px #bf97ff3d;
@@ -167,4 +173,103 @@
 	filter: blur(24px);
 	background-color: #4a4afe; /* change */
 	border-radius: 320px;
+}
+
+.background {
+	@apply grid grid-cols-1 grid-rows-1;
+}
+
+.background-1 {
+	animation: background-1-animation 8s infinite;
+	background-image: linear-gradient(165deg, #2731f7 rgba(241, 146, 229, 0));
+	border-radius: 5px;
+}
+.background-1:before {
+	content: "";
+	position: absolute;
+	top: 0.7rem;
+	bottom: 0.7rem;
+	left: 0.6rem;
+	right: 0.6rem;
+	background-image: linear-gradient(165deg, #2731f7 rgba(241, 146, 229, 0));
+	filter: blur(35px);
+}
+
+.background-2 {
+	animation: background-3-animation 8s infinite;
+	background-image: linear-gradient(165deg, hsl(0, 84%, 61%) hsl(47, 95%, 57%));
+	border-radius: 5px;
+}
+.background-2:before {
+	content: "";
+	position: absolute;
+	top: 0.7rem;
+	bottom: 0.7rem;
+	left: 0.6rem;
+	right: 0.6rem;
+	background-image: linear-gradient(165deg, hsl(0, 84%, 61%) hsl(47, 95%, 57%));
+	filter: blur(35px);
+}
+
+.background-3 {
+	animation: background-2-animation 8s infinite;
+	background-image: linear-gradient(
+		165deg,
+		hsl(330, 100%, 50%),
+		hsl(270, 67%, 46%)
+	);
+	border-radius: 5px;
+}
+.background-3:before {
+	content: "";
+	position: absolute;
+	top: 0.7rem;
+	bottom: 0.7rem;
+	left: 0.6rem;
+	right: 0.6rem;
+	background-image: linear-gradient(
+		165deg,
+		hsl(330, 100%, 50%),
+		hsl(270, 67%, 46%)
+	);
+	filter: blur(35px);
+}
+
+@keyframes background-1-animation {
+	from,
+	16.667%,
+	to {
+		opacity: 0;
+	}
+	25%,
+	91.667% {
+		opacity: 1;
+	}
+}
+
+@keyframes background-2-animation {
+	from,
+	to {
+		opacity: 0;
+	}
+	33.333%,
+	50% {
+		opacity: 1;
+	}
+	16.667%,
+	66.667% {
+		opacity: 0;
+	}
+}
+
+@keyframes background-3-animation {
+	from,
+	50%,
+	to {
+		opacity: 0;
+	}
+	66.667%,
+	83.333% {
+		opacity: 1;
+	}
 }

@@ -1,4 +1,4 @@
-import { useActiveSectionStore } from '@/store/active-section-store'
+import { useActiveSectionStore } from '@/store/activeSession'
 import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 
