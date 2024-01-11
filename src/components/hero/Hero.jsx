@@ -9,7 +9,7 @@ import { getStories } from "@/services/getStories"
 // import { SectionMotion } from '../SectionMotion'
 
 export async function Hero() {
-	const stories = await getStories()
+	const { data: stories } = await getStories()
 
 	return (
 		<section className="relative w-full h-screen flex flex-col items-center justify-start px-[15px]">
