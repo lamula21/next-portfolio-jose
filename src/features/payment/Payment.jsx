@@ -18,24 +18,20 @@ import Image from "next/image"
 import { PaymentButton } from "./components/PaymentButton"
 
 import { useSearchParams } from "next/navigation"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { toast } from "sonner"
 
 export function PaymentDrawer() {
 	const searchParams = useSearchParams()
 
-	useEffect(() => {
-		if (searchParams.get("success")) {
-			toast.success("OMG THANK YOU. Your payment was processed!")
-		}
+	const [isMounted, setIsMounted] = useState(false)
 
-		if (searchParams.get("canceled")) {
-			toast.error("Oops! Payment was canceled.")
-		}
-	}, [searchParams])
+	useEffect(() => {
+		setIsMounted(true)
+	}, [])
 
 	const stripeCheckout = async () => {
-		const response = await fetch("api/checkout", {
+		const response = await fetch("/api/checkout", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -47,6 +43,16 @@ export function PaymentDrawer() {
 
 		window.location = url
 	}
+
+	if (searchParams.get("success")) {
+		toast.success("OMG THANK YOU. Your payment was processed!")
+	}
+
+	if (searchParams.get("canceled")) {
+		toast.error("Oops! Payment was canceled.")
+	}
+
+	if (!isMounted) return null
 
 	return (
 		<Drawer>
