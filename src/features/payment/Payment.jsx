@@ -24,12 +24,6 @@ import { toast } from "sonner"
 export function PaymentDrawer() {
 	const searchParams = useSearchParams()
 
-	const [isMounted, setIsMounted] = useState(false)
-
-	useEffect(() => {
-		setIsMounted(true)
-	}, [])
-
 	const stripeCheckout = async () => {
 		const response = await fetch("/api/checkout", {
 			method: "POST",
@@ -44,15 +38,26 @@ export function PaymentDrawer() {
 		window.location = url
 	}
 
-	if (searchParams.get("success")) {
-		toast.success("OMG THANK YOU. Your payment was processed!")
-	}
+	useEffect(() => {
+		if (searchParams.get("success")) {
+			toast.success(
+				<div className="flex">
+					Icon
+					<div>
+						<h1>Thank you for your donation!</h1>
+						<p>
+							Your support is greatly appreciated. You can see my courses{" "}
+							<a href="/courses">here</a>
+						</p>
+					</div>
+				</div>
+			)
+		}
 
-	if (searchParams.get("canceled")) {
-		toast.error("Oops! Payment was canceled.")
-	}
-
-	if (!isMounted) return null
+		if (searchParams.get("canceled")) {
+			toast.error("Oops! Payment was canceled.")
+		}
+	}, [searchParams])
 
 	return (
 		<Drawer>

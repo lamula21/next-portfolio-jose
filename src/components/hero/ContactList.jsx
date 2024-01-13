@@ -24,7 +24,7 @@ export function ContactList() {
 			setOnCopy(true)
 		} catch (error) {
 			// toast here
-			console.log("error copying to clipboard", error)
+			toast.error("Error copying to clipboard.")
 		}
 	}
 
