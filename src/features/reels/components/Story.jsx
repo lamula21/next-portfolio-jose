@@ -81,7 +81,7 @@ export function Story({ slides, timer = 4000, thumbnail, topic }) {
 						height={1000}
 						className="h-full object-cover opacity-75 rounded-lg"
 						src={currentSlide.image}
-						alt=""
+						alt={thumbnail.alt}
 					/>
 
 					<div className="absolute flex top-3 gap-x-3 z-50 w-full px-2">

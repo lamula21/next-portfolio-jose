@@ -1,6 +1,7 @@
 import { GradientButton } from "@/components/GradientButton"
 import { MainButton } from "@/components/MainButton"
 import { CoffeeIcon, ContactIcon, DownloadIcon } from "@/components/icons"
+import { PaymentDrawer } from "@/features/payment/Payment"
 
 export function ButtonList() {
 	return (
@@ -20,10 +21,7 @@ export function ButtonList() {
 				<DownloadIcon className="w-5 h-5 group-hover:translate-y-[2px] transition" />
 			</MainButton>
 
-			<MainButton className="group">
-				Buy me a Coffee
-				<CoffeeIcon className="w-5 h-5 group-hover:scale-[120%] transition" />
-			</MainButton>
+			<PaymentDrawer />
 		</div>
 	)
 }

@@ -1,13 +1,12 @@
-'use client'
+"use client"
 
-import { motion } from 'framer-motion'
-import Link from 'next/link'
+import { motion } from "framer-motion"
+import Link from "next/link"
 
-import { links } from '@/data/config'
-import { cn } from '@/lib/utils'
-import { useActiveSectionStore } from '@/store/activeSession'
-import { Logo } from '@/components/hero/Logo'
-import { ChevronUp } from 'lucide-react'
+import { links } from "@/data/config"
+import { cn } from "@/lib/utils"
+import { useActiveSectionStore } from "@/store/activeSession"
+import { ChevronUp } from "lucide-react"
 
 export function Navbar() {
 	const { activeSection, setActiveSection, setTimeOfLastClick } =
@@ -26,9 +25,9 @@ export function Navbar() {
 						>
 							<Link
 								className={cn(
-									'flex w-full items-center justify-center p-3 text-sm text-black hover:text-black transition dark:text-gray-300 dark:hover:text-gray-50 cursor-pointer animate-slowfade',
+									"flex w-full items-center justify-center p-3 text-sm text-black hover:text-black transition dark:text-gray-300 dark:hover:text-gray-50 cursor-pointer animate-slowfade",
 									activeSection === link.name &&
-										'text-gray-950 dark:text-gray-200'
+										"text-gray-950 dark:text-gray-200"
 								)}
 								href={link.hash}
 								onClick={() => {
@@ -38,7 +37,7 @@ export function Navbar() {
 							>
 								<div className="flex items-center gap-1">
 									{link.name}
-									{link.name === 'More' && (
+									{link.name === "More" && (
 										<ChevronUp className="block h-full rotate-180" />
 									)}
 								</div>
@@ -48,7 +47,7 @@ export function Navbar() {
 										className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-[#7042f82b] dark:blur-md bg-p"
 										layoutId="activeSection"
 										transition={{
-											type: 'spring',
+											type: "spring",
 											stiffness: 380,
 											damping: 30,
 										}}
@@ -60,7 +59,7 @@ export function Navbar() {
 								<motion.span
 									layoutId="activeSectionLine"
 									transition={{
-										type: 'spring',
+										type: "spring",
 										stiffness: 380,
 										damping: 70,
 									}}
