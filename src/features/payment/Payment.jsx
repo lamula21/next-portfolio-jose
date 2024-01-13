@@ -18,7 +18,7 @@ import Image from "next/image"
 import { PaymentButton } from "./components/PaymentButton"
 
 import { useSearchParams } from "next/navigation"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { toast } from "sonner"
 
 export function PaymentDrawer() {
