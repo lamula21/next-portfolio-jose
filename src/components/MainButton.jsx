@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils"
 
 export function MainButton({ className, href, children, onClick }) {
-	const Tag = href ? "a" : "div"
+	const Tag = href ? "a" : "button"
 	return (
 		<Tag
 			{...(href ? { href } : {})}

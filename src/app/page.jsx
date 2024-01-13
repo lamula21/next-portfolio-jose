@@ -1,6 +1,6 @@
 // import { SectionHero } from "@/components/hero/SectionHero"
-import { Hero } from "@/components/hero/Hero"
-import { Projects } from "@/components/projects/Projects"
+import { Hero } from '@/components/hero/Hero'
+import { Projects } from '@/components/projects/Projects'
 
 export default async function Home() {
 	return (

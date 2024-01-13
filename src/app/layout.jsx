@@ -4,7 +4,7 @@ import localFont from "next/font/local"
 
 import { Navbar } from "@/components/Navbar"
 import { cn } from "@/lib/utils"
-import StarsCanvas from "@/components/Stars"
+import { StarsCanvas } from "@/components/Stars"
 import { TailwindIndicator } from "@/components/TailwindIndicator"
 import { Toaster } from "@/components/ui/sonner"
 
@@ -47,7 +47,7 @@ const myFont = localFont({
 
 export const metadata = {
 	title: "Jose Valdivia",
-	description: "My showcase of projects and skills",
+	description: "Showcasing my latest projects and skills",
 }
 
 export default function RootLayout({ children }) {

@@ -18,7 +18,7 @@ import Image from "next/image"
 import { PaymentButton } from "./components/PaymentButton"
 
 import { useSearchParams } from "next/navigation"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { toast } from "sonner"
 
 export function PaymentDrawer() {
@@ -62,10 +62,12 @@ export function PaymentDrawer() {
 	return (
 		<Drawer>
 			<DrawerTrigger asChild>
-				<MainButton className="group">
-					Buy me a Coffee
-					<CoffeeIcon className="w-5 h-5 group-hover:scale-[120%] transition" />
-				</MainButton>
+				<div>
+					<MainButton className="group">
+						Buy me a Coffee
+						<CoffeeIcon className="w-5 h-5 group-hover:scale-[120%] transition" />
+					</MainButton>
+				</div>
 			</DrawerTrigger>
 
 			<DrawerContent>

@@ -1,10 +1,11 @@
-'use client'
+"use client"
 
-import { useState, useRef, Suspense, useEffect } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { Points, PointMaterial, Preload } from '@react-three/drei'
-import * as random from 'maath/random/dist/maath-random.esm'
-import { useStarsStore } from '@/store/stars'
+import { useState, useRef, Suspense, useEffect } from "react"
+import { Canvas, useFrame } from "@react-three/fiber"
+import { Points, PointMaterial, Preload } from "@react-three/drei"
+import * as random from "maath/random/dist/maath-random.esm"
+import { useStarsStore } from "@/store/stars"
+import { cn } from "@/lib/utils"
 
 function Background_Stars(props) {
 	const { starColor } = useStarsStore()
@@ -12,7 +13,8 @@ function Background_Stars(props) {
 
 	const [sphere] = useState(() =>
 		// Randomingly generate stars
-		random.inSphere(new Float32Array(1000), { radius: 1.2 })
+		// Float32Array input must be divisible by 3 because each star has 3 coordinates
+		random.inSphere(new Float32Array(1002), { radius: 1.2 })
 	)
 
 	useFrame((state, delta) => {
@@ -51,14 +53,11 @@ function Background_Stars(props) {
 	)
 }
 
-const StarsCanvas = () => {
+export function StarsCanvas() {
 	const { starMode } = useStarsStore()
-	return (
-		<div
-			className={`w-full h-auto ${
-				starMode === true ? '' : ' hidden'
-			}  fixed inset-0 z-[-2]`}
-		>
+
+	return starMode ? (
+		<div className={cn("w-full h-auto fixed inset-0 z-[-2]")}>
 			<Canvas camera={{ position: [0, 0, 1] }}>
 				<Suspense fallback={null}>
 					<Background_Stars />
@@ -67,7 +66,5 @@ const StarsCanvas = () => {
 				<Preload all />
 			</Canvas>
 		</div>
-	)
+	) : null
 }
-
-export default StarsCanvas

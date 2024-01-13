@@ -1,6 +1,6 @@
 import { GradientButton } from "@/components/GradientButton"
 import { MainButton } from "@/components/MainButton"
-import { CoffeeIcon, ContactIcon, DownloadIcon } from "@/components/icons"
+import { ContactIcon, DownloadIcon } from "@/components/icons"
 import { PaymentDrawer } from "@/features/payment/Payment"
 
 export function ButtonList() {
