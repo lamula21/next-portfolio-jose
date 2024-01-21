@@ -1,24 +1,15 @@
-import { LucideGraduationCap } from "lucide-react"
-import React from "react"
+import DCCOA from "@public/logos/dccoa.jpeg"
+import MC from "@public/logos/mc.jpeg"
+import UMD from "@public/logos/umd.jpeg"
 
 export const experiencesData = [
 	{
-		title: "Lead Intern Full Stack Developer",
+		title: "Lead Intern S.W.E",
 		location: "Washington, D.C",
-		company: "D.C Code Officials Assoc.",
-		description:
-			"I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-		icon: React.createElement(LucideGraduationCap),
-		date: "2019",
-	},
-	{
-		title: "Group Project",
-		location: "College Park, MD",
-		company: "University of Maryland",
-		description:
-			"I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-		icon: React.createElement(),
-		date: "Jan 2023 - May 2023",
+		company: "DCCOA",
+		description: "",
+		logo: DCCOA,
+		date: "Jun 2023 - Aug 2023",
 	},
 	{
 		title: "ADS Note Taker",
@@ -26,34 +17,35 @@ export const experiencesData = [
 		company: "University of Maryland",
 		description:
 			"I worked as a note taker for the course of CMSC 335 Web Development with Javascript. Collaborated with the professor and students to provide detailed and organized documentation of lectures.",
-		icon: React.createElement(FaReact),
+		logo: UMD,
 		date: "Jan 2023 - May 2023",
+	},
+	{
+		title: "Teaching Assistant",
+		location: "Germantown, MD",
+		company: "Montgomery College",
+		logo: MC,
+		date: "Jan 2022 - May 2022",
 	},
 ]
 
-// export const experiencesData = [
-// 	{
-// 		title: "Lead Software Developer",
-// 		location: "Miami, FL",
-// 		description:
-// 			"I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-// 		icon: React.createElement(LucideGraduationCap),
-// 		date: "2019",
-// 	},
-// 	{
-// 		title: "Group Project",
-// 		location: "Orlando, FL",
-// 		description:
-// 			"I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-// 		icon: React.createElement(),
-// 		date: "2019 - 2021",
-// 	},
-// 	{
-// 		title: "ADS Note Taker",
-// 		location: "College Park, MD",
-// 		description:
-// 			"I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-// 		icon: React.createElement(FaReact),
-// 		date: "Jan 2023 - May 2023",
-// 	},
-// ]
+export const educationData = [
+	{
+		title: "B.S. Computer Science",
+		location: "University of Maryland",
+		logo: UMD,
+		date: "2022 - 2024",
+	},
+	{
+		title: "AppTracker",
+		location: "Group Project",
+		logo: UMD,
+		date: "5 mos",
+	},
+	{
+		title: "Associate's with Honors",
+		location: "Montgomery College",
+		logo: MC,
+		date: "2020 - 2022",
+	},
+]

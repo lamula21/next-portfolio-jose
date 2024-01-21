@@ -79,7 +79,7 @@ export function Story({ slides, timer = 4000, thumbnail, topic }) {
 					<Image
 						width={1000}
 						height={1000}
-						className="h-full object-cover opacity-75 rounded-lg"
+						className="h-full object-cover opacity-90 rounded-lg"
 						src={currentSlide.image}
 						alt={thumbnail.alt}
 					/>

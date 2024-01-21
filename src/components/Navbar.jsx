@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 
-import { links } from "@/data/config"
+import { links_navigation } from "@/data/config"
 import { cn } from "@/lib/utils"
 import { useActiveSectionStore } from "@/store/activeSession"
 import { ChevronUp } from "lucide-react"
@@ -13,12 +13,12 @@ export function Navbar() {
 		useActiveSectionStore()
 
 	return (
-		<header className="w-full h-[4.5rem] fixed shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 flex items-center justify-center">
+		<header className="w-full h-[4.5rem] fixed z-50 flex items-center justify-center">
 			{/* <Logo className="m-auto" /> */}
 
 			<nav className="h-[2.5rem] w-auto px-6 rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3rem] sm:max-w-[40rem] sm:rounded-full dark:bg-[#0300145e] dark:border-[#7042f861] dark:bg-opacity-75">
 				<ul className="h-full flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-semibold text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
-					{links.map((link) => (
+					{links_navigation.map((link) => (
 						<li
 							className="relative h-full flex items-center justify-center "
 							key={link.hash}

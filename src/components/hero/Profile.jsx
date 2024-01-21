@@ -4,7 +4,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import profile from "../../../public/profile.png"
 
-import { slideIn, textVariant } from "@/utils/motion"
+import { textVariant } from "@/utils/motion"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { DynamicToolTip } from "@/components/hero/DynamicTooltip"
 import { ContactList } from "@/components/hero/ContactList"
@@ -16,8 +16,7 @@ export function Profile() {
 			{/* Avatar */}
 			<motion.div
 				variants={textVariant(2)}
-				className="group relative rounded-full border border-blue-900 opacity-[0.9] transition-shadow duration-300 hover:shadow-lg
-              hover:shadow-blue-600 cursor-pointer"
+				className="group relative rounded-full border opacity-[0.9] transition-shadow duration-300 hover:shadow-lg"
 			>
 				<Avatar className="w-28 h-28 m-1">
 					<Image src={profile} className="scale-110" alt="JV profile picture" />
@@ -25,8 +24,6 @@ export function Profile() {
 				</Avatar>
 
 				<DynamicToolTip />
-
-				<span className="absolute opacity-0 transition-400 group-hover:opacity-100 group-hover:transition-opacity top-0 left-0 w-full h-full rounded-full border-r-[2px] border-r-blue-600 animate-spin-slow"></span>
 			</motion.div>
 
 			<div className="w-full lg:min-w-[350px] h-full flex flex-col items-center gap-3 lg:items-start">

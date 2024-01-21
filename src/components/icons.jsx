@@ -1,336 +1,973 @@
 import { cn } from "@/lib/utils"
 
 export const GradIcon = ({ className }) => (
-	<svg
-		className={className}
-		width={24}
-		height={24}
-		viewBox="0 0 24 24"
-		strokeWidth="2"
-		stroke="currentColor"
-		fill="none"
-		strokeLinecap="round"
-		strokeLinejoin="round"
-	>
-		<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-		<path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
-		<path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
-	</svg>
+  <svg
+    className={className}
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    strokeWidth="2"
+    stroke="currentColor"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
+    <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
+  </svg>
 )
 
 export const GithubIcon = ({ className }) => (
-	<svg
-		className={className}
-		width={24}
-		height={24}
-		viewBox="0 0 24 24"
-		fill="fill"
-		color="rgba(0, 0, 0, 1)"
-	>
-		<path
-			fillRule="evenodd"
-			clipRule="evenodd"
-			d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
-		></path>
-	</svg>
+  <svg
+    className={className}
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="fill"
+    color="rgba(0, 0, 0, 1)"
+  >
+    <path
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+    ></path>
+  </svg>
 )
 
 export const XIcon = ({ className }) => (
-	<svg
-		className={className}
-		width={24}
-		height={24}
-		viewBox="0 0 24 24"
-		strokeWidth={2}
-		stroke="currentColor"
-		strokeLinecap="round"
-		strokeLinejoin="round"
-	>
-		<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-		<path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-		<path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-	</svg>
+  <svg
+    className={className}
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+  </svg>
 )
 
 export const AtIcon = ({ className }) => (
-	<svg
-		className={className}
-		width={24}
-		height={24}
-		viewBox="0 0 24 24"
-		strokeWidth={2}
-		stroke="currentColor"
-		fill="none"
-		strokeLinecap="round"
-		strokeLinejoin="round"
-	>
-		<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-		<path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
-		<path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path>
-	</svg>
+  <svg
+    className={className}
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+    <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28"></path>
+  </svg>
 )
 
 export const MailIcon = ({ className, ...props }) => (
-	<svg
-		className={className}
-		{...props}
-		width={24}
-		height={24}
-		viewBox="0 0 24 24"
-		strokeWidth={2}
-		stroke="currentColor"
-		fill="none"
-		strokeLinecap="round"
-		strokeLinejoin="round"
-	>
-		<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-		<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
-		<path d="M3 7l9 6l9 -6" />
-	</svg>
+  <svg
+    className={className}
+    {...props}
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+    <path d="M3 7l9 6l9 -6" />
+  </svg>
 )
 
 export const MailCheckIcon = ({ className }) => (
-	<svg
-		className={className}
-		width={24}
-		height={24}
-		viewBox="0 0 24 24"
-		strokeWidth={2}
-		stroke="currentColor"
-		fill="none"
-		strokeLinecap="round"
-		strokeLinejoin="round"
-	>
-		<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-		<path d="M11 19h-6a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v6" />
-		<path d="M3 7l9 6l9 -6" />
-		<path d="M15 19l2 2l4 -4" />
-	</svg>
+  <svg
+    className={className}
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M11 19h-6a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v6" />
+    <path d="M3 7l9 6l9 -6" />
+    <path d="M15 19l2 2l4 -4" />
+  </svg>
 )
 
 export const LinkedInIcon = ({ className }) => (
-	<svg
-		className="icon icon-tabler icon-tabler-brand-linkedin"
-		width={24}
-		height={24}
-		viewBox="0 0 24 24"
-		strokeWidth={2}
-		stroke="currentColor"
-		fill="none"
-		strokeLinecap="round"
-		strokeLinejoin="round"
-	>
-		<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-		<path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-		<path d="M8 11l0 5"></path>
-		<path d="M8 8l0 .01"></path>
-		<path d="M12 16l0 -5"></path>
-		<path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-	</svg>
+  <svg
+    className="icon icon-tabler icon-tabler-brand-linkedin"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+    <path d="M8 11l0 5"></path>
+    <path d="M8 8l0 .01"></path>
+    <path d="M12 16l0 -5"></path>
+    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+  </svg>
 )
 
 export const DiscordIcon = ({ className }) => (
-	<svg
-		className={className}
-		width={24}
-		height={24}
-		viewBox="0 0 24 24"
-		strokeWidth={2}
-		stroke="currentColor"
-		fill="none"
-		strokeLinecap="round"
-		strokeLinejoin="round"
-	>
-		<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-		<path
-			d="M14.983 3l.123 .006c2.014 .214 3.527 .672 4.966 1.673a1 1 0 0 1 .371 .488c1.876 5.315 2.373 9.987 1.451 12.28c-1.003 2.005 -2.606 3.553 -4.394 3.553c-.732 0 -1.693 -.968 -2.328 -2.045a21.512 21.512 0 0 0 2.103 -.493a1 1 0 1 0 -.55 -1.924c-3.32 .95 -6.13 .95 -9.45 0a1 1 0 0 0 -.55 1.924c.717 .204 1.416 .37 2.103 .494c-.635 1.075 -1.596 2.044 -2.328 2.044c-1.788 0 -3.391 -1.548 -4.428 -3.629c-.888 -2.217 -.39 -6.89 1.485 -12.204a1 1 0 0 1 .371 -.488c1.439 -1.001 2.952 -1.459 4.966 -1.673a1 1 0 0 1 .935 .435l.063 .107l.651 1.285l.137 -.016a12.97 12.97 0 0 1 2.643 0l.134 .016l.65 -1.284a1 1 0 0 1 .754 -.54l.122 -.009zm-5.983 7a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15zm6 0a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15z"
-			strokeWidth={0}
-			fill="currentColor"
-		></path>
-	</svg>
+  <svg
+    className={className}
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M14.983 3l.123 .006c2.014 .214 3.527 .672 4.966 1.673a1 1 0 0 1 .371 .488c1.876 5.315 2.373 9.987 1.451 12.28c-1.003 2.005 -2.606 3.553 -4.394 3.553c-.732 0 -1.693 -.968 -2.328 -2.045a21.512 21.512 0 0 0 2.103 -.493a1 1 0 1 0 -.55 -1.924c-3.32 .95 -6.13 .95 -9.45 0a1 1 0 0 0 -.55 1.924c.717 .204 1.416 .37 2.103 .494c-.635 1.075 -1.596 2.044 -2.328 2.044c-1.788 0 -3.391 -1.548 -4.428 -3.629c-.888 -2.217 -.39 -6.89 1.485 -12.204a1 1 0 0 1 .371 -.488c1.439 -1.001 2.952 -1.459 4.966 -1.673a1 1 0 0 1 .935 .435l.063 .107l.651 1.285l.137 -.016a12.97 12.97 0 0 1 2.643 0l.134 .016l.65 -1.284a1 1 0 0 1 .754 -.54l.122 -.009zm-5.983 7a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15zm6 0a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15z"
+      strokeWidth={0}
+      fill="currentColor"
+    ></path>
+  </svg>
 )
 
 export const ArrowSvg = ({ className }) => (
-	<svg
-		className={cn("bi bi-triangle-fill text-[#0c0728]", className)}
-		width="16"
-		height="16"
-		fill="currentColor"
-		viewBox="0 0 16 16"
-	>
-		<path
-			fillRule="evenodd"
-			d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z"
-		/>
-	</svg>
+  <svg
+    className={cn("bi bi-triangle-fill text-[#0c0728]", className)}
+    width="16"
+    height="16"
+    fill="currentColor"
+    viewBox="0 0 16 16"
+  >
+    <path
+      fillRule="evenodd"
+      d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z"
+    />
+  </svg>
 )
 
 export const DownloadIcon = ({ className }) => (
-	<svg
-		className={className}
-		width={24}
-		height={24}
-		viewBox="0 0 24 24"
-		strokeWidth={2}
-		stroke="currentColor"
-		fill="none"
-		strokeLinecap="round"
-		strokeLinejoin="round"
-	>
-		<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-		<path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
-		<path d="M7 11l5 5l5 -5" />
-		<path d="M12 4l0 12" />
-	</svg>
+  <svg
+    className={className}
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+    <path d="M7 11l5 5l5 -5" />
+    <path d="M12 4l0 12" />
+  </svg>
 )
 
 export const ContactIcon = ({ className }) => (
-	<svg className={className} width="1em" height="1em" viewBox="0 0 1792 1792">
-		<path
-			fill="currentColor"
-			d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45q-14 8-31 8q-11 0-24-5l-453-185l-242 295q-18 23-49 23q-13 0-22-4q-19-7-30.5-23.5T640 1728v-349l864-1059l-1069 925l-395-162q-37-14-40-55q-2-40 32-59L1696 9q15-9 32-9q20 0 36 11"
-		/>
-	</svg>
+  <svg className={className} width="1em" height="1em" viewBox="0 0 1792 1792">
+    <path
+      fill="currentColor"
+      d="M1764 11q33 24 27 64l-256 1536q-5 29-32 45q-14 8-31 8q-11 0-24-5l-453-185l-242 295q-18 23-49 23q-13 0-22-4q-19-7-30.5-23.5T640 1728v-349l864-1059l-1069 925l-395-162q-37-14-40-55q-2-40 32-59L1696 9q15-9 32-9q20 0 36 11"
+    />
+  </svg>
 )
 
 export const CoffeeIcon = ({ className }) => (
-	<svg className={className} width="1em" height="1em" viewBox="0 0 24 24">
-		<g
-			fill="none"
-			stroke="currentColor"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-			strokeWidth="2"
-		>
-			<path
-				fill="currentColor"
-				fillOpacity="0"
-				strokeDasharray="48"
-				strokeDashoffset="48"
-				d="M17 9v9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V9z"
-			>
-				<animate
-					fill="freeze"
-					attributeName="stroke-dashoffset"
-					dur="0.6s"
-					values="48;0"
-				/>
-				<animate
-					fill="freeze"
-					attributeName="fill-opacity"
-					begin="0.8s"
-					dur="0.15s"
-					values="0;0.3"
-				/>
-			</path>
-			<path
-				strokeDasharray="14"
-				strokeDashoffset="14"
-				d="M17 14H20C20.55 14 21 13.55 21 13V10C21 9.45 20.55 9 20 9H17"
-			>
-				<animate
-					fill="freeze"
-					attributeName="stroke-dashoffset"
-					begin="0.6s"
-					dur="0.2s"
-					values="14;28"
-				/>
-			</path>
-		</g>
-		<mask id="IconifyId18ce49d7e19baefac11">
-			<path
-				fill="none"
-				stroke="#fff"
-				strokeWidth="2"
-				d="M8 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4M12 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4M16 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4"
-			>
-				<animateMotion
-					calcMode="linear"
-					dur="3s"
-					path="M0 0v-8"
-					repeatCount="indefinite"
-				/>
-			</path>
-		</mask>
-		<rect
-			width="24"
-			height="0"
-			y="7"
-			fill="currentColor"
-			mask="url(#IconifyId18ce49d7e19baefac11)"
-		>
-			<animate
-				fill="freeze"
-				attributeName="y"
-				begin="0.8s"
-				dur="0.6s"
-				values="7;2"
-			/>
-			<animate
-				fill="freeze"
-				attributeName="height"
-				begin="0.8s"
-				dur="0.6s"
-				values="0;5"
-			/>
-		</rect>
-	</svg>
+  <svg className={className} width="1em" height="1em" viewBox="0 0 24 24">
+    <g
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+    >
+      <path
+        fill="currentColor"
+        fillOpacity="0"
+        strokeDasharray="48"
+        strokeDashoffset="48"
+        d="M17 9v9a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V9z"
+      >
+        <animate
+          fill="freeze"
+          attributeName="stroke-dashoffset"
+          dur="0.6s"
+          values="48;0"
+        />
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="0.8s"
+          dur="0.15s"
+          values="0;0.3"
+        />
+      </path>
+      <path
+        strokeDasharray="14"
+        strokeDashoffset="14"
+        d="M17 14H20C20.55 14 21 13.55 21 13V10C21 9.45 20.55 9 20 9H17"
+      >
+        <animate
+          fill="freeze"
+          attributeName="stroke-dashoffset"
+          begin="0.6s"
+          dur="0.2s"
+          values="14;28"
+        />
+      </path>
+    </g>
+    <mask id="IconifyId18ce49d7e19baefac11">
+      <path
+        fill="none"
+        stroke="#fff"
+        strokeWidth="2"
+        d="M8 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4M12 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4M16 0c0 2-2 2-2 4s2 2 2 4-2 2-2 4 2 2 2 4"
+      >
+        <animateMotion
+          calcMode="linear"
+          dur="3s"
+          path="M0 0v-8"
+          repeatCount="indefinite"
+        />
+      </path>
+    </mask>
+    <rect
+      width="24"
+      height="0"
+      y="7"
+      fill="currentColor"
+      mask="url(#IconifyId18ce49d7e19baefac11)"
+    >
+      <animate
+        fill="freeze"
+        attributeName="y"
+        begin="0.8s"
+        dur="0.6s"
+        values="7;2"
+      />
+      <animate
+        fill="freeze"
+        attributeName="height"
+        begin="0.8s"
+        dur="0.6s"
+        values="0;5"
+      />
+    </rect>
+  </svg>
 )
 
-export function VerifiedIcon({ className }) {
-	return (
-		<svg width="1em" height="1em" viewBox="0 0 24 24" className={className}>
-			<g fill="none">
-				<path
-					fillRule="evenodd"
-					clipRule="evenodd"
-					d="M10.054 2.344a3 3 0 0 1 3.892 0l1.271 1.084a1 1 0 0 0 .57.236l1.665.133a3 3 0 0 1 2.751 2.751l.133 1.666a1 1 0 0 0 .236.569l1.084 1.271a3 3 0 0 1 0 3.892l-1.084 1.271a1 1 0 0 0-.236.57l-.133 1.665a3 3 0 0 1-2.751 2.751l-1.666.133a1 1 0 0 0-.569.236l-1.271 1.084a3 3 0 0 1-3.892 0l-1.271-1.084a1 1 0 0 0-.57-.236l-1.665-.133a3 3 0 0 1-2.751-2.751l-.133-1.666a1 1 0 0 0-.236-.569l-1.084-1.271a3 3 0 0 1 0-3.892l1.084-1.271a1 1 0 0 0 .236-.57l.133-1.665a3 3 0 0 1 2.751-2.751l1.666-.133a1 1 0 0 0 .569-.236l1.271-1.084zm5.653 8.363a1 1 0 0 0-1.414-1.414L11 12.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4z"
-					fill="currentColor"
-				/>
-			</g>
-		</svg>
-	)
+export const VerifiedIcon = ({ className }) => {
+  return (
+    <svg width="1em" height="1em" viewBox="0 0 24 24" className={className}>
+      <g fill="none">
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M10.054 2.344a3 3 0 0 1 3.892 0l1.271 1.084a1 1 0 0 0 .57.236l1.665.133a3 3 0 0 1 2.751 2.751l.133 1.666a1 1 0 0 0 .236.569l1.084 1.271a3 3 0 0 1 0 3.892l-1.084 1.271a1 1 0 0 0-.236.57l-.133 1.665a3 3 0 0 1-2.751 2.751l-1.666.133a1 1 0 0 0-.569.236l-1.271 1.084a3 3 0 0 1-3.892 0l-1.271-1.084a1 1 0 0 0-.57-.236l-1.665-.133a3 3 0 0 1-2.751-2.751l-.133-1.666a1 1 0 0 0-.236-.569l-1.084-1.271a3 3 0 0 1 0-3.892l1.084-1.271a1 1 0 0 0 .236-.57l.133-1.665a3 3 0 0 1 2.751-2.751l1.666-.133a1 1 0 0 0 .569-.236l1.271-1.084zm5.653 8.363a1 1 0 0 0-1.414-1.414L11 12.586l-1.293-1.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4z"
+          fill="currentColor"
+        />
+      </g>
+    </svg>
+  )
 }
 
-export function CashappIcon(props) {
-	return (
-		<svg width="1em" height="1em" viewBox="0 0 32 32" {...props}>
-			<path
-				fill="currentColor"
-				d="M31.453 4.625A6.796 6.796 0 0 0 27.385.562c-1.745-.563-3.333-.563-6.557-.563h-9.682c-3.198 0-4.813 0-6.531.531A6.805 6.805 0 0 0 .547 4.613C0 6.347 0 7.946 0 11.144v9.693c0 3.214 0 4.802.531 6.536a6.796 6.796 0 0 0 4.068 4.063c1.734.547 3.333.547 6.536.547h9.703c3.214 0 4.813 0 6.536-.531a6.807 6.807 0 0 0 4.078-4.078c.547-1.734.547-3.333.547-6.536v-9.667c0-3.214 0-4.813-.547-6.547zm-8.224 6.177l-1.245 1.24a.67.67 0 0 1-.891.01a6.715 6.715 0 0 0-4.292-1.573c-1.297 0-2.589.427-2.589 1.615c0 1.198 1.385 1.599 2.984 2.198c2.802.938 5.12 2.109 5.12 4.854c0 2.99-2.318 5.042-6.104 5.266l-.349 1.604a.648.648 0 0 1-.635.516h-2.391l-.12-.01a.668.668 0 0 1-.505-.786l.375-1.693a8.748 8.748 0 0 1-3.844-2.094v-.016a.641.641 0 0 1 0-.906l1.333-1.292a.66.66 0 0 1 .896 0a6.454 6.454 0 0 0 4.521 1.76c1.734 0 2.891-.734 2.891-1.896s-1.172-1.464-3.385-2.292c-2.349-.839-4.573-2.026-4.573-4.802c0-3.224 2.677-4.797 5.854-4.943l.333-1.641a.642.642 0 0 1 .641-.51h2.37l.135.016a.64.64 0 0 1 .495.76l-.359 1.828a9.945 9.945 0 0 1 3.302 1.849l.031.031c.25.266.25.667 0 .906z"
-			/>
-		</svg>
-	)
+export const CashappIcon = (props) => {
+  return (
+    <svg width="1em" height="1em" viewBox="0 0 32 32" {...props}>
+      <path
+        fill="currentColor"
+        d="M31.453 4.625A6.796 6.796 0 0 0 27.385.562c-1.745-.563-3.333-.563-6.557-.563h-9.682c-3.198 0-4.813 0-6.531.531A6.805 6.805 0 0 0 .547 4.613C0 6.347 0 7.946 0 11.144v9.693c0 3.214 0 4.802.531 6.536a6.796 6.796 0 0 0 4.068 4.063c1.734.547 3.333.547 6.536.547h9.703c3.214 0 4.813 0 6.536-.531a6.807 6.807 0 0 0 4.078-4.078c.547-1.734.547-3.333.547-6.536v-9.667c0-3.214 0-4.813-.547-6.547zm-8.224 6.177l-1.245 1.24a.67.67 0 0 1-.891.01a6.715 6.715 0 0 0-4.292-1.573c-1.297 0-2.589.427-2.589 1.615c0 1.198 1.385 1.599 2.984 2.198c2.802.938 5.12 2.109 5.12 4.854c0 2.99-2.318 5.042-6.104 5.266l-.349 1.604a.648.648 0 0 1-.635.516h-2.391l-.12-.01a.668.668 0 0 1-.505-.786l.375-1.693a8.748 8.748 0 0 1-3.844-2.094v-.016a.641.641 0 0 1 0-.906l1.333-1.292a.66.66 0 0 1 .896 0a6.454 6.454 0 0 0 4.521 1.76c1.734 0 2.891-.734 2.891-1.896s-1.172-1.464-3.385-2.292c-2.349-.839-4.573-2.026-4.573-4.802c0-3.224 2.677-4.797 5.854-4.943l.333-1.641a.642.642 0 0 1 .641-.51h2.37l.135.016a.64.64 0 0 1 .495.76l-.359 1.828a9.945 9.945 0 0 1 3.302 1.849l.031.031c.25.266.25.667 0 .906z"
+      />
+    </svg>
+  )
 }
 
-export function StripeIcon(props) {
-	return (
-		<svg width="2.4em" height="1em" viewBox="0 0 512 214" {...props}>
-			<path
-				fill="#635BFF"
-				d="M512 110.08c0-36.409-17.636-65.138-51.342-65.138c-33.85 0-54.33 28.73-54.33 64.854c0 42.808 24.179 64.426 58.88 64.426c16.925 0 29.725-3.84 39.396-9.244v-28.445c-9.67 4.836-20.764 7.823-34.844 7.823c-13.796 0-26.027-4.836-27.591-21.618h69.547c0-1.85.284-9.245.284-12.658m-70.258-13.511c0-16.071 9.814-22.756 18.774-22.756c8.675 0 17.92 6.685 17.92 22.756zm-90.31-51.627c-13.939 0-22.899 6.542-27.876 11.094l-1.85-8.818h-31.288v165.83l35.555-7.537l.143-40.249c5.12 3.698 12.657 8.96 25.173 8.96c25.458 0 48.64-20.48 48.64-65.564c-.142-41.245-23.609-63.716-48.498-63.716m-8.534 97.991c-8.391 0-13.37-2.986-16.782-6.684l-.143-52.765c3.698-4.124 8.818-6.968 16.925-6.968c12.942 0 21.902 14.506 21.902 33.137c0 19.058-8.818 33.28-21.902 33.28M241.493 36.551l35.698-7.68V0l-35.698 7.538zm0 10.809h35.698v124.444h-35.698zm-38.257 10.524L200.96 47.36h-30.72v124.444h35.556V87.467c8.39-10.951 22.613-8.96 27.022-7.396V47.36c-4.551-1.707-21.191-4.836-29.582 10.524m-71.112-41.386l-34.702 7.395l-.142 113.92c0 21.05 15.787 36.551 36.836 36.551c11.662 0 20.195-2.133 24.888-4.693V140.8c-4.55 1.849-27.022 8.391-27.022-12.658V77.653h27.022V47.36h-27.022zM35.982 83.484c0-5.546 4.551-7.68 12.09-7.68c10.808 0 24.461 3.272 35.27 9.103V51.484c-11.804-4.693-23.466-6.542-35.27-6.542C19.2 44.942 0 60.018 0 85.192c0 39.252 54.044 32.995 54.044 49.92c0 6.541-5.688 8.675-13.653 8.675c-11.804 0-26.88-4.836-38.827-11.378v33.849c13.227 5.689 26.596 8.106 38.827 8.106c29.582 0 49.92-14.648 49.92-40.106c-.142-42.382-54.329-34.845-54.329-50.774"
-			/>
-		</svg>
-	)
+export const StripeIcon = (props) => {
+  return (
+    <svg width="2.4em" height="1em" viewBox="0 0 512 214" {...props}>
+      <path
+        fill="#635BFF"
+        d="M512 110.08c0-36.409-17.636-65.138-51.342-65.138c-33.85 0-54.33 28.73-54.33 64.854c0 42.808 24.179 64.426 58.88 64.426c16.925 0 29.725-3.84 39.396-9.244v-28.445c-9.67 4.836-20.764 7.823-34.844 7.823c-13.796 0-26.027-4.836-27.591-21.618h69.547c0-1.85.284-9.245.284-12.658m-70.258-13.511c0-16.071 9.814-22.756 18.774-22.756c8.675 0 17.92 6.685 17.92 22.756zm-90.31-51.627c-13.939 0-22.899 6.542-27.876 11.094l-1.85-8.818h-31.288v165.83l35.555-7.537l.143-40.249c5.12 3.698 12.657 8.96 25.173 8.96c25.458 0 48.64-20.48 48.64-65.564c-.142-41.245-23.609-63.716-48.498-63.716m-8.534 97.991c-8.391 0-13.37-2.986-16.782-6.684l-.143-52.765c3.698-4.124 8.818-6.968 16.925-6.968c12.942 0 21.902 14.506 21.902 33.137c0 19.058-8.818 33.28-21.902 33.28M241.493 36.551l35.698-7.68V0l-35.698 7.538zm0 10.809h35.698v124.444h-35.698zm-38.257 10.524L200.96 47.36h-30.72v124.444h35.556V87.467c8.39-10.951 22.613-8.96 27.022-7.396V47.36c-4.551-1.707-21.191-4.836-29.582 10.524m-71.112-41.386l-34.702 7.395l-.142 113.92c0 21.05 15.787 36.551 36.836 36.551c11.662 0 20.195-2.133 24.888-4.693V140.8c-4.55 1.849-27.022 8.391-27.022-12.658V77.653h27.022V47.36h-27.022zM35.982 83.484c0-5.546 4.551-7.68 12.09-7.68c10.808 0 24.461 3.272 35.27 9.103V51.484c-11.804-4.693-23.466-6.542-35.27-6.542C19.2 44.942 0 60.018 0 85.192c0 39.252 54.044 32.995 54.044 49.92c0 6.541-5.688 8.675-13.653 8.675c-11.804 0-26.88-4.836-38.827-11.378v33.849c13.227 5.689 26.596 8.106 38.827 8.106c29.582 0 49.92-14.648 49.92-40.106c-.142-42.382-54.329-34.845-54.329-50.774"
+      />
+    </svg>
+  )
 }
 
-// export const CVIcon = ({ className }) => (
-// 		<svg
-// 			className={className}
-// 			width={24}
-// 			height={24}
-// 			viewBox="0 0 24 24"
-// 			stroke-width={2}
-// 			stroke="currentColor"
-// 			fill="none"
-// 			strokeLinecap="round"
-// 			strokeLinejoin="round"
-// 		>
-// 			<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-// 			<path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-// 			<path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
-// 			<path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0"></path>
-// 			<path d="M13 11l1.5 6l1.5 -6"></path>
-// 		</svg>
-//
-// )
+export const CodeIcon = (props) => {
+  return (
+    <svg
+      {...props}
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M7 8l-4 4l4 4" />
+      <path d="M17 8l4 4l-4 4" />
+      <path d="M14 4l-4 16" />
+    </svg>
+  )
+}
+
+export const JavaScript = ({ className, ...props }) => {
+  return (
+    <svg
+      className={className}
+      {...props}
+      fill="none"
+      height="800px"
+      viewBox="0 0 24 24"
+      width="800px"
+    >
+      <path
+        d="M3 6.25C3 4.45507 4.45507 3 6.25 3H17.75C19.5449 3 21 4.45507 21 6.25V17.75C21 19.5449 19.5449 21 17.75 21H6.25C4.45507 21 3 19.5449 3 17.75V6.25ZM12 9.5C11.5858 9.5 11.25 9.83579 11.25 10.25V16.25C11.25 16.3881 11.1381 16.5 11 16.5H9.75C9.33579 16.5 9 16.8358 9 17.25C9 17.6642 9.33579 18 9.75 18H11C11.9665 18 12.75 17.2165 12.75 16.25V10.25C12.75 9.83579 12.4142 9.5 12 9.5ZM14 11.25V12.75C14 13.7165 14.7835 14.5 15.75 14.5H16.25C16.3881 14.5 16.5 14.6119 16.5 14.75V16.25C16.5 16.3881 16.3881 16.5 16.25 16.5H14.75C14.3358 16.5 14 16.8358 14 17.25C14 17.6642 14.3358 18 14.75 18H16.25C17.2165 18 18 17.2165 18 16.25V14.75C18 13.7835 17.2165 13 16.25 13H15.75C15.6119 13 15.5 12.8881 15.5 12.75V11.25C15.5 11.1119 15.6119 11 15.75 11H17.25C17.6642 11 18 10.6642 18 10.25C18 9.83579 17.6642 9.5 17.25 9.5H15.75C14.7835 9.5 14 10.2835 14 11.25Z"
+        fill="#f7df1e"
+      />
+    </svg>
+  )
+}
+
+export const CSS = ({ className, ...props }) => {
+  return (
+    <svg viewBox="0 0 452 520" className={className} {...props}>
+      <path d="M41 460L0 0h451l-41 460-185 52" fill="#0c73b8" />
+      <path d="M226 472l149-41 35-394H226" fill="#30a9dc" />
+      <path
+        d="M226 208H94l5 57h127zm0-114H84l5 56h137zm0 261l-124-33 7 60 117 32z"
+        fill="#ecedee"
+      />
+      <path
+        d="M226 265h69l-7 73-62 17v59l115-32 26-288H226v56h80l-6 58h-74z"
+        fill="#fff"
+      />
+    </svg>
+  )
+}
+
+export const Rust = ({ className, ...props }) => {
+  return (
+    <svg
+      className={className}
+      {...props}
+      height="100%"
+      style={{
+        clipRule: "evenodd",
+        fillRule: "evenodd",
+        strokeLinejoin: "round",
+        strokeMiterlimit: "1.41421",
+      }}
+      version="1.1"
+      viewBox="0 0 1200 800"
+      width="100%"
+      xmlSpace="preserve"
+    >
+      <g id="Layer-1" serifid="Layer 1">
+        <g transform="matrix(1,0,0,1,597.344,637.02)">
+          <path
+            d="M0,-279.559C-121.238,-279.559 -231.39,-264.983 -312.939,-241.23L-312.939,-38.329C-231.39,-14.575 -121.238,0 0,0C138.76,0 262.987,-19.092 346.431,-49.186L346.431,-230.37C262.987,-260.465 138.76,-279.559 0,-279.559"
+            style={{
+              fill: "rgb(165,43,0)",
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,1068.75,575.642)">
+          <path
+            d="M0,-53.32L-14.211,-82.761C-14.138,-83.879 -14.08,-84.998 -14.08,-86.121C-14.08,-119.496 -48.786,-150.256 -107.177,-174.883L-107.177,2.643C-79.932,-8.849 -57.829,-21.674 -42.021,-35.482C-46.673,-16.775 -62.585,21.071 -75.271,47.686C-96.121,85.752 -103.671,118.889 -102.703,120.53C-102.086,121.563 -94.973,110.59 -84.484,92.809C-60.074,58.028 -13.82,-8.373 -4.575,-25.287C5.897,-44.461 0,-53.32 0,-53.32"
+            style={{
+              fill: "rgb(165,43,0)",
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,149.064,591.421)">
+          <path
+            d="M0,-99.954C0,-93.526 1.293,-87.194 3.788,-80.985L-4.723,-65.835C-4.723,-65.835 -11.541,-56.989 0.465,-38.327C11.055,-21.872 64.1,42.54 92.097,76.271C104.123,93.564 112.276,104.216 112.99,103.187C114.114,101.554 105.514,69.087 81.631,32.046C70.487,12.151 57.177,-14.206 49.189,-33.675C71.492,-19.559 100.672,-6.755 135.341,4.265L135.341,-204.17C51.797,-177.622 0,-140.737 0,-99.954"
+            style={{
+              fill: "rgb(165,43,0)",
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(-65.8097,-752.207,-752.207,65.8097,621.707,796.312)">
+          <path
+            d="M0.991,-0.034L0.933,0.008C0.933,0.014 0.933,0.02 0.933,0.026L0.99,0.069C0.996,0.073 0.999,0.08 0.998,0.087C0.997,0.094 0.992,0.1 0.986,0.103L0.92,0.133C0.919,0.139 0.918,0.145 0.916,0.15L0.964,0.203C0.968,0.208 0.97,0.216 0.968,0.222C0.965,0.229 0.96,0.234 0.953,0.236L0.882,0.254C0.88,0.259 0.877,0.264 0.875,0.27L0.91,0.33C0.914,0.336 0.914,0.344 0.91,0.35C0.907,0.356 0.9,0.36 0.893,0.361L0.82,0.365C0.817,0.369 0.813,0.374 0.81,0.379L0.832,0.445C0.835,0.452 0.833,0.459 0.828,0.465C0.824,0.47 0.816,0.473 0.809,0.472L0.737,0.462C0.733,0.466 0.729,0.47 0.724,0.474L0.733,0.544C0.734,0.551 0.731,0.558 0.725,0.562C0.719,0.566 0.711,0.568 0.704,0.565L0.636,0.542C0.631,0.546 0.626,0.549 0.621,0.552L0.615,0.621C0.615,0.629 0.61,0.635 0.604,0.638C0.597,0.641 0.589,0.641 0.583,0.638L0.521,0.602C0.52,0.603 0.519,0.603 0.518,0.603L0.406,0.729C0.406,0.729 0.394,0.747 0.359,0.725C0.329,0.705 0.206,0.599 0.141,0.543C0.109,0.52 0.089,0.504 0.09,0.502C0.093,0.499 0.149,0.509 0.217,0.554C0.278,0.588 0.371,0.631 0.38,0.619C0.38,0.619 0.396,0.604 0.406,0.575C0.406,0.575 0.406,0.575 0.406,0.575C0.407,0.576 0.407,0.576 0.406,0.575C0.406,0.575 0.091,0.024 0.305,-0.531C0.311,-0.593 0.275,-0.627 0.275,-0.627C0.266,-0.639 0.178,-0.598 0.12,-0.566C0.055,-0.523 0.002,-0.513 0,-0.516C-0.001,-0.518 0.018,-0.533 0.049,-0.555C0.11,-0.608 0.227,-0.707 0.256,-0.726C0.289,-0.748 0.301,-0.73 0.301,-0.73L0.402,-0.615C0.406,-0.614 0.41,-0.613 0.415,-0.613L0.47,-0.658C0.475,-0.663 0.483,-0.664 0.49,-0.662C0.497,-0.66 0.502,-0.655 0.504,-0.648L0.522,-0.58C0.527,-0.578 0.533,-0.576 0.538,-0.574L0.602,-0.608C0.608,-0.612 0.616,-0.612 0.623,-0.608C0.629,-0.605 0.633,-0.599 0.633,-0.592L0.637,-0.522C0.642,-0.519 0.647,-0.515 0.652,-0.512L0.721,-0.534C0.728,-0.536 0.736,-0.535 0.741,-0.531C0.747,-0.526 0.75,-0.519 0.749,-0.512L0.738,-0.443C0.742,-0.439 0.746,-0.435 0.751,-0.431L0.823,-0.439C0.83,-0.44 0.837,-0.437 0.842,-0.432C0.847,-0.426 0.848,-0.419 0.845,-0.412L0.821,-0.347C0.824,-0.342 0.828,-0.337 0.831,-0.332L0.903,-0.327C0.911,-0.327 0.917,-0.322 0.92,-0.316C0.924,-0.31 0.924,-0.302 0.92,-0.296L0.883,-0.236C0.885,-0.231 0.887,-0.226 0.889,-0.22L0.959,-0.202C0.966,-0.2 0.972,-0.195 0.974,-0.188C0.976,-0.181 0.974,-0.174 0.969,-0.168L0.92,-0.116C0.921,-0.111 0.923,-0.105 0.924,-0.099L0.988,-0.068C0.995,-0.065 0.999,-0.059 1,-0.052C1.001,-0.045 0.997,-0.038 0.991,-0.034ZM0.406,0.575C0.406,0.575 0.406,0.575 0.406,0.575C0.406,0.575 0.406,0.575 0.406,0.575Z"
+            style={{
+              fill: "url(#_Linear1)",
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,450.328,483.629)">
+          <path
+            d="M0,167.33C-1.664,165.91 -2.536,165.068 -2.536,165.068L140.006,153.391C23.733,0 -69.418,122.193 -79.333,135.855L-79.333,167.33L0,167.33Z"
+            style={{
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,747.12,477.333)">
+          <path
+            d="M0,171.974C1.663,170.554 2.536,169.71 2.536,169.71L-134.448,159.687C-18.12,0 69.421,126.835 79.335,140.497L79.335,171.974L0,171.974Z"
+            style={{
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(-1.53e-05,-267.211,-267.211,1.53e-05,809.465,764.23)">
+          <path
+            d="M1,-0.586C1,-0.586 0.768,-0.528 0.524,-0.165L0.5,-0.064C0.5,-0.064 1.1,0.265 0.424,0.731C0.424,0.731 0.508,0.586 0.405,0.197C0.405,0.197 0.131,0.376 0.14,0.736C0.14,0.736 -0.275,0.391 0.324,-0.135C0.324,-0.135 0.539,-0.691 1,-0.736L1,-0.586Z"
+            style={{
+              fill: "url(#_Linear2)",
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,677.392,509.61)">
+          <path
+            d="M0,-92.063C0,-92.063 43.486,-139.678 86.974,-92.063C86.974,-92.063 121.144,-28.571 86.974,3.171C86.974,3.171 31.062,47.615 0,3.171C0,3.171 -37.275,-31.75 0,-92.063"
+            style={{
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,727.738,435.209)">
+          <path
+            d="M0,0.002C0,18.543 -10.93,33.574 -24.408,33.574C-37.885,33.574 -48.814,18.543 -48.814,0.002C-48.814,-18.539 -37.885,-33.572 -24.408,-33.572C-10.93,-33.572 0,-18.539 0,0.002"
+            style={{
+              fill: "white",
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,483.3,502.984)">
+          <path
+            d="M0,-98.439C0,-98.439 74.596,-131.467 94.956,-57.748C94.956,-57.748 116.283,28.178 33.697,33.028C33.697,33.028 -71.613,12.745 0,-98.439"
+            style={{
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,520.766,436.428)">
+          <path
+            d="M0,0C0,19.119 -11.27,34.627 -25.173,34.627C-39.071,34.627 -50.344,19.119 -50.344,0C-50.344,-19.124 -39.071,-34.627 -25.173,-34.627C-11.27,-34.627 0,-19.124 0,0"
+            style={{
+              fill: "white",
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+        <g transform="matrix(-1.53e-05,-239.021,-239.021,1.53e-05,402.161,775.388)">
+          <path
+            d="M0.367,0.129C-0.364,-0.441 0.223,-0.711 0.223,-0.711C0.259,-0.391 0.472,-0.164 0.472,-0.164C0.521,-0.548 0.525,-0.77 0.525,-0.77C1.203,-0.256 0.589,0.161 0.589,0.161C0.627,0.265 0.772,0.372 0.906,0.451L1,0.77C0.376,0.403 0.367,0.129 0.367,0.129Z"
+            style={{
+              fill: "url(#_Linear3)",
+              fillRule: "nonzero",
+            }}
+          />
+        </g>
+      </g>
+      <defs>
+        <linearGradient
+          gradientTransform="matrix(1,0,1.38778e-17,-1,0,-0.000650515)"
+          gradientUnits="userSpaceOnUse"
+          id="_Linear1"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="0"
+        >
+          <stop
+            offset="0"
+            style={{
+              stopColor: "rgb(247,76,0)",
+              stopOpacity: "1",
+            }}
+          />
+          <stop
+            offset="0.33"
+            style={{
+              stopColor: "rgb(247,76,0)",
+              stopOpacity: "1",
+            }}
+          />
+          <stop
+            offset="1"
+            style={{
+              stopColor: "rgb(244,150,0)",
+              stopOpacity: "1",
+            }}
+          />
+        </linearGradient>
+        <linearGradient
+          gradientTransform="matrix(1,0,0,-1,0,1.23438e-06)"
+          gradientUnits="userSpaceOnUse"
+          id="_Linear2"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="0"
+        >
+          <stop
+            offset="0"
+            style={{
+              stopColor: "rgb(204,58,0)",
+              stopOpacity: "1",
+            }}
+          />
+          <stop
+            offset="0.15"
+            style={{
+              stopColor: "rgb(204,58,0)",
+              stopOpacity: "1",
+            }}
+          />
+          <stop
+            offset="0.74"
+            style={{
+              stopColor: "rgb(247,76,0)",
+              stopOpacity: "1",
+            }}
+          />
+          <stop
+            offset="1"
+            style={{
+              stopColor: "rgb(247,76,0)",
+              stopOpacity: "1",
+            }}
+          />
+        </linearGradient>
+        <linearGradient
+          gradientTransform="matrix(1,1.32349e-23,1.32349e-23,-1,0,-9.1568e-07)"
+          gradientUnits="userSpaceOnUse"
+          id="_Linear3"
+          x1="0"
+          x2="1"
+          y1="0"
+          y2="0"
+        >
+          <stop
+            offset="0"
+            style={{
+              stopColor: "rgb(204,58,0)",
+              stopOpacity: "1",
+            }}
+          />
+          <stop
+            offset="0.15"
+            style={{
+              stopColor: "rgb(204,58,0)",
+              stopOpacity: "1",
+            }}
+          />
+          <stop
+            offset="0.74"
+            style={{
+              stopColor: "rgb(247,76,0)",
+              stopOpacity: "1",
+            }}
+          />
+          <stop
+            offset="1"
+            style={{
+              stopColor: "rgb(247,76,0)",
+              stopOpacity: "1",
+            }}
+          />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+
+export const Ocaml = ({ className, ...props }) => {
+  return (
+    <svg className={className} {...props} viewBox="0 0 128 128">
+      <defs>
+        <linearGradient
+          gradientTransform="translate(0 8.224) scale(.77317)"
+          gradientUnits="userSpaceOnUse"
+          id="ocaml-original-a"
+          x1="82.925"
+          x2="82.925"
+          y1="97.718"
+          y2="97.9"
+        >
+          <stop offset="0" stopColor="#F29100" />
+          <stop offset="1" stopColor="#EC670F" />
+        </linearGradient>
+        <linearGradient
+          gradientTransform="translate(0 8.224) scale(.77317)"
+          gradientUnits="userSpaceOnUse"
+          id="ocaml-original-b"
+          x1="61.276"
+          x2="61.276"
+          y1="98.981"
+          y2="144.277"
+        >
+          <stop offset="0" stopColor="#F29100" />
+          <stop offset="1" stopColor="#EC670F" />
+        </linearGradient>
+        <linearGradient
+          gradientTransform="translate(0 8.224) scale(.77317)"
+          gradientUnits="userSpaceOnUse"
+          id="ocaml-original-c"
+          x1="82.781"
+          x2="82.781"
+          y1="0"
+          y2="144.245"
+        >
+          <stop offset="0" stopColor="#F29100" />
+          <stop offset="1" stopColor="#EC670F" />
+        </linearGradient>
+        <linearGradient
+          gradientTransform="translate(0 8.224) scale(.77317)"
+          gradientUnits="userSpaceOnUse"
+          id="ocaml-original-d"
+          x1="22.871"
+          x2="22.871"
+          y1="92.114"
+          y2="143.249"
+        >
+          <stop offset="0" stopColor="#F29100" />
+          <stop offset="1" stopColor="#EC670F" />
+        </linearGradient>
+      </defs>
+      <path
+        d="M64.11 83.918l.019-.047c-.027-.117-.035-.148-.02.047zm0 0"
+        fill="#484444"
+      />
+      <path
+        d="M64.11 83.918l.019-.047c-.027-.117-.035-.148-.02.047zm0 0"
+        fill="url(#ocaml-original-a)"
+      />
+      <path
+        d="M64.969 115.441c-.45-.937-1.016-2.773-1.39-3.582-.356-.754-1.434-2.722-1.974-3.355-1.175-1.375-1.453-1.477-1.796-3.215-.602-3.023-2.192-8.508-4.067-12.293-.969-1.953-2.578-3.594-4.05-5.012-1.286-1.242-4.184-3.332-4.692-3.226-4.734.945-6.203 5.59-8.434 9.27-1.23 2.034-2.535 3.765-3.507 5.929-.899 1.992-.817 4.195-2.352 5.902-1.578 1.758-2.602 3.625-3.371 5.891-.148.43-.563 4.953-1.016 6.027l7.04-.496c6.558.45 4.663 2.965 14.902 2.414l16.164-.5c-.504-1.48-1.196-3.195-1.461-3.754zm0 0"
+        fill="url(#ocaml-original-b)"
+      />
+      <path
+        d="M111.875 8.223H16.133C7.227 8.227.008 15.445.008 24.352v35.183c2.308-.836 5.625-5.742 6.664-6.937 1.82-2.086 2.148-4.75 3.055-6.426 2.066-3.82 2.421-6.445 7.109-6.445 2.187 0 3.055.503 4.535 2.488 1.027 1.379 2.809 3.93 3.637 5.633.96 1.968 2.527 4.629 3.215 5.164.511.402 1.015.699 1.488.875.758.289 1.39-.235 1.898-.64.649-.52.93-1.571 1.532-2.977.867-2.028 1.808-4.458 2.347-5.31.93-1.464 1.246-3.202 2.25-4.046 1.485-1.242 3.414-1.328 3.95-1.434 2.976-.59 4.328 1.434 5.792 2.743.961.855 2.27 2.582 3.204 4.89.726 1.809 1.652 3.48 2.039 4.524.375 1.004 1.3 2.62 1.847 4.55.496 1.758 1.828 3.106 2.332 3.938 0 0 .774 2.168 5.48 4.152 1.02.43 3.083 1.13 4.313 1.575 2.047.746 4.028.648 6.551.347 1.797 0 2.774-2.605 3.59-4.691.484-1.23.945-4.766 1.262-5.766.304-.976-.41-1.73.199-2.586.71-1 1.133-1.054 1.543-2.355.883-2.785 5.984-2.926 8.847-2.926 2.399 0 2.086 2.32 6.141 1.527 2.32-.457 4.559.297 7.024.95 2.074.55 4.023 1.175 5.195 2.546.758.887 2.633 5.325.719 5.516.183.223.32.629.664.852-.426 1.675-2.282.48-3.309.265-1.39-.285-2.367.043-3.726.645-2.32 1.035-5.715.914-7.739 2.597-1.715 1.43-1.71 4.614-2.511 6.399 0 0-2.223 5.719-7.075 9.215-1.242.898-3.668 3.054-8.953 3.87-2.367.368-4.586.395-7.02.274l-3.511-.133c-.695-.003-3.063-.082-2.945.145l-.266.656c.043.219.129.754.152.887.098.527.125.95.145 1.437.035 1-.082 2.043-.031 3.055.105 2.094.882 4.008.98 6.121.11 2.356 1.274 4.844 2.399 6.77.43.73 1.078.812 1.363 1.715.332 1.03.02 2.129.18 3.23.632 4.266 1.855 8.73 3.785 12.582a.685.685 0 00.043.094c2.375-.395 4.754-1.25 7.84-1.707 5.652-.836 13.519-.406 18.57-.88 12.781-1.198 19.719 5.243 31.203 2.602V24.352c-.004-8.907-7.223-16.13-16.129-16.13zM64.109 83.918c-.015-.195-.007-.168.02-.047zm0 0"
+        fill="url(#ocaml-original-c)"
+      />
+      <path
+        d="M29.516 98.727c.89-1.946 1.406-4.165 2.144-6.157.711-1.906 1.817-4.61 3.7-5.57-.227-.27-3.938-.39-4.93-.492l-3.2-.453-6.164-1.27c-1.199-.289-5.187-1.703-6.054-2.101-2.032-.938-3.383-3.48-4.969-3.22-1.016.165-2.012.513-2.633 1.536-.515.836-.691 2.27-1.047 3.23-.414 1.118-1.129 2.16-1.754 3.223-1.152 1.95-3.222 3.715-4.113 5.617-.18.39-.34.828-.488 1.285v21.735l3.347.722c8.993 2.403 11.188 2.606 20.008 1.594l.828-.11c.672-1.405 1.196-6.187 1.633-7.667.34-1.137.809-2.04.988-3.2.168-1.1-.015-2.148-.113-3.152-.242-2.504 1.828-3.398 2.82-5.55zm0 0"
+        fill="url(#ocaml-original-d)"
+      />
+    </svg>
+  )
+}
+
+export const Java = ({ className, ...props }) => {
+  return (
+    <svg
+      className={className}
+      {...props}
+      preserveAspectRatio="xMidYMid"
+      viewBox="0 0 256 346"
+    >
+      <path
+        d="M83 267s-14 8 9 11c27 3 41 2 71-3 0 0 8 5 19 9-67 29-153-2-99-17M74 230s-15 11 8 13c29 3 52 3 92-4 0 0 6 5 15 8-82 24-173 2-115-17"
+        fill="#5382A1"
+      />
+      <path
+        d="M144 166c17 19-4 36-4 36s42-22 22-49c-18-26-32-38 44-82 0 0-119 29-62 95"
+        fill="#E76F00"
+      />
+      <path
+        d="M233 295s10 8-10 15c-39 12-163 15-197 0-12-5 11-13 18-14l12-2c-14-9-89 19-38 28 138 22 251-10 215-27M89 190s-63 15-22 21c17 2 51 2 83-1 26-2 52-7 52-7l-16 9c-64 16-187 8-151-9 30-14 54-13 54-13M202 253c64-33 34-66 13-61l-7 2s2-3 6-5c41-14 73 43-14 66l2-2"
+        fill="#5382A1"
+      />
+      <path
+        d="M162 0s36 36-34 91c-56 45-12 70 0 99-32-30-56-56-40-80 23-35 89-53 74-110"
+        fill="#E76F00"
+      />
+      <path
+        d="M95 345c62 4 158-3 160-32 0 0-4 11-51 20-53 10-119 9-158 2 0 0 8 7 49 10"
+        fill="#5382A1"
+      />
+    </svg>
+  )
+}
+
+export const Python = ({ className, ...props }) => {
+  return (
+    <svg
+      className={className}
+      {...props}
+      fill="none"
+      height="2500"
+      viewBox="0 0 64 64"
+      width="2500"
+    >
+      <path
+        d="M31.885 16c-8.124 0-7.617 3.523-7.617 3.523l.01 3.65h7.752v1.095H21.197S16 23.678 16 31.876c0 8.196 4.537 7.906 4.537 7.906h2.708v-3.804s-.146-4.537 4.465-4.537h7.688s4.32.07 4.32-4.175v-7.019S40.374 16 31.885 16zm-4.275 2.454a1.394 1.394 0 1 1 0 2.79 1.393 1.393 0 0 1-1.395-1.395c0-.771.624-1.395 1.395-1.395z"
+        fill="url(#a)"
+      />
+      <path
+        d="M32.115 47.833c8.124 0 7.617-3.523 7.617-3.523l-.01-3.65H31.97v-1.095h10.832S48 40.155 48 31.958c0-8.197-4.537-7.906-4.537-7.906h-2.708v3.803s.146 4.537-4.465 4.537h-7.688s-4.32-.07-4.32 4.175v7.019s-.656 4.247 7.833 4.247zm4.275-2.454a1.393 1.393 0 0 1-1.395-1.395 1.394 1.394 0 1 1 1.395 1.395z"
+        fill="url(#b)"
+      />
+      <defs>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="a"
+          x1="19.075"
+          x2="34.898"
+          y1="18.782"
+          y2="34.658"
+        >
+          <stop stopColor="#387EB8" />
+          <stop offset="1" stopColor="#366994" />
+        </linearGradient>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="b"
+          x1="28.809"
+          x2="45.803"
+          y1="28.882"
+          y2="45.163"
+        >
+          <stop stopColor="#FFE052" />
+          <stop offset="1" stopColor="#FFC331" />
+        </linearGradient>
+      </defs>
+    </svg>
+  )
+}
+
+export const Tanstack = ({ className, ...props }) => {
+  return (
+    <svg
+      className={className}
+      {...props}
+      preserveAspectRatio="xMidYMid"
+      viewBox="0 0 256 230"
+    >
+      <path
+        d="m158 142.5-5 8.5a8.3 8.3 0 0 1-7.1 4.2h-37.6c-3 0-5.7-1.6-7.2-4.2l-5-8.5H158Zm13.7-23.9-8.6 15H91l-8.7-15h89.3Zm-8.3-23.3 8.3 14.5H82.4l8.4-14.5h72.6Zm-17.5-22c3 0 5.7 1.5 7.2 4l5.2 9.1H95.9l5.2-9a8.3 8.3 0 0 1 7.2-4.2h37.6Z"
+        fill="#00435B"
+      />
+      <path
+        d="M53.5 69.3c-4.1-20.3-5-35.8-2.3-47a30.2 30.2 0 0 1 9-16.1A25.5 25.5 0 0 1 77.4 0c11 0 22.6 5 35 14.6 5 3.9 10.2 8.6 15.7 14l1.4-1.5C145 13.4 158 4.9 169.1 1.6c6.6-2 12.7-2.2 18.4-.3 6 2 10.7 6.2 14 12 5.5 9.5 7 22 5 37.6-1 6.3-2.4 13.2-4.4 20.7.8 0 1.5.2 2.3.5 19.5 6.4 33.3 13.4 41.7 21.4 5 4.7 8.2 10 9.4 15.8 1.3 6.1 0 12.3-3.3 18.1-5.5 9.5-15.6 17-30 23-5.8 2.4-12.4 4.6-19.7 6.6l.8 2.3c4.1 20.3 5 35.7 2.3 47a30.2 30.2 0 0 1-9 16.1 25.5 25.5 0 0 1-17.3 6.2c-11 0-22.6-5-35-14.6-5-4-10.4-8.7-15.9-14.2-.5.9-1.2 1.7-2 2.4C111 216 98 224.4 86.9 227.7c-6.6 2-12.7 2.2-18.4.3-6-2-10.7-6.2-14-12-5.5-9.5-7-22-5-37.6 1-6.5 2.5-13.7 4.6-21.5-.8 0-1.7-.2-2.5-.5C32.1 149.9 18.3 143 9.9 135c-5-4.7-8.2-10-9.4-15.8-1.3-6.2 0-12.3 3.3-18.1 5.5-9.6 15.6-17.1 30-23 6-2.5 12.8-4.8 20.4-6.8l-.7-2Z"
+        fill="#002B3B"
+      />
+      <path
+        d="M189.6 161.3c2-.3 3.8 1 4.3 2.8v.2l.2 1c6.7 35.3 2 53-14.2 53-15.8 0-36-15.1-60.4-45.2a3.7 3.7 0 0 1 2.8-6H123.7a354 354 0 0 0 66-5.8Zm-111-26.6h.1l.7 1.2a358 358 0 0 0 38.4 54.5 3.7 3.7 0 0 1-.3 5.1v.1l-1 .7c-27.2 23.4-45 28-53.2 14-8-13.7-5-38.7 8.8-75a3.7 3.7 0 0 1 6.5-.6Zm124.9-52h.1l1 .3c33.7 11.7 46.6 24.6 38.5 38.7-8 13.7-31 23.7-69 30a3.7 3.7 0 0 1-3.9-5.5A359.6 359.6 0 0 0 199 84.9a3.7 3.7 0 0 1 4.4-2.3h.1Zm-119-6c1.7 1 2.3 3.3 1.3 5A359.6 359.6 0 0 0 57 143a3.7 3.7 0 0 1-4.5 2.3h-.1l-1-.4c-33.7-11.7-46.6-24.6-38.5-38.6 8-13.8 31-23.8 69-30 1-.2 1.8 0 2.5.4ZM192.6 19c8 13.7 5 38.7-8.8 75a3.7 3.7 0 0 1-6.5.6h-.1l-.7-1.2a358 358 0 0 0-38.4-54.5 3.7 3.7 0 0 1 .3-5.1v-.1l1-.7c27.2-23.4 45-28 53.2-14ZM77.4 10.6c15.9 0 36 15 60.4 45.1a3.7 3.7 0 0 1-2.7 6h-1.4a354 354 0 0 0-66 5.8c-2 .3-3.8-.9-4.2-2.8v-.1l-.2-1.1c-6.7-35.3-2-53 14.1-53Z"
+        fill="#FF4154"
+      />
+      <path
+        d="M111.3 73.7h31.6c4.6 0 8.9 2.4 11.2 6.4l15.8 27.7c2.3 4 2.3 8.8 0 12.8l-15.8 27.6c-2.3 4-6.6 6.5-11.2 6.5h-31.6c-4.6 0-8.9-2.5-11.2-6.5l-15.8-27.6c-2.3-4-2.3-8.9 0-12.8L100 80c2.3-4 6.6-6.4 11.2-6.4ZM138 82c4.6 0 8.8 2.5 11.1 6.5l11.1 19.3c2.3 4 2.3 8.8 0 12.8l-11 19.3c-2.4 4-6.6 6.5-11.2 6.5h-22c-4.6 0-8.9-2.5-11.2-6.5l-11-19.3c-2.3-4-2.3-8.9 0-12.8l11-19.3c2.3-4 6.6-6.5 11.2-6.5h22Zm-5.2 9.1h-11.6c-4.6 0-8.9 2.5-11.2 6.5l-5.8 10.2c-2.3 4-2.3 8.8 0 12.8l5.8 10.2c2.3 4 6.6 6.4 11.2 6.4h11.6c4.6 0 8.8-2.4 11.1-6.4l5.9-10.2c2.3-4 2.3-8.9 0-12.8L144 97.6c-2.3-4-6.5-6.5-11.1-6.5Zm-5 8.8c4.6 0 8.8 2.4 11.1 6.4l.9 1.5c2.3 4 2.3 8.8 0 12.8l-.9 1.5c-2.3 4-6.5 6.4-11.1 6.4h-1.6c-4.6 0-8.9-2.4-11.2-6.4l-.8-1.5c-2.3-4-2.3-8.9 0-12.8l.8-1.5c2.3-4 6.6-6.4 11.2-6.4h1.6Zm-.8 8.6a5.7 5.7 0 1 0 0 11.4 5.7 5.7 0 1 0 0-11.4Zm-46.5 5.7h10.3"
+        fill="#FFD94C"
+      />
+    </svg>
+  )
+}
+
+export const NextJS = ({ className, ...props }) => {
+  return (
+    <svg
+      className={className}
+      {...props}
+      viewBox="0 0 256 256"
+      width="256"
+      height="256"
+      preserveAspectRatio="xMidYMid"
+    >
+      <defs>
+        <linearGradient
+          id="c"
+          x1="55.633%"
+          x2="83.228%"
+          y1="56.385%"
+          y2="96.08%"
+        >
+          <stop offset="0%" stopColor="#FFF" />
+          <stop offset="100%" stopColor="#FFF" stopOpacity="0" />
+        </linearGradient>
+        <linearGradient id="d" x1="50%" x2="49.953%" y1="0%" y2="73.438%">
+          <stop offset="0%" stopColor="#FFF" />
+          <stop offset="100%" stopColor="#FFF" stopOpacity="0" />
+        </linearGradient>
+        <circle id="a" cx="128" cy="128" r="128" />
+      </defs>
+      <mask id="b" fill="#fff">
+        <use xlinkHref="#a" />
+      </mask>
+      <g mask="url(#b)">
+        <circle cx="128" cy="128" r="128" />
+        <path
+          fill="url(#c)"
+          d="M212.634 224.028 98.335 76.8H76.8v102.357h17.228V98.68L199.11 234.446a128.433 128.433 0 0 0 13.524-10.418Z"
+        />
+        <path fill="url(#d)" d="M163.556 76.8h17.067v102.4h-17.067z" />
+      </g>
+    </svg>
+  )
+}
+
+export const ReactJS = ({ className, ...props }) => {
+  return (
+    <svg
+      className={className}
+      {...props}
+      viewBox="0 0 256 228"
+      width="256"
+      height="228"
+      preserveAspectRatio="xMidYMid"
+    >
+      <path
+        d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621 6.238-30.281 2.16-54.676-11.769-62.708-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848 155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233 50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165 167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266 13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923 168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586 13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488 29.348-9.723 48.443-25.443 48.443-41.52 0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345-3.24-10.257-7.612-21.163-12.963-32.432 5.106-11 9.31-21.767 12.459-31.957 2.619.758 5.16 1.557 7.61 2.4 23.69 8.156 38.14 20.213 38.14 29.504 0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787-1.524 8.219-4.59 13.698-8.382 15.893-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246 12.376-1.098 24.068-2.894 34.671-5.345.522 2.107.986 4.173 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994 7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863-6.35-5.437-9.555-10.836-9.555-15.216 0-9.322 13.897-21.212 37.076-29.293 2.813-.98 5.757-1.905 8.812-2.773 3.204 10.42 7.406 21.315 12.477 32.332-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789 8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152 7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793 2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433 4.902.192 9.899.29 14.978.29 5.218 0 10.376-.117 15.453-.343-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026 347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815 329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627 310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695 358.489 358.489 0 0 1 11.036 20.54 329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026-.344 1.668-.73 3.367-1.15 5.09-10.622-2.452-22.155-4.275-34.23-5.408-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86-22.86-10.235-22.86-22.86 10.235-22.86 22.86-22.86Z"
+        fill="#00D8FF"
+      />
+    </svg>
+  )
+}
+
+export const Tailwind = ({ className, ...props }) => {
+  return (
+    <svg className={className} {...props} fill="none" viewBox="0 0 54 33">
+      <g clipPath="url(#a)">
+        <path
+          clipRule="evenodd"
+          d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+          fill="#38bdf8"
+          fillRule="evenodd"
+        />
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path d="M0 0h54v32.4H0z" fill="#fff" />
+        </clipPath>
+      </defs>
+    </svg>
+  )
+}
+
+export const MongoDB = ({ className, ...props }) => {
+  return (
+    <svg
+      className={className}
+      {...props}
+      viewBox="0 0 256 549"
+      width="256"
+      height="549"
+      preserveAspectRatio="xMidYMid"
+    >
+      <path
+        fill="#01EC64"
+        d="M175.622 61.108C152.612 33.807 132.797 6.078 128.749.32a1.03 1.03 0 0 0-1.492 0c-4.048 5.759-23.863 33.487-46.874 60.788-197.507 251.896 31.108 421.89 31.108 421.89l1.917 1.28c1.704 26.234 5.966 63.988 5.966 63.988h17.045s4.26-37.54 5.965-63.987l1.918-1.494c.213.214 228.828-169.78 31.32-421.677Zm-47.726 418.05s-10.227-8.744-12.997-13.222v-.428l12.358-274.292c0-.853 1.279-.853 1.279 0l12.357 274.292v.428c-2.77 4.478-12.997 13.223-12.997 13.223Z"
+      />
+    </svg>
+  )
+}
+
+export const Github = ({ className, ...props }) => {
+  return (
+    <svg viewBox="0 0 128 128" className={className} {...props}>
+      <g fill="currentColor">
+        <path
+          clipRule="evenodd"
+          d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
+          fillRule="evenodd"
+        />
+        <path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0" />
+      </g>
+    </svg>
+  )
+}
+
+export const Link = ({ className, ...props }) => {
+  return (
+    <svg
+      className={className}
+      {...props}
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+      width="24"
+    >
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+    </svg>
+  )
+}
+
+export const WorkIcon = ({ className, ...props }) => {
+  return (
+    <svg
+      {...props}
+      className={className}
+      aria-hidden="true"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
+        d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
+      />
+      <path
+        className="stroke-zinc-400 dark:stroke-zinc-500"
+        d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
+      />
+    </svg>
+  )
+}
+
+export const AWS = ({ className, ...props }) => {
+  return (
+    <svg
+      className={className}
+      {...props}
+      fill="none"
+      height="800px"
+      viewBox="0 -30 150 150"
+      width="800px"
+    >
+      <path
+        d="M122.714 62.703c5.28-.643 16.924-2.027 18.997.643 2.072 2.621-2.319 13.649-4.293 18.544-.592 1.484.691 2.077 2.023.94 8.684-7.319 10.954-22.6 9.178-24.825-1.777-2.175-17.023-4.055-26.3 2.473-1.431 1.038-1.184 2.423.395 2.225z"
+        fill="#F90"
+      />
+      <path
+        d="M74.852 89.456c20.28 0 43.865-6.38 60.099-18.396 2.664-1.978.345-4.994-2.369-3.758-18.207 7.714-37.993 11.473-56.003 11.473-26.694 0-52.5-7.368-73.42-19.533-1.827-1.088-3.208.791-1.679 2.176 19.343 17.505 44.951 28.038 73.372 28.038z"
+        fill="#F90"
+      />
+      <path
+        d="M42.632 32.835c0 1.83.197 3.313.542 4.401a26.505 26.505 0 001.58 3.56c.246.396.345.792.345 1.138 0 .495-.296.99-.938 1.484l-3.108 2.077c-.444.296-.889.445-1.283.445-.494 0-.987-.248-1.48-.693a15.29 15.29 0 01-1.777-2.324 38.28 38.28 0 01-1.53-2.918c-3.848 4.55-8.684 6.825-14.506 6.825-4.145 0-7.45-1.187-9.868-3.56-2.418-2.374-3.652-5.54-3.652-9.495 0-4.204 1.48-7.616 4.49-10.187 3.01-2.572 7.007-3.857 12.09-3.857 1.677 0 3.404.148 5.23.395 1.825.248 3.7.643 5.674 1.088v-3.61c0-3.758-.79-6.379-2.32-7.912-1.578-1.533-4.243-2.274-8.042-2.274-1.727 0-3.503.197-5.329.642a39.247 39.247 0 00-5.329 1.682 14.14 14.14 0 01-1.727.643c-.345.098-.592.148-.79.148-.69 0-1.036-.494-1.036-1.533V6.577c0-.791.1-1.385.346-1.73.246-.347.69-.693 1.381-1.04 1.727-.89 3.8-1.631 6.217-2.225C20.23.94 22.797.642 25.51.642c5.872 0 10.164 1.336 12.927 4.006 2.714 2.67 4.096 6.726 4.096 12.165v16.022h.099zm-20.033 7.517c1.628 0 3.306-.297 5.082-.89 1.776-.594 3.355-1.682 4.687-3.165.79-.94 1.382-1.978 1.678-3.165.296-1.187.493-2.621.493-4.302v-2.077a41.135 41.135 0 00-4.539-.84 37.099 37.099 0 00-4.638-.298c-3.306 0-5.724.643-7.352 1.978-1.628 1.336-2.418 3.215-2.418 5.687 0 2.324.592 4.055 1.826 5.242 1.184 1.236 2.911 1.83 5.18 1.83zm39.621 5.34c-.888 0-1.48-.148-1.875-.494-.394-.297-.74-.99-1.036-1.929L47.714 5.044c-.296-.99-.444-1.632-.444-1.978 0-.791.394-1.236 1.184-1.236h4.835c.938 0 1.58.148 1.925.494.395.297.69.99.987 1.929l8.29 32.736 7.697-32.736c.246-.99.542-1.632.937-1.929.395-.297 1.085-.494 1.974-.494h3.947c.938 0 1.579.148 1.974.494.395.297.74.99.937 1.929l7.796 33.132L98.29 4.253c.295-.99.64-1.632.986-1.929.395-.297 1.036-.494 1.925-.494h4.588c.79 0 1.234.395 1.234 1.236 0 .247-.049.494-.099.791a7.041 7.041 0 01-.345 1.236L94.688 43.32c-.297.989-.642 1.631-1.037 1.928-.394.297-1.036.495-1.875.495h-4.243c-.938 0-1.58-.149-1.974-.495-.394-.346-.74-.989-.937-1.978l-7.648-31.895-7.599 31.846c-.247.989-.543 1.632-.938 1.978-.394.346-1.085.494-1.973.494H62.22zm63.405 1.336c-2.566 0-5.132-.297-7.599-.89-2.467-.594-4.391-1.237-5.674-1.979-.79-.445-1.332-.94-1.53-1.384a3.503 3.503 0 01-.296-1.385v-2.522c0-1.038.395-1.533 1.135-1.533.296 0 .592.05.888.148.296.1.74.297 1.234.495a26.791 26.791 0 005.428 1.73c1.973.396 3.898.594 5.871.594 3.109 0 5.527-.544 7.204-1.632 1.678-1.088 2.566-2.67 2.566-4.698 0-1.384-.444-2.521-1.332-3.461-.888-.94-2.566-1.78-4.984-2.571l-7.154-2.226c-3.602-1.137-6.267-2.818-7.895-5.044-1.628-2.176-2.467-4.599-2.467-7.17 0-2.077.444-3.907 1.332-5.489.888-1.582 2.072-2.967 3.553-4.055 1.48-1.137 3.157-1.978 5.131-2.571 1.974-.594 4.046-.841 6.217-.841 1.086 0 2.221.05 3.306.198 1.135.148 2.171.346 3.207.544.987.247 1.925.494 2.813.79.888.298 1.579.594 2.072.891.691.396 1.185.791 1.481 1.236.296.396.444.94.444 1.632V8.16c0 1.039-.395 1.583-1.135 1.583-.395 0-1.036-.198-1.875-.594-2.813-1.285-5.971-1.928-9.474-1.928-2.812 0-5.033.445-6.562 1.384-1.53.94-2.319 2.374-2.319 4.402 0 1.384.493 2.57 1.48 3.51s2.812 1.88 5.427 2.72l7.007 2.226c3.553 1.137 6.118 2.72 7.648 4.747 1.53 2.027 2.27 4.351 2.27 6.923 0 2.126-.444 4.055-1.283 5.736-.888 1.681-2.072 3.165-3.602 4.352-1.53 1.236-3.355 2.126-5.477 2.769-2.22.692-4.54 1.039-7.056 1.039z"
+        fill="#fff"
+      />
+    </svg>
+  )
+}

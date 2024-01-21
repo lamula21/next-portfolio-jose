@@ -14,7 +14,7 @@ export function GradientButton({ className, children }) {
 			href="#projects"
 			id="button-primary"
 			className={cn(
-				"relative overflow-hidden border border-t-[#ffffff0d] rounded-xl px-[20px] py-4 text-white font-bold cursor-pointer transition-shadow duration-400 select-none bg-blue-gradient-circle backdrop-brightness-150 backdrop-blur-sm blue-hover-effect",
+				"relative overflow-hidden border border-t-[#ffffff0d] rounded-xl px-[20px] py-4 text-white font-bold cursor-pointer transition-shadow duration-400 select-none  backdrop-brightness-150 backdrop-blur-sm bg-blue-gradient-circle blue-hover-effect",
 				className
 			)}
 		>

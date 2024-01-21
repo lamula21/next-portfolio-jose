@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import { useRef } from 'react'
-import Image from 'next/image'
-import { motion, useScroll, useTransform } from 'framer-motion'
-import { cn } from '@/lib/utils'
+import { useRef } from "react"
+import Image from "next/image"
+import { motion, useScroll, useTransform } from "framer-motion"
+import { cn } from "@/lib/utils"
 
 export function Project({ title, description, tags, imageUrl }) {
 	const ref = useRef(null)
 	const { scrollYProgress } = useScroll({
 		target: ref,
-		offset: ['0.37 1', '1.33 1'],
+		offset: ["0.37 1", "1.33 1"],
 	})
 	const scaleProgess = useTransform(scrollYProgress, [0, 1], [1, 1])
 	const opacityProgess = useTransform(scrollYProgress, [0, 0.3], [0, 1])
@@ -19,7 +19,7 @@ export function Project({ title, description, tags, imageUrl }) {
 	const textref = useRef(null)
 	const { scrollYProgress: scrollText } = useScroll({
 		target: ref,
-		offset: ['0.37 1', '1.33 1'],
+		offset: ["0.37 1", "1.33 1"],
 	})
 	const opacityTextProgess = useTransform(scrollYProgress, [0.48, 1], [0, 1])
 
@@ -30,14 +30,14 @@ export function Project({ title, description, tags, imageUrl }) {
 				scale: scaleProgess,
 				opacity: opacityProgess,
 				translateY: translateYProgress,
-				backdropFilter: 'blur(4px)',
+				backdropFilter: "blur(4px)",
 			}}
 			className="group relative overflow-hidden p-[1px] rounded-lg "
 		>
 			{/* Project Card */}
 			<section
 				className={cn(
-					'group/overlay relative flex gap-20 p-12 bg-gray-100 border border-white/10 rounded-lg overflow-hidden transition backdrop-blur-sm sm:h-[20rem] lg:h-[30rem] dark:text-white dark:bg-white/10 hover:bg-gray-200 hover:transition-shadow duration-500 hover:duration-600'
+					"group/overlay relative flex gap-20 p-12 bg-gray-100 border border-white/10 rounded-lg overflow-hidden transition backdrop-blur-sm sm:h-[20rem] lg:h-[30rem] dark:text-white dark:bg-white/10 hover:bg-gray-200 hover:transition-shadow duration-500 hover:duration-600"
 				)}
 			>
 				<div className="sm:max-w-[50%] flex flex-col lg:justify-center h-full sm:group-even:order-2 sm:group-even:max-w-[45%] pb-14">

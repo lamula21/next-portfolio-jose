@@ -1,8 +1,8 @@
 import React from "react"
 
-import { projectsData } from "@/data/config"
 import { Project } from "./Project"
 import { ProjectSectionRef } from "@/components/sections/ProjectSectionRef"
+import { projectsData } from "@/data/projects"
 
 export function Projects() {
 	return (
