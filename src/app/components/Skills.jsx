@@ -1,13 +1,12 @@
 import { Section } from "@/components/Section"
 import { Heading } from "@/components/Heading"
 import { Subheading } from "@/components/Subheading"
-import { DEVLOGOS, technologies } from "@/data/technologies"
-import { cn } from "@/lib/utils"
+import { technologies } from "@/data/technologies"
 import { InfiniteLoopCards } from "@/features/inifinite-loop/InfiniteLoop"
+import { groupBy } from "lodash"
 
 export function Skills() {
-  const grouped = Object.groupBy(technologies, (tech) => tech.category)
-  console.log(grouped)
+  const grouped = groupBy(technologies, (tech) => tech.category)
 
   return (
     <Section id="skills" className="mt-40">
