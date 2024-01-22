@@ -4,24 +4,19 @@ import { ContactIcon, DownloadIcon } from "@/components/icons"
 import { PaymentDrawer } from "@/features/payment/Payment"
 
 export function ButtonList() {
-	return (
-		<div className="flex gap-5 animate-slowfade">
-			<GradientButton className="group">
-				{/* <div className="">
-					<div className="background-1" />
-					<div className="background-2" />
-					<div className="background-3" />
-				</div> */}
-				{"Let's Connect!"}
-				<ContactIcon className="w-4 h-4 group-hover:translate-x-[1px] group-hover:translate-y-[-1px] transition" />
-			</GradientButton>
+  return (
+    <div className="flex animate-slowfade gap-5">
+      <GradientButton className="group">
+        {"Let's Connect!"}
+        <ContactIcon className="h-4 w-4 transition group-hover:translate-x-[1px] group-hover:translate-y-[-1px]" />
+      </GradientButton>
 
-			<MainButton className="group">
-				Download CV
-				<DownloadIcon className="w-5 h-5 group-hover:translate-y-[2px] transition" />
-			</MainButton>
+      <MainButton className="group">
+        Download CV
+        <DownloadIcon className="h-5 w-5 transition group-hover:translate-y-[2px]" />
+      </MainButton>
 
-			<PaymentDrawer />
-		</div>
-	)
+      <PaymentDrawer />
+    </div>
+  )
 }

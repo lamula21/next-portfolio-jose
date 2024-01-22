@@ -11,36 +11,36 @@ import { ContactList } from "@/components/hero/ContactList"
 import { VerifiedIcon } from "../icons"
 
 export function Profile() {
-	return (
-		<div className="w-full flex flex-col items-center gap-8 lg:flex-row lg:justify-start ">
-			{/* Avatar */}
-			<motion.div
-				variants={textVariant(2)}
-				className="group relative rounded-full border opacity-[0.9] transition-shadow duration-300 hover:shadow-lg"
-			>
-				<Avatar className="w-28 h-28 m-1">
-					<Image src={profile} className="scale-110" alt="JV profile picture" />
-					<AvatarFallback>JV</AvatarFallback>
-				</Avatar>
+  return (
+    <div className="flex w-full flex-col items-center gap-8 lg:flex-row lg:justify-start ">
+      {/* Avatar */}
+      <motion.div
+        variants={textVariant(2)}
+        className="group relative rounded-full  opacity-[0.9] transition-shadow duration-300 hover:shadow-lg"
+      >
+        <Avatar className="m-1 h-28 w-28">
+          <Image src={profile} className="scale-110" alt="JV profile picture" />
+          <AvatarFallback>JV</AvatarFallback>
+        </Avatar>
 
-				<DynamicToolTip />
-			</motion.div>
+        <DynamicToolTip />
+      </motion.div>
 
-			<div className="w-full lg:min-w-[350px] h-full flex flex-col items-center gap-3 lg:items-start">
-				<h2 className="font-extrabold text-3xl flex items-center">
-					Jose Valdivia
-					<VerifiedIcon className="inline-flex ml-2 text-[#B5924F]" />
-				</h2>
-				<div className="text-foreground/60 flex justify-center gap-x-2 items-center font-Interegular">
-					<p>Est. 1999</p>
-					<span className="w-[3px] h-[3px] bg-neutral-600 rounded-full"></span>
-					<p>Maryland, US</p>
-					<span className="w-[3px] h-[3px] bg-neutral-600 rounded-full"></span>
-					<p>Full Stack Engineer</p>
-				</div>
+      <div className="flex h-full w-full flex-col items-center gap-3 lg:min-w-[350px] lg:items-start">
+        <h2 className="flex items-center text-3xl font-extrabold">
+          Jose Valdivia
+          <VerifiedIcon className="ml-2 inline-flex text-[#1D9BF0]" />
+        </h2>
+        <div className="font-Interegular flex items-center justify-center gap-x-2 text-foreground/60">
+          <p>Est. 1999</p>
+          <span className="h-[3px] w-[3px] rounded-full bg-neutral-600"></span>
+          <p>Maryland, US</p>
+          <span className="h-[3px] w-[3px] rounded-full bg-neutral-600"></span>
+          <p>Full Stack Engineer</p>
+        </div>
 
-				<ContactList />
-			</div>
-		</div>
-	)
+        <ContactList />
+      </div>
+    </div>
+  )
 }

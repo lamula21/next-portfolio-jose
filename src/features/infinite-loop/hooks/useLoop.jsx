@@ -47,7 +47,7 @@ export function useLoop(direction, speed) {
     if (containerRef.current) {
       if (speed === "fast") {
         containerRef.current.style.setProperty("--animation-duration", "20s")
-      } else if ((speed = "normal")) {
+      } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "45s")
       } else {
         containerRef.current.style.setProperty("--animation-duration", "80s")

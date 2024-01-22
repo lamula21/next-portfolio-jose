@@ -2,7 +2,7 @@ import { Section } from "@/components/Section"
 import { Heading } from "@/components/Heading"
 import { Subheading } from "@/components/Subheading"
 import { technologies } from "@/data/technologies"
-import { InfiniteLoopCards } from "@/features/inifinite-loop/InfiniteLoop"
+import { InfiniteLoopCards } from "@/features/infinite-loop/InfiniteLoopCards"
 import { groupBy } from "lodash"
 
 export function Skills() {
@@ -12,13 +12,14 @@ export function Skills() {
     <Section id="skills" className="mt-40">
       <header className="max-w-2xl space-y-5">
         <Heading className="text-pretty ">
-          {`Some of the Technologies I use Regularly and Love Working With 🚀`}
+          Some of the <span className="text-teal-500">Technologies</span> I use
+          Regularly and <span className="text-teal-500">Love</span> Working With
+          🚀
         </Heading>
 
         <Subheading>
-          {`These are my favorites one, but I'm always open to learn new ones. I'm
-          a fast learner, adaptable, and committed to continuous improvement to
-          contribute effectively to any team or project.`}
+          {`These are my favorite ones, but I'm always open to learn new technologies. I'm
+          a fast learner, adaptable, and dedicated to continually enhancing my skills to elevate my capabilities as a software engineer.`}
         </Subheading>
       </header>
 
@@ -28,7 +29,7 @@ export function Skills() {
           <div className="sticky left-0 top-[37%] h-[150px] w-[1px] rounded-full bg-gradient-to-b from-[rgba(17,17,17,0)] via-teal-500 to-[rgba(17,17,17,0)] transition-all" />
         </div>
 
-        <div className="flex max-w-5xl flex-col space-y-10">
+        <div className="flex max-w-5xl flex-col gap-y-10">
           {Object.keys(grouped).map((category) => {
             const techs = grouped[category]
 
@@ -37,11 +38,11 @@ export function Skills() {
                 className="md:grid md:grid-cols-5 md:items-center"
                 key={category}
               >
-                <div className="group relative flex h-[200px] flex-col items-start justify-center rounded-3xl border border-zinc-700/40 pt-3 md:col-span-4">
+                <div className="group relative flex h-[200px] flex-col items-start justify-center rounded-3xl md:col-span-4">
                   {/* overlay */}
                   {/* <div
                     id="overlay"
-                    className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"
+                    className="absolute -inset-x-4 -inset-y-6 top-2 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"
                   /> */}
 
                   <aside className="relative z-10 mb-3 flex items-center pl-3.5 text-sm text-zinc-400 dark:text-zinc-500 md:hidden">
@@ -56,13 +57,13 @@ export function Skills() {
 
                   <InfiniteLoopCards
                     direction="left"
-                    speed="fast"
+                    speed="normal"
                     pauseOnHover
                     techs={techs}
                   />
                 </div>
 
-                <aside className="relative z-10 order-first mb-3 mt-1 hidden items-center text-sm capitalize text-zinc-400 dark:text-zinc-500 md:block">
+                <aside className="relative z-10 order-first mb-3 mt-1 hidden items-center text-sm font-semibold capitalize text-zinc-800 dark:text-zinc-100 md:block">
                   {category}
                 </aside>
               </article>
