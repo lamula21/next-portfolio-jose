@@ -1310,3 +1310,36 @@ export const GraphQL = ({ className, ...props }) => {
     </svg>
   )
 }
+
+export const DEVICONS = {
+  JavaScript,
+  CSS,
+  Rust,
+  Ocaml,
+  Java,
+  Python,
+  PostgreSQL,
+  // "SQLite",
+  MySQL,
+  Firebase,
+  Supabase,
+  PlanetScale,
+  Redis,
+  MongoDB,
+  ReactJS,
+  NextJS,
+  Tailwind,
+  Node,
+  ExpressJS,
+  Astro,
+  AWS,
+  // Railway,
+  Vercel,
+  // SST,
+  Docker,
+  Redux,
+  Tanstack,
+  Prisma,
+  Drizzle,
+  GraphQL,
+}

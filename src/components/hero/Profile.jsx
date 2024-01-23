@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { motion } from "framer-motion"
-import profile from "../../../public/profile.png"
+import profile from "@public/profile.png"
 
 import { textVariant } from "@/utils/motion"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"

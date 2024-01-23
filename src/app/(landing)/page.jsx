@@ -1,7 +1,7 @@
 // import { SectionHero } from "@/components/hero/SectionHero"
 import { Hero } from "@/components/hero/Hero"
-import { Featured } from "./components/Featured"
-import { Skills } from "./components/Skills"
+import { Featured } from "@/features/featured/Featured"
+import { Skills } from "@/features/featured/components/Skills"
 
 export default async function Home() {
   return (

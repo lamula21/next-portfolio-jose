@@ -1,6 +1,6 @@
 import { Section } from "@/components/Section"
-import { Heading } from "@/components/Heading"
-import { Subheading } from "@/components/Subheading"
+import { Headline1 } from "@/components/Headline1"
+import { Headline2 } from "@/components/Headline2"
 import { technologies } from "@/data/technologies"
 import { InfiniteLoopCards } from "@/features/infinite-loop/InfiniteLoopCards"
 import { groupBy } from "lodash"
@@ -11,16 +11,16 @@ export function Skills() {
   return (
     <Section id="skills" className="mt-40">
       <header className="max-w-2xl space-y-5">
-        <Heading className="text-pretty ">
+        <Headline1 className="text-pretty sm:font-semibold">
           Some of the <span className="text-teal-500">Technologies</span> I use
           Regularly and <span className="text-teal-500">Love</span> Working With
           🚀
-        </Heading>
+        </Headline1>
 
-        <Subheading>
+        <Headline2>
           {`These are my favorite ones, but I'm always open to learn new technologies. I'm
           a fast learner, adaptable, and dedicated to continually enhancing my skills to elevate my capabilities as a software engineer.`}
-        </Subheading>
+        </Headline2>
       </header>
 
       <div className="relative mt-16 sm:mt-20 md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">

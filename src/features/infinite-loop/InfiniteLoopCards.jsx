@@ -2,7 +2,7 @@
 
 import { cn } from "@/lib/utils"
 import { useLoop } from "./hooks/useLoop"
-import { DEVLOGOS } from "@/data/technologies"
+import { DEVICONS } from "@/components/icons"
 
 export const InfiniteLoopCards = ({
   direction = "left",
@@ -28,7 +28,7 @@ export const InfiniteLoopCards = ({
         )}
       >
         {techs.map((tech) => {
-          const Icon = DEVLOGOS[tech.icon]
+          const Icon = DEVICONS[tech.icon]
 
           return (
             <li
