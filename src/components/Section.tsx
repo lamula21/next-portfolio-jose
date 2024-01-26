@@ -3,6 +3,15 @@
 import { useSectionInView } from "@/hooks/useSectionInView"
 import { cn } from "@/lib/utils"
 
+interface SectionProps {
+  children: React.ReactNode
+  sectionId?: string
+  className?: string
+  footer?: boolean
+  navigation?: React.ReactNode
+  id?: string
+}
+
 export function Section({
   children,
   sectionId,
@@ -10,7 +19,7 @@ export function Section({
   footer,
   navigation,
   id,
-}) {
+}: SectionProps) {
   const { ref } = useSectionInView(sectionId, 0.5)
 
   if (ref.current) {

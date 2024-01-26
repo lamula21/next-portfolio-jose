@@ -1,5 +1,54 @@
 import { cn } from "@/lib/utils"
 
+export const ArrowIcon = ({ className, ...props }) => (
+  <svg
+    aria-hidden="true"
+    className={className}
+    {...props}
+    fill="currentColor"
+    viewBox="0 0 16 16"
+  >
+    <path
+      d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="1.5"
+    />
+  </svg>
+)
+
+export const ViewIcon = ({ className, ...props }) => (
+  <svg
+    aria-hidden="true"
+    className={className}
+    {...props}
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+  >
+    <path
+      fill="currentColor"
+      d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"
+    />
+  </svg>
+)
+
+export const CVIcon = ({ className, ...props }) => (
+  <svg
+    aria-hidden="true"
+    className={className}
+    {...props}
+    width="1em"
+    height="1em"
+    viewBox="0 0 256 256"
+  >
+    <path
+      fill="currentColor"
+      d="m210.78 39.25l-130.25-23A16 16 0 0 0 62 29.23l-29.75 169a16 16 0 0 0 13 18.53l130.25 23a16 16 0 0 0 18.54-13l29.75-169a16 16 0 0 0-13.01-18.51m-75.28 92.31a8 8 0 0 1-7.87 6.61a8.27 8.27 0 0 1-1.4-.12l-41.5-7.33A8 8 0 0 1 87.52 115l41.48 7.29a8 8 0 0 1 6.5 9.27m47-24.18a8 8 0 0 1-7.86 6.61a7.55 7.55 0 0 1-1.41-.13l-83-14.65a8 8 0 0 1 2.79-15.76l83 14.66a8 8 0 0 1 6.51 9.27Zm5.55-31.52a8 8 0 0 1-7.87 6.61a8.36 8.36 0 0 1-1.4-.12l-83-14.66a8 8 0 1 1 2.78-15.75l83 14.65a8 8 0 0 1 6.52 9.27Z"
+    />
+  </svg>
+)
+
 export const GradIcon = ({ className }) => (
   <svg
     className={className}
@@ -24,7 +73,7 @@ export const GithubIcon = ({ className }) => (
     width={24}
     height={24}
     viewBox="0 0 24 24"
-    fill="fill"
+    fill="currentColor"
     color="rgba(0, 0, 0, 1)"
   >
     <path
@@ -35,20 +84,15 @@ export const GithubIcon = ({ className }) => (
   </svg>
 )
 
-export const XIcon = ({ className }) => (
+export const XIcon = ({ className, ...props }) => (
   <svg
     className={className}
-    width={24}
-    height={24}
+    {...props}
+    aria-hidden="true"
     viewBox="0 0 24 24"
-    strokeWidth={2}
-    stroke="currentColor"
-    strokeLinecap="round"
-    strokeLinejoin="round"
+    fill="currentColor"
   >
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-    <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+    <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z" />
   </svg>
 )
 
@@ -89,6 +133,15 @@ export const MailIcon = ({ className, ...props }) => (
   </svg>
 )
 
+export const MailFilledIcon = ({ className, ...props }) => (
+  <svg className={className} {...props} aria-hidden="true" viewBox="0 0 24 24">
+    <path
+      d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
+      fillRule="evenodd"
+    />
+  </svg>
+)
+
 export const MailCheckIcon = ({ className }) => (
   <svg
     className={className}
@@ -108,9 +161,10 @@ export const MailCheckIcon = ({ className }) => (
   </svg>
 )
 
-export const LinkedInIcon = ({ className }) => (
+export const LinkedInIcon = ({ className, ...props }) => (
   <svg
-    className="icon icon-tabler icon-tabler-brand-linkedin"
+    className={className}
+    {...props}
     width={24}
     height={24}
     viewBox="0 0 24 24"
@@ -126,6 +180,12 @@ export const LinkedInIcon = ({ className }) => (
     <path d="M8 8l0 .01"></path>
     <path d="M12 16l0 -5"></path>
     <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+  </svg>
+)
+
+export const LinkedInFilledIcon = ({ className, ...props }) => (
+  <svg className={className} {...props} aria-hidden="true" viewBox="0 0 24 24">
+    <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z" />
   </svg>
 )
 
@@ -335,7 +395,7 @@ export const CodeIcon = (props) => {
   )
 }
 
-export const JavaScript = ({ className, ...props }) => {
+export const js = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -353,7 +413,7 @@ export const JavaScript = ({ className, ...props }) => {
   )
 }
 
-export const CSS = ({ className, ...props }) => {
+export const css = ({ className, ...props }) => {
   return (
     <svg viewBox="0 0 452 520" className={className} {...props}>
       <path d="M41 460L0 0h451l-41 460-185 52" fill="#0c73b8" />
@@ -370,7 +430,7 @@ export const CSS = ({ className, ...props }) => {
   )
 }
 
-export const Rust = ({ className, ...props }) => {
+export const rust = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -606,7 +666,7 @@ export const Rust = ({ className, ...props }) => {
   )
 }
 
-export const Ocaml = ({ className, ...props }) => {
+export const ocaml = ({ className, ...props }) => {
   return (
     <svg className={className} {...props} viewBox="0 0 128 128">
       <defs>
@@ -683,7 +743,7 @@ export const Ocaml = ({ className, ...props }) => {
   )
 }
 
-export const Java = ({ className, ...props }) => {
+export const java = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -715,7 +775,7 @@ export const Java = ({ className, ...props }) => {
   )
 }
 
-export const Python = ({ className, ...props }) => {
+export const python = ({ className, ...props }) => {
   return (
     <svg viewBox="0 0 128 128" className={className} {...props}>
       <linearGradient
@@ -772,7 +832,7 @@ export const Python = ({ className, ...props }) => {
   )
 }
 
-export const Tanstack = ({ className, ...props }) => {
+export const tanstack = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -800,7 +860,7 @@ export const Tanstack = ({ className, ...props }) => {
   )
 }
 
-export const NextJS = ({ className, ...props }) => {
+export const nextjs = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -842,7 +902,7 @@ export const NextJS = ({ className, ...props }) => {
   )
 }
 
-export const ReactJS = ({ className, ...props }) => {
+export const reactjs = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -860,7 +920,7 @@ export const ReactJS = ({ className, ...props }) => {
   )
 }
 
-export const ExpressJS = ({ className, ...props }) => {
+export const expressjs = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -873,7 +933,7 @@ export const ExpressJS = ({ className, ...props }) => {
   )
 }
 
-export const Tailwind = ({ className, ...props }) => {
+export const tailwind = ({ className, ...props }) => {
   return (
     <svg className={className} {...props} fill="none" viewBox="0 0 54 33">
       <g clipPath="url(#a)">
@@ -893,7 +953,7 @@ export const Tailwind = ({ className, ...props }) => {
   )
 }
 
-export const MongoDB = ({ className, ...props }) => {
+export const mongodb = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -970,7 +1030,7 @@ export const WorkIcon = ({ className, ...props }) => {
   )
 }
 
-export const AWS = ({ className, ...props }) => {
+export const aws = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -996,7 +1056,7 @@ export const AWS = ({ className, ...props }) => {
   )
 }
 
-export const PostgreSQL = ({ className, ...props }) => {
+export const postgresql = ({ className, ...props }) => {
   return (
     <svg className={className} {...props} viewBox="0 0 128 128">
       <path d="M93.809 92.112c.785-6.533.55-7.492 5.416-6.433l1.235.108c3.742.17 8.637-.602 11.513-1.938 6.191-2.873 9.861-7.668 3.758-6.409-13.924 2.873-14.881-1.842-14.881-1.842 14.703-21.815 20.849-49.508 15.543-56.287-14.47-18.489-39.517-9.746-39.936-9.52l-.134.025c-2.751-.571-5.83-.912-9.289-.968-6.301-.104-11.082 1.652-14.709 4.402 0 0-44.683-18.409-42.604 23.151.442 8.841 12.672 66.898 27.26 49.362 5.332-6.412 10.484-11.834 10.484-11.834 2.558 1.699 5.622 2.567 8.834 2.255l.249-.212c-.078.796-.044 1.575.099 2.497-3.757 4.199-2.653 4.936-10.166 6.482-7.602 1.566-3.136 4.355-.221 5.084 3.535.884 11.712 2.136 17.238-5.598l-.22.882c1.474 1.18 1.375 8.477 1.583 13.69.209 5.214.558 10.079 1.621 12.948 1.063 2.868 2.317 10.256 12.191 8.14 8.252-1.764 14.561-4.309 15.136-27.985" />
@@ -1013,7 +1073,7 @@ export const PostgreSQL = ({ className, ...props }) => {
   )
 }
 
-export const MySQL = ({ className, ...props }) => {
+export const mysql = ({ className, ...props }) => {
   return (
     <svg className={className} {...props} viewBox="0 0 128 128">
       <path
@@ -1024,7 +1084,7 @@ export const MySQL = ({ className, ...props }) => {
   )
 }
 
-export const Firebase = ({ className, ...props }) => {
+export const firebase = ({ className, ...props }) => {
   return (
     <svg className={className} {...props} viewBox="0 0 128 128">
       <path
@@ -1035,7 +1095,7 @@ export const Firebase = ({ className, ...props }) => {
   )
 }
 
-export const Supabase = ({ className, ...props }) => {
+export const supabase = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1086,7 +1146,7 @@ export const Supabase = ({ className, ...props }) => {
   )
 }
 
-export const PlanetScale = ({ className, ...props }) => {
+export const planetscale = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1102,7 +1162,7 @@ export const PlanetScale = ({ className, ...props }) => {
   )
 }
 
-export const Redis = ({ className, ...props }) => {
+export const redis = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1144,7 +1204,7 @@ export const Redis = ({ className, ...props }) => {
   )
 }
 
-export const Node = ({ className, ...props }) => {
+export const node = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1164,7 +1224,7 @@ export const Node = ({ className, ...props }) => {
   )
 }
 
-export const Astro = ({ className, ...props }) => {
+export const astro = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1187,7 +1247,7 @@ export const Astro = ({ className, ...props }) => {
   )
 }
 
-export const Vercel = ({ className, ...props }) => {
+export const vercel = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1203,7 +1263,7 @@ export const Vercel = ({ className, ...props }) => {
   )
 }
 
-export const Docker = ({ className, ...props }) => {
+export const docker = ({ className, ...props }) => {
   return (
     <svg className={className} {...props} viewBox="0 0 24 24" fill="#008fe2">
       <path d="M13.98 11.08h2.12a.19.19 0 0 0 .19-.19V9.01a.19.19 0 0 0-.19-.19h-2.12a.18.18 0 0 0-.18.18v1.9c0 .1.08.18.18.18m-2.95-5.43h2.12a.19.19 0 0 0 .18-.19V3.57a.19.19 0 0 0-.18-.18h-2.12a.18.18 0 0 0-.19.18v1.9c0 .1.09.18.19.18m0 2.71h2.12a.19.19 0 0 0 .18-.18V6.29a.19.19 0 0 0-.18-.18h-2.12a.18.18 0 0 0-.19.18v1.89c0 .1.09.18.19.18m-2.93 0h2.12a.19.19 0 0 0 .18-.18V6.29a.18.18 0 0 0-.18-.18H8.1a.18.18 0 0 0-.18.18v1.89c0 .1.08.18.18.18m-2.96 0h2.11a.19.19 0 0 0 .19-.18V6.29a.18.18 0 0 0-.19-.18H5.14a.19.19 0 0 0-.19.18v1.89c0 .1.08.18.19.18m5.89 2.72h2.12a.19.19 0 0 0 .18-.19V9.01a.19.19 0 0 0-.18-.19h-2.12a.18.18 0 0 0-.19.18v1.9c0 .1.09.18.19.18m-2.93 0h2.12a.18.18 0 0 0 .18-.19V9.01a.18.18 0 0 0-.18-.19H8.1a.18.18 0 0 0-.18.18v1.9c0 .1.08.18.18.18m-2.96 0h2.11a.18.18 0 0 0 .19-.19V9.01a.18.18 0 0 0-.18-.19H5.14a.19.19 0 0 0-.19.19v1.88c0 .1.08.19.19.19m-2.92 0h2.12a.18.18 0 0 0 .18-.19V9.01a.18.18 0 0 0-.18-.19H2.22a.18.18 0 0 0-.19.18v1.9c0 .1.08.18.19.18m21.54-1.19c-.06-.05-.67-.51-1.95-.51-.34 0-.68.03-1.01.09a3.77 3.77 0 0 0-1.72-2.57l-.34-.2-.23.33a4.6 4.6 0 0 0-.6 1.43c-.24.97-.1 1.88.4 2.66a4.7 4.7 0 0 1-1.75.42H.76a.75.75 0 0 0-.76.75 11.38 11.38 0 0 0 .7 4.06 6.03 6.03 0 0 0 2.4 3.12c1.18.73 3.1 1.14 5.28 1.14.98 0 1.96-.08 2.93-.26a12.25 12.25 0 0 0 3.82-1.4 10.5 10.5 0 0 0 2.61-2.13c1.25-1.42 2-3 2.55-4.4h.23c1.37 0 2.21-.55 2.68-1 .3-.3.55-.66.7-1.06l.1-.28Z" />
@@ -1211,7 +1271,7 @@ export const Docker = ({ className, ...props }) => {
   )
 }
 
-export const Redux = ({ className, ...props }) => {
+export const redux = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1229,7 +1289,7 @@ export const Redux = ({ className, ...props }) => {
   )
 }
 
-export const Prisma = ({ className, ...props }) => {
+export const prisma = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1247,7 +1307,7 @@ export const Prisma = ({ className, ...props }) => {
   )
 }
 
-export const Drizzle = ({ className, ...props }) => {
+export const drizzle = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1293,7 +1353,7 @@ export const Drizzle = ({ className, ...props }) => {
   )
 }
 
-export const GraphQL = ({ className, ...props }) => {
+export const graphql = ({ className, ...props }) => {
   return (
     <svg className={className} {...props} fill="#e10098" viewBox="0 0 100 100">
       <path
@@ -1312,34 +1372,40 @@ export const GraphQL = ({ className, ...props }) => {
 }
 
 export const DEVICONS = {
-  JavaScript,
-  CSS,
-  Rust,
-  Ocaml,
-  Java,
-  Python,
-  PostgreSQL,
+  js,
+  css,
+  rust,
+  ocaml,
+  java,
+  python,
+  postgresql,
   // "SQLite",
-  MySQL,
-  Firebase,
-  Supabase,
-  PlanetScale,
-  Redis,
-  MongoDB,
-  ReactJS,
-  NextJS,
-  Tailwind,
-  Node,
-  ExpressJS,
-  Astro,
-  AWS,
+  mysql,
+  firebase,
+  supabase,
+  planetscale,
+  redis,
+  mongodb,
+  reactjs,
+  nextjs,
+  tailwind,
+  node,
+  expressjs,
+  astro,
+  aws,
   // Railway,
-  Vercel,
+  vercel,
   // SST,
-  Docker,
-  Redux,
-  Tanstack,
-  Prisma,
-  Drizzle,
-  GraphQL,
+  docker,
+  redux,
+  tanstack,
+  prisma,
+  drizzle,
+  graphql,
+
+  XIcon,
+  GithubIcon,
+  LinkedInIcon,
+  MailFilledIcon,
+  LinkedInFilledIcon,
 }

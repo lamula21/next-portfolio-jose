@@ -63,8 +63,9 @@ export function PaymentDrawer() {
     <Drawer>
       <DrawerTrigger asChild>
         <div>
-          <MainButton className="group">
-            Buy me a Coffee
+          <MainButton className="group group inline-flex h-12 px-4 py-6 text-sm  will-change-transform md:px-5 md:py-7 md:text-base">
+            <span className="hidden md:flex">Buy me a Coffee</span>
+            <span className="flex md:hidden">Coffee</span>
             <CoffeeIcon className="h-5 w-5 transition will-change-transform group-hover:scale-[120%]" />
           </MainButton>
         </div>

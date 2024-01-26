@@ -1,49 +1,7 @@
 import SqlCrud from "@public/projects/next-sql-crud.png"
 import Twitter from "@public/projects/next-twitter-supabase.png"
 import Quizlet from "@public/projects/react-zustand-quizlet.png"
-
-export const TAGS = {
-  REACT: {
-    name: "React",
-    class: "bg-white text-black",
-    icon: "ReactJS",
-  },
-
-  NEXT: {
-    name: "Next.js",
-    class: "bg-black text-white",
-    icon: "NextJS",
-  },
-
-  TAILWIND: {
-    name: "Tailwind",
-    class: "bg-[#003159] text-white",
-    icon: "Tailwind",
-  },
-
-  MONGODB: {
-    name: "MongoDB",
-    class: "bg-green-100 text-green-900",
-    icon: "MongoDB",
-  },
-
-  REDIS: {
-    name: "Redis",
-    class: "bg-red-100 text-red-900",
-    icon: "Redis",
-  },
-
-  POSTGRESQL: {
-    name: "PostgreSQL",
-    class: "bg-blue-100 text-blue-900",
-    icon: "PostgreSQL",
-  },
-  PRISMA: {
-    name: "Prisma",
-    class: "bg-blue-100 text-blue-900",
-    icon: "Prisma",
-  },
-}
+import { TAGS } from "./tags"
 
 export const projectsData = [
   {

@@ -5,7 +5,7 @@ import { Projects } from "./components/Projects"
 
 export function Featured() {
   return (
-    <Section id="featured" className="mt-14">
+    <Section id="featured" className="mt-32 scroll-mt-20 md:mt-14">
       <Grid>
         <Projects />
 

@@ -1,14 +1,14 @@
 export const technologies = [
   {
     name: "JavaScript",
-    icon: "JavaScript",
+    icon: "js",
     color: "",
     shadow: "bg-gradient-to-r from-[#f7df1e] to-[#c3b017]",
     category: "languages",
   },
   {
     name: "CSS",
-    icon: "CSS",
+    icon: "css",
     color: "",
     shadow: "bg-gradient-to-r from-[#019ae9] to-[#00dfd8]",
     category: "languages",
@@ -16,7 +16,7 @@ export const technologies = [
 
   {
     name: "Rust",
-    icon: "Rust",
+    icon: "rust",
     color: "",
     shadow: "bg-gradient-to-tr from-[#e95420] to-[#ff8c02]",
     category: "languages",
@@ -24,7 +24,7 @@ export const technologies = [
 
   {
     name: "Python",
-    icon: "Python",
+    icon: "python",
     color: "",
     shadow: "bg-gradient-to-tr from-[#407eb0] to-[#ffdf59]",
     category: "languages",
@@ -32,7 +32,7 @@ export const technologies = [
 
   {
     name: "OCaml",
-    icon: "Ocaml",
+    icon: "ocaml",
     color: "",
     shadow: "bg-gradient-to-tr from-[#8d4912] to-[#ab6917]",
     category: "languages",
@@ -40,7 +40,7 @@ export const technologies = [
 
   {
     name: "Java",
-    icon: "Java",
+    icon: "java",
     color: "",
     shadow: "bg-gradient-to-r from-[#5382a1] to-[#00dfd8]",
     category: "languages",
@@ -48,7 +48,7 @@ export const technologies = [
 
   {
     name: "PostgreSQL",
-    icon: "PostgreSQL",
+    icon: "postgresql",
     color: "",
     shadow: "bg-gradient-to-r from-[#019ae9] to-[#00dfd8]",
     category: "databases",
@@ -64,7 +64,7 @@ export const technologies = [
 
   {
     name: "MySQL",
-    icon: "MySQL",
+    icon: "mysql",
     color: "",
     shadow: "bg-gradient-to-r from-[#324b60] to-[#0ea5e2]",
     category: "databases",
@@ -72,7 +72,7 @@ export const technologies = [
 
   {
     name: "Firebase",
-    icon: "Firebase",
+    icon: "firebase",
     color: "",
     shadow: "bg-gradient-to-tr from-[#ffa712] via-[#f6820c] to-[#fcca3f]",
     category: "databases",
@@ -80,7 +80,7 @@ export const technologies = [
 
   {
     name: "Supabase",
-    icon: "Supabase",
+    icon: "supabase",
     color: "",
     shadow: "bg-gradient-to-r from-[#265b26] to-[#3ecf8e]",
     category: "databases",
@@ -88,7 +88,7 @@ export const technologies = [
 
   {
     name: "PlanetScale",
-    icon: "PlanetScale",
+    icon: "planetscale",
     color: "",
     shadow: "bg-gradient-to-tr from-[#cbcccc] to-[#797979]",
     category: "databases",
@@ -96,7 +96,7 @@ export const technologies = [
 
   {
     name: "Redis",
-    icon: "Redis",
+    icon: "redis",
     color: "",
     shadow: "bg-gradient-to-tr from-[#f90600] to-[#c6302b]",
     category: "databases",
@@ -104,7 +104,7 @@ export const technologies = [
 
   {
     name: "MongoDB",
-    icon: "MongoDB",
+    icon: "mongodb",
     color: "",
     shadow: "bg-gradient-to-r from-green-700 to-[#00dfd8]",
     category: "databases",
@@ -112,7 +112,7 @@ export const technologies = [
 
   {
     name: "React.js",
-    icon: "ReactJS",
+    icon: "reactjs",
     color: "",
     shadow: "bg-gradient-to-r from-[#019ae9] to-[#00dfd8]",
     category: "frameworks",
@@ -120,7 +120,7 @@ export const technologies = [
 
   {
     name: "Next.js",
-    icon: "NextJS",
+    icon: "nextjs",
     color: "",
     shadow: "bg-gradient-to-tr from-[#cbcccc] to-[#797979]",
     category: "frameworks",
@@ -128,7 +128,7 @@ export const technologies = [
 
   {
     name: "Tailwind",
-    icon: "Tailwind",
+    icon: "tailwind",
     color: "",
     shadow: "bg-gradient-to-r from-[#1fa3bc] to-[#13c9b7]",
     category: "frameworks",
@@ -136,7 +136,7 @@ export const technologies = [
 
   {
     name: "React Native",
-    icon: "ReactJS",
+    icon: "reactjs",
     color: "",
     shadow: "bg-gradient-to-r from-[#019ae9] to-[#00dfd8]",
     category: "frameworks",
@@ -144,7 +144,7 @@ export const technologies = [
 
   {
     name: "Node.js",
-    icon: "Node",
+    icon: "node",
     color: "",
     shadow: "bg-gradient-to-r from-[#63975e] to-[#7cc327]",
     category: "frameworks",
@@ -152,7 +152,7 @@ export const technologies = [
 
   {
     name: "Express.js",
-    icon: "ExpressJS",
+    icon: "expressjs",
     color: "text-black dark:text-white",
     shadow: "bg-gradient-to-r from-[#f7df1e] to-[#c3b017]",
     category: "frameworks",
@@ -160,7 +160,7 @@ export const technologies = [
 
   {
     name: "Astro",
-    icon: "Astro",
+    icon: "astro",
     color: "",
     shadow: "bg-gradient-to-r from-[#ffffff] to-[#f05d09]",
     category: "frameworks",
@@ -168,7 +168,7 @@ export const technologies = [
 
   {
     name: "AWS",
-    icon: "AWS",
+    icon: "aws",
     color: "",
     shadow: "bg-gradient-to-tr from-[#cbcccc] to-[#797979]",
     category: "hosting",
@@ -184,7 +184,7 @@ export const technologies = [
 
   {
     name: "Vercel",
-    icon: "Vercel",
+    icon: "vercel",
     color: "",
     shadow: "",
     category: "hosting",
@@ -200,7 +200,7 @@ export const technologies = [
 
   {
     name: "Docker",
-    icon: "Docker",
+    icon: "docker",
     color: "",
     shadow: "bg-gradient-to-r from-[#019ae9] to-[#00dfd8]",
     category: "tools",
@@ -208,7 +208,7 @@ export const technologies = [
 
   {
     name: "Redux",
-    icon: "Redux",
+    icon: "redux",
     color: "",
     shadow: "bg-gradient-to-tr from-violet-300 to-purple-300",
     category: "tools",
@@ -216,7 +216,7 @@ export const technologies = [
 
   {
     name: "Tanstack Query",
-    icon: "Tanstack",
+    icon: "tanstack",
     color: "",
     shadow: "bg-gradient-to-br from-red-400 to-yellow-700",
     category: "tools",
@@ -224,7 +224,7 @@ export const technologies = [
 
   {
     name: "Prisma",
-    icon: "Prisma",
+    icon: "prisma",
     color: "",
     shadow: "bg-gradient-to-tr from-[#cbcccc] to-[#797979]",
     category: "tools",
@@ -232,7 +232,7 @@ export const technologies = [
 
   {
     name: "Drizzle",
-    icon: "Drizzle",
+    icon: "drizzle",
     color: "text-lime-300",
     shadow: "bg-gradient-to-tr from-green-400 to-lime-300",
     category: "tools",
@@ -240,7 +240,7 @@ export const technologies = [
 
   {
     name: "GraphQL",
-    icon: "GraphQL",
+    icon: "graphql",
     color: "",
     shadow: "bg-gradient-to-tr from-[#7928ca] to-[#ff0080]",
     category: "tools",

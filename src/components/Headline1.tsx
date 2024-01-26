@@ -1,6 +1,11 @@
 import { cn } from "@/lib/utils"
 
-export function Headline1({ children, className }) {
+interface Headline1Props {
+  children: React.ReactNode
+  className?: string
+}
+
+export function Headline1({ children, className }: Headline1Props) {
   return (
     <h1
       className={cn(

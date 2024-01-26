@@ -23,7 +23,7 @@ export function Projects() {
       <a
         href="/projects"
         aria-hidden="true"
-        className="group relative z-10 mt-4 flex cursor-pointer items-center text-sm font-medium text-teal-500"
+        className="group relative z-10 mt-4 flex cursor-pointer items-center text-sm font-medium text-sky-500"
       >
         See All Projects
         <ChevronRight className="h-4 w-4 transition-transform will-change-transform group-hover:translate-x-2" />

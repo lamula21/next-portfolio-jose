@@ -9,10 +9,16 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { DynamicToolTip } from "@/components/hero/DynamicTooltip"
 import { ContactList } from "@/components/hero/ContactList"
 import { VerifiedIcon } from "../icons"
+import { cn } from "@/lib/utils"
 
-export function Profile() {
+export function Profile({ className }) {
   return (
-    <div className="flex w-full flex-col items-center gap-8 lg:flex-row lg:justify-start ">
+    <div
+      className={cn(
+        "flex w-full flex-col items-center gap-8 md:flex-row md:justify-start ",
+        className,
+      )}
+    >
       {/* Avatar */}
       <motion.div
         variants={textVariant(2)}
@@ -26,7 +32,7 @@ export function Profile() {
         <DynamicToolTip />
       </motion.div>
 
-      <div className="flex h-full w-full flex-col items-center gap-3 lg:min-w-[350px] lg:items-start">
+      <div className="flex h-full w-full flex-col items-center gap-3 md:min-w-[350px] md:items-start">
         <h2 className="flex items-center text-3xl font-extrabold">
           Jose Valdivia
           <VerifiedIcon className="ml-2 inline-flex text-[#1D9BF0]" />

@@ -18,12 +18,22 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        "geist-mono": ["var(--font-geist-mono)"],
+        "geist-sans": ["var(--font-geist-sans)"],
+      },
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        mdx: {
+          text: "hsl(var(--mdx-text))",
+          primary: "hsl(var( --mdx-primary))",
+          marker: "hsl(var(--mdx-marker))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -338,11 +348,13 @@ module.exports = {
         950: "950px",
         1000: "1000px",
         1140: "1140px",
+        1160: "1160px",
         1250: "1250px",
         1260: "1260px",
         1280: "1280px",
         1296: "1296px",
         1300: "1300px",
+        1350: "1350px",
         1660: "1660px",
       },
 
@@ -385,6 +397,7 @@ module.exports = {
       },
     },
   },
+
   plugins: [
     require("tailwindcss-animate"),
     require("tailwindcss"),

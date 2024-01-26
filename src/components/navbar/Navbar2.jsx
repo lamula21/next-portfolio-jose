@@ -1,14 +1,14 @@
 "use client"
 
-import { motion } from "framer-motion"
-import Link from "next/link"
 import profile from "@public/profile.png"
-import Image from "next/image"
-
+import { motion } from "framer-motion"
 import { links_navigation } from "@/data/config"
 import { cn } from "@/lib/utils"
-import { useActiveSectionStore } from "@/store/activeSession"
 import { ChevronUp } from "lucide-react"
+import { useActiveSectionStore } from "@/store/activeSession"
+
+import Link from "next/link"
+import Image from "next/image"
 import { Logo } from "../hero/Logo"
 import { Avatar, AvatarFallback } from "../ui/avatar"
 import { Section } from "../Section"
@@ -20,7 +20,13 @@ export function Navbar2() {
   return (
     <Section className="z-50 mt-6 block h-auto w-full">
       <header className="flex w-full items-center justify-between">
-        <Link href="/">
+        <Link
+          href="/"
+          onClick={() => {
+            setActiveSection(null)
+            setTimeOfLastClick(Date.now())
+          }}
+        >
           <Avatar className="m-1 h-9 w-9">
             <Image
               src={profile}
@@ -40,7 +46,7 @@ export function Navbar2() {
               >
                 <Link
                   className={cn(
-                    "flex w-full animate-slowfade cursor-pointer items-center justify-center p-3 text-sm text-black transition hover:text-black dark:text-gray-300 dark:hover:text-gray-50",
+                    "flex w-full cursor-pointer items-center justify-center p-3 text-sm text-black transition hover:text-black dark:text-gray-300 dark:hover:text-gray-50",
                     activeSection === link.name &&
                       "text-gray-950 dark:text-gray-200",
                   )}
@@ -66,8 +72,8 @@ export function Navbar2() {
                       stiffness: 380,
                       damping: 70,
                     }}
-                    className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"
-                  ></motion.span>
+                    className="absolute -inset-x-2 -bottom-px h-[2px] bg-gradient-to-r from-sky-500/0 via-sky-500/40 to-sky-500/0 dark:from-sky-400/0 dark:via-sky-400/40 dark:to-sky-400/0"
+                  />
                 )}
               </li>
             ))}

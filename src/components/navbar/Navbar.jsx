@@ -40,7 +40,7 @@ export function Navbar() {
               >
                 <Link
                   className={cn(
-                    "flex w-full animate-slowfade cursor-pointer items-center justify-center p-3 text-sm text-black transition hover:text-black dark:text-gray-300 dark:hover:text-gray-50",
+                    "flex w-full cursor-pointer items-center justify-center p-3 text-sm text-black transition hover:text-black dark:text-gray-300 dark:hover:text-gray-50",
                     activeSection === link.name &&
                       "text-gray-950 dark:text-gray-200",
                   )}
@@ -78,7 +78,7 @@ export function Navbar() {
                       stiffness: 380,
                       damping: 70,
                     }}
-                    className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0"
+                    className="absolute -inset-x-2 -bottom-px h-[2px] bg-gradient-to-r from-sky-500/0 via-sky-500/40 to-sky-500/0 dark:from-sky-400/0 dark:via-sky-400/40 dark:to-sky-400/0"
                   ></motion.span>
                 )}
               </li>

@@ -12,8 +12,8 @@ export function Skills() {
     <Section id="skills" className="mt-40">
       <header className="max-w-2xl space-y-5">
         <Headline1 className="text-pretty sm:font-semibold">
-          Some of the <span className="text-teal-500">Technologies</span> I use
-          Regularly and <span className="text-teal-500">Love</span> Working With
+          Some of the <span className="text-blue-500">Technologies</span> I use
+          Regularly and <span className="text-blue-500">Love</span> Working With
           🚀
         </Headline1>
 
@@ -26,7 +26,7 @@ export function Skills() {
       <div className="relative mt-16 sm:mt-20 md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
         {/* BORDER LEFT */}
         <div className="top-50 absolute left-[-1px] h-full">
-          <div className="sticky left-0 top-[37%] h-[150px] w-[1px] rounded-full bg-gradient-to-b from-[rgba(17,17,17,0)] via-teal-500 to-[rgba(17,17,17,0)] transition-all" />
+          <div className="sticky left-0 top-[37%] h-[150px] w-[1px] rounded-full bg-gradient-to-b from-[rgba(17,17,17,0)] via-sky-500 to-[rgba(17,17,17,0)] transition-all" />
         </div>
 
         <div className="flex max-w-5xl flex-col gap-y-10">
