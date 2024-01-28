@@ -16,7 +16,7 @@ export function Section({
   children,
   sectionId,
   className,
-  footer,
+  footer = false,
   navigation,
   id,
 }: SectionProps) {

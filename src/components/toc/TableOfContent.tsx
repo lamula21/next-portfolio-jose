@@ -33,7 +33,9 @@ export function TableOfContent({ toc }: TocProps) {
 
   return mounted ? (
     <div className="space-y-2">
-      <p className="font-medium">On This Page</p>
+      <p className="border-b-2 border-zinc-700/40  pb-2 font-medium">
+        Table of Content
+      </p>
       <Tree tree={toc} activeItem={activeHeading} />
     </div>
   ) : null

@@ -37,7 +37,10 @@ export default function ProjectsPage() {
               const Icon = DEVICONS[each.icon]
 
               return (
-                <li className="mt-4 flex first:mt-0 last:mt-8 last:border-t last:border-zinc-100 last:pt-8 dark:last:border-zinc-700/40">
+                <li
+                  className="mt-4 flex first:mt-0 last:mt-8 last:border-t last:border-zinc-100 last:pt-8 dark:last:border-zinc-700/40"
+                  key={index}
+                >
                   {ABOUT.follow.length - 1 === index ? (
                     <CopyButton className="group flex justify-normal bg-transparent text-sm font-medium text-zinc-800 transition hover:bg-transparent hover:text-sky-500 dark:text-zinc-200 dark:hover:text-sky-500">
                       <Icon className="h-6 w-6 flex-none fill-zinc-500 text-zinc-500 transition group-hover:fill-sky-500" />
@@ -64,8 +67,8 @@ export default function ProjectsPage() {
             {ABOUT.title}
           </h1>
           <div className="mt-6 space-y-7 text-base leading-7 text-zinc-600 dark:text-zinc-400">
-            {ABOUT.p.map((paragraph) => (
-              <p>{paragraph}</p>
+            {ABOUT.p.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
             ))}
           </div>
         </div>

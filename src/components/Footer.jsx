@@ -9,7 +9,7 @@ export function Footer() {
   const Icon = DEVICONS[tag.icon]
 
   return (
-    <Section className="mt-10 pt-6" footer>
+    <Section className="mt-10 pt-6" footer={true}>
       <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
         <ul className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-normal text-zinc-800 dark:text-zinc-200">
           <li>

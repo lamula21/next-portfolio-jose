@@ -38,3 +38,7 @@ ol li {
 ul li {
   @apply dark:marker:text-white;
 }
+
+/* p:has(+ ul) {
+  @apply !my-0;
+} */

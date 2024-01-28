@@ -63,11 +63,14 @@ export function BlogCard({
 
           {/* badges */}
           <div className="flex h-6 w-full flex-wrap gap-1 overflow-y-hidden">
-            {tags.map((tag) => {
+            {tags.map((tag, index) => {
               const tagInfo = TAGS[tag.toUpperCase()]
               const Icon = DEVICONS[tagInfo.icon]
               return (
-                <Badge className={tagInfo.class}>
+                <Badge
+                  className={tagInfo.class}
+                  key={`${tagInfo.class}-${index}`}
+                >
                   <Icon className="h-4 w-4" />
                   {tagInfo.name}
                 </Badge>

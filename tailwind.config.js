@@ -31,7 +31,7 @@ module.exports = {
         foreground: "hsl(var(--foreground))",
         mdx: {
           text: "hsl(var(--mdx-text))",
-          primary: "hsl(var( --mdx-primary))",
+          primary: "hsl(var(--mdx-primary))",
           marker: "hsl(var(--mdx-marker))",
         },
         primary: {

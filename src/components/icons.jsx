@@ -1,5 +1,53 @@
 import { cn } from "@/lib/utils"
 
+export const WarningIcon = ({ className, ...props }) => (
+  <svg
+    className={className}
+    {...props}
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    strokeWidth={2}
+    stroke="currentColor"
+    fill="none"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+    <path
+      d="M12 1.67c.955 0 1.845 .467 2.39 1.247l.105 .16l8.114 13.548a2.914 2.914 0 0 1 -2.307 4.363l-.195 .008h-16.225a2.914 2.914 0 0 1 -2.582 -4.2l.099 -.185l8.11 -13.538a2.914 2.914 0 0 1 2.491 -1.403zm.01 13.33l-.127 .007a1 1 0 0 0 0 1.986l.117 .007l.127 -.007a1 1 0 0 0 0 -1.986l-.117 -.007zm-.01 -7a1 1 0 0 0 -.993 .883l-.007 .117v4l.007 .117a1 1 0 0 0 1.986 0l.007 -.117v-4l-.007 -.117a1 1 0 0 0 -.993 -.883z"
+      strokeWidth={0}
+      fill="currentColor"
+    />
+  </svg>
+)
+
+export const InfoIcon = ({ className, ...props }) => (
+  <svg className={className} {...props} fill="currentColor" viewBox="0 0 20 20">
+    <path
+      clipRule="evenodd"
+      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z"
+      fillRule="evenodd"
+    />
+  </svg>
+)
+
+export const DangerIcon = ({ className, ...props }) => (
+  <svg
+    className={className}
+    {...props}
+    aria-hidden="true"
+    fill="currentColor"
+    viewBox="0 0 20 20"
+  >
+    <path
+      clipRule="evenodd"
+      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z"
+      fillRule="evenodd"
+    />
+  </svg>
+)
+
 export const ArrowIcon = ({ className, ...props }) => (
   <svg
     aria-hidden="true"
@@ -395,7 +443,7 @@ export const CodeIcon = (props) => {
   )
 }
 
-export const js = ({ className, ...props }) => {
+export const javascript = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1372,7 +1420,7 @@ export const graphql = ({ className, ...props }) => {
 }
 
 export const DEVICONS = {
-  js,
+  javascript,
   css,
   rust,
   ocaml,
@@ -1408,4 +1456,60 @@ export const DEVICONS = {
   LinkedInIcon,
   MailFilledIcon,
   LinkedInFilledIcon,
+  GithubIcon,
+  bash: ({ className, ...props }) => (
+    <svg
+      className={className}
+      {...props}
+      width={24}
+      height={24}
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      fill="none"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M5 7l5 5l-5 5" />
+      <path d="M12 19l7 0" />
+    </svg>
+  ),
+
+  json: ({ className, ...props }) => (
+    <svg
+      className={className}
+      {...props}
+      width="1em"
+      height="1em"
+      viewBox="0 0 32 32"
+    >
+      <path
+        fill="#f5de19"
+        d="M4.014 14.976a2.51 2.51 0 0 0 1.567-.518a2.377 2.377 0 0 0 .805-1.358a15.261 15.261 0 0 0 .214-2.944q.012-2.085.075-2.747a5.236 5.236 0 0 1 .418-1.686a3.025 3.025 0 0 1 .755-1.018A3.046 3.046 0 0 1 9 4.125A6.762 6.762 0 0 1 10.544 4h.7v1.96h-.387a2.338 2.338 0 0 0-1.723.468a3.4 3.4 0 0 0-.425 2.092a36.054 36.054 0 0 1-.137 4.133a4.734 4.734 0 0 1-.768 2.06A4.567 4.567 0 0 1 6.1 16a3.809 3.809 0 0 1 1.992 1.754a8.861 8.861 0 0 1 .618 3.865q0 2.435.05 2.9a1.755 1.755 0 0 0 .504 1.181a2.639 2.639 0 0 0 1.592.337h.387V28h-.7a5.655 5.655 0 0 1-1.773-.2a2.97 2.97 0 0 1-1.324-.93a3.353 3.353 0 0 1-.681-1.63a24.175 24.175 0 0 1-.165-3.234a16.469 16.469 0 0 0-.214-3.106a2.408 2.408 0 0 0-.805-1.361a2.489 2.489 0 0 0-1.567-.524Zm23.972 2.035a2.489 2.489 0 0 0-1.567.524a2.408 2.408 0 0 0-.805 1.361a16.469 16.469 0 0 0-.212 3.109a24.175 24.175 0 0 1-.169 3.234a3.353 3.353 0 0 1-.681 1.63a2.97 2.97 0 0 1-1.324.93a5.655 5.655 0 0 1-1.773.2h-.7V26.04h.387a2.639 2.639 0 0 0 1.592-.337a1.755 1.755 0 0 0 .506-1.186q.05-.462.05-2.9a8.861 8.861 0 0 1 .618-3.865A3.809 3.809 0 0 1 25.9 16a4.567 4.567 0 0 1-1.7-1.286a4.734 4.734 0 0 1-.768-2.06a36.054 36.054 0 0 1-.137-4.133a3.4 3.4 0 0 0-.425-2.092a2.338 2.338 0 0 0-1.723-.468h-.387V4h.7a6.762 6.762 0 0 1 1.54.125a3.046 3.046 0 0 1 1.149.581a3.025 3.025 0 0 1 .755 1.018a5.236 5.236 0 0 1 .418 1.686q.062.662.075 2.747a15.261 15.261 0 0 0 .212 2.947a2.377 2.377 0 0 0 .805 1.355a2.51 2.51 0 0 0 1.567.518Z"
+      />
+    </svg>
+  ),
+
+  html: ({ className, ...props }) => (
+    <svg
+      className={className}
+      {...props}
+      width="1em"
+      height="1em"
+      viewBox="0 0 256 256"
+    >
+      <g fill="none">
+        <rect width="256" height="256" fill="#E14E1D" rx="60" />
+        <path
+          fill="#fff"
+          d="m48 38l8.61 96.593h110.71l-3.715 41.43l-35.646 9.638l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l65.51-18.172l8.783-98.061H85.824l-2.923-32.71h122.238L208 38z"
+        />
+        <path
+          fill="#EBEBEB"
+          d="M128 38H48l8.61 96.593H128v-31.938H85.824l-2.923-32.71H128zm0 147.647l-.041.014l-35.579-9.624l-2.379-26.602H57.94l4.585 51.281l65.427 18.172l.049-.014z"
+        />
+      </g>
+    </svg>
+  ),
 }

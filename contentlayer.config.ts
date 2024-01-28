@@ -1,4 +1,8 @@
-import { defineDocumentType, makeSource } from "contentlayer/source-files"
+import {
+  defineDocumentType,
+  defineNestedType,
+  makeSource,
+} from "contentlayer/source-files"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import rehypePrettyCode from "rehype-pretty-code"
 import rehypeSlug from "rehype-slug"
@@ -6,6 +10,7 @@ import remarkGfm from "remark-gfm"
 // import { codeImport } from "remark-code-import"
 import { preProcess } from "./src/lib/rehype-code-props"
 
+/********************** Extraction  **********************/
 const computedFields: import("contentlayer/source-files").ComputedFields = {
   slug: {
     type: "string",
@@ -17,6 +22,7 @@ const computedFields: import("contentlayer/source-files").ComputedFields = {
   },
 }
 
+/********************** Documents  **********************/
 const Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: `b/**/*.mdx`,
@@ -76,6 +82,54 @@ const Post = defineDocumentType(() => ({
   computedFields,
 }))
 
+const Doc = defineDocumentType(() => ({
+  name: "Doc",
+  filePathPattern: `c/**/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      description: "The title of the course",
+      required: true,
+    },
+    category: {
+      type: "string",
+      description: "The category of the course",
+      required: true,
+    },
+    breadcrumbs: {
+      type: "list",
+      of: { type: "string" },
+      description: "The breadcrumbs for the course",
+      required: true,
+    },
+    description: {
+      type: "string",
+      description: "The description of the course",
+      required: true,
+    },
+
+    date: {
+      type: "date",
+      description: "The date of the course",
+    },
+    image: {
+      type: "string",
+      description: "The image of the course",
+    },
+    published: {
+      type: "boolean",
+      default: true,
+    },
+    authors: {
+      type: "list",
+      of: { type: "string" },
+      description: "The author of the course",
+    },
+  },
+  computedFields,
+}))
+
 const rehypeOptions = {
   theme: "github-dark",
   onVisitLine(node) {
@@ -101,7 +155,7 @@ const rehypeOptions = {
 
 export default makeSource({
   contentDirPath: "./content",
-  documentTypes: [Post],
+  documentTypes: [Post, Doc],
   mdx: {
     remarkPlugins: [remarkGfm],
 

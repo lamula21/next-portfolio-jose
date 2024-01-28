@@ -15,7 +15,7 @@ const components = {
   h1: ({ className, ...props }) => (
     <h1
       className={cn(
-        "group mb-[1rem] mt-[8rem] scroll-m-20 border-b pb-2 text-4xl font-bold tracking-tight text-mdx-marker",
+        "group mb-[1rem] mt-[8rem] scroll-m-20 border-b pb-2 text-4xl font-bold tracking-tight text-white md:text-5xl",
         className,
       )}
       {...props}
@@ -24,7 +24,7 @@ const components = {
   h2: ({ className, ...props }) => (
     <h2
       className={cn(
-        "dark:text-teal-00 group mb-[1rem] mt-[5rem] scroll-m-20  border-b pb-2 text-3xl font-bold tracking-tight text-mdx-marker md:text-4xl",
+        "dark:text-teal-00 group mb-[1rem] mt-[5rem] scroll-m-20  border-b pb-2 text-3xl font-bold tracking-tight text-mdx-marker md:text-4xl dark:[&>a>span>svg]:text-mdx-marker",
         className,
       )}
       {...props}
@@ -33,7 +33,7 @@ const components = {
   h3: ({ className, ...props }) => (
     <h3
       className={cn(
-        "group mt-8 scroll-m-20 text-2xl font-semibold tracking-tight",
+        "group mt-8 scroll-m-20 text-2xl font-semibold tracking-tight dark:[&>a>span>svg]:text-white",
         className,
       )}
       {...props}
@@ -83,17 +83,15 @@ const components = {
     return (
       <span className={className} {...props}>
         {isHeadline && (
-          <Link className="absolute bottom-0 left-0 top-0 my-auto flex h-6 w-6 translate-x-[-150%] items-center justify-center text-mdx-marker opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100" />
+          <Link className="absolute bottom-0 left-0 top-0 my-auto flex h-6 w-6 translate-x-[-150%] items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100" />
         )}
         {children}
       </span>
     )
   },
-
   strong: ({ className, ...props }) => (
     <strong className={cn("font-bold dark:text-white", className)} {...props} />
   ),
-
   p: ({ className, ...props }) => (
     <p
       className={cn(
@@ -103,18 +101,26 @@ const components = {
       {...props}
     />
   ),
+
   ul: ({ className, ...props }) => (
-    <ul className={cn("my-6 ml-6 list-disc", className)} {...props} />
+    <ul className={cn("my-6 ml-6 list-disc space-y-2", className)} {...props} />
   ),
-  ol: ({ className, ...props }) => (
-    <ol className={cn("my-6 ml-6 list-decimal", className)} {...props} />
-  ),
-  li: ({ className, ...props }) => (
-    <li
-      className={cn("my-[1.5rem] pl-[.875rem] dark:text-mdx-text", className)}
-      {...props}
-    />
-  ),
+  ol: ({ className, ...props }) => {
+    return (
+      <ol
+        className={cn("my-6 ml-6 list-decimal space-y-3", className)}
+        {...props}
+      />
+    )
+  },
+  li: ({ className, ...props }) => {
+    return (
+      <li
+        className={cn("pl-[.875rem] dark:text-mdx-text", className)}
+        {...props}
+      />
+    )
+  },
   blockquote: ({ className, ...props }) => (
     <blockquote
       className={cn(
@@ -124,6 +130,7 @@ const components = {
       {...props}
     />
   ),
+
   img: ({
     className,
     alt,
@@ -132,22 +139,30 @@ const components = {
     // eslint-disable-next-line @next/next/no-img-element
     <img className={cn("rounded-2xl border", className)} alt={alt} {...props} />
   ),
+
   hr: ({ ...props }) => <hr className="my-4 md:my-8" {...props} />,
+
   table: ({ className, ...props }: React.HTMLAttributes<HTMLTableElement>) => (
-    <div className="my-6 w-full overflow-y-auto">
-      <table className={cn("w-full", className)} {...props} />
+    <div className="my-6 w-full overflow-y-auto rounded-2xl ">
+      <table
+        className={cn(
+          "w-full [&>tbody>tr]:border [&>tbody>tr]:border-zinc-100 dark:[&>tbody>tr]:border-zinc-700/40",
+          className,
+        )}
+        {...props}
+      />
     </div>
   ),
   tr: ({ className, ...props }: React.HTMLAttributes<HTMLTableRowElement>) => (
     <tr
-      className={cn("m-0 border-t p-0 even:bg-muted", className)}
+      className={cn("m-0   bg-[#18191b] p-0  [&>th]:bg-[#1f2123]", className)}
       {...props}
     />
   ),
   th: ({ className, ...props }) => (
     <th
       className={cn(
-        "border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right",
+        "px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right",
         className,
       )}
       {...props}
@@ -156,7 +171,7 @@ const components = {
   td: ({ className, ...props }) => (
     <td
       className={cn(
-        "border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
+        "px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right",
         className,
       )}
       {...props}
@@ -186,7 +201,6 @@ const components = {
       {children}
     </figure>
   ),
-
   pre: ({ className, children, ...props }) => {
     return (
       <pre className={cn("!bg-black", className)} {...props}>

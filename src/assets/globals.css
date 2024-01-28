@@ -64,7 +64,7 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
+    --border: 240 5% 26% / 0.4;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
@@ -90,6 +90,11 @@
 @layer utilities {
   .text-gradient-white {
     @apply bg-gradient-to-b from-[#fff] to-[rgba(255,255,255,.75)] bg-clip-text text-transparent;
+  }
+
+  .bg-\[url\(\'\/bg-luz\.webp\'\)\] {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
 }
 
