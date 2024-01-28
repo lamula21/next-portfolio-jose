@@ -12,8 +12,8 @@ export function UnderWorkPage() {
               This page is in progress
             </h2>
             <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
-              I'm working hard to bring you something amazing. Please check back
-              soon.
+              {` I'm working hard to bring you something amazing. Please check back
+              soon.`}
             </p>
           </div>
           <div className="mt-6 flex justify-center">
