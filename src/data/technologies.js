@@ -1,7 +1,7 @@
 export const technologies = [
   {
     name: "JavaScript",
-    icon: "js",
+    icon: "javascript",
     color: "",
     shadow: "bg-gradient-to-r from-[#f7df1e] to-[#c3b017]",
     category: "languages",

@@ -3,7 +3,7 @@ export const TAGS = {
     name: "JavaScript",
     class:
       "bg-yellow-100 text-yellow-800 font-medium dark:bg-yellow-900 dark:text-yellow-300 gap-1",
-    icon: "js",
+    icon: "javascript",
   },
   REACT: {
     name: "React",
