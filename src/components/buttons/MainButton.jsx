@@ -1,9 +1,10 @@
 import { cn } from "@/lib/utils"
 
-export function MainButton({ className, href, children, onClick }) {
+export function MainButton({ className, target, href, children, onClick }) {
   const Tag = href ? "a" : "button"
   return (
     <Tag
+      target={target}
       {...(href ? { href } : {})}
       onClick={onClick}
       className={cn(

@@ -4,7 +4,7 @@ import { DEVICONS } from "../icons"
 
 export function DocsMainNavRight() {
   return (
-    <div className="relative ml-auto hidden flex-1 items-center justify-end space-x-4 sm:justify-end lg:flex">
+    <div className="relative ml-auto flex shrink-0  items-center justify-end space-x-4 sm:flex-1 sm:justify-end">
       <nav className="flex space-x-4">
         <Link href={siteConfig.links.github} target="_blank" rel="noreferrer">
           <DEVICONS.GithubIcon className="h-7 w-7 text-white" />

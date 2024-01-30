@@ -18,7 +18,7 @@ export function DocsMainNavLeft({ items, children }: MainNavProps) {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
 
   return (
-    <div className="flex flex-1 gap-6 md:gap-10">
+    <div className="flex shrink-0 gap-6 sm:flex-1 md:gap-10">
       <Link href="/" className="hidden items-center space-x-2 md:flex">
         <span>📚</span>
         <span className="hidden font-bold sm:inline-block">

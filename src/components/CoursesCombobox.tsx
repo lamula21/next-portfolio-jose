@@ -14,6 +14,7 @@ import { DEVICONS } from "./icons"
 import Link from "next/link"
 import { useParams } from "next/navigation"
 import { useState } from "react"
+import { useRouter } from "next/navigation"
 
 interface CoursesComboboxProps {
   courses: Doc["breadcrumbs"]
@@ -21,17 +22,19 @@ interface CoursesComboboxProps {
 
 export function CoursesCombobox({ courses }: CoursesComboboxProps) {
   const params = useParams()
+  const [open, setOpen] = useState(false)
+  const router = useRouter()
 
   const I = DEVICONS[params.slug[0]]
 
   return (
-    <Popover>
+    <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button
           variant="outline"
           role="combobox"
           className={cn(
-            "mb-10 w-full max-w-[220px] justify-between bg-zinc-700/60 px-4 py-5 text-white",
+            "mb-10 w-full max-w-[220px] justify-between border-none px-4 py-5 text-white focus-visible:ring-blue-500 dark:bg-zinc-700/50  dark:hover:bg-zinc-800",
           )}
         >
           <div className="flex items-center gap-2">
@@ -44,24 +47,30 @@ export function CoursesCombobox({ courses }: CoursesComboboxProps) {
         </Button>
       </PopoverTrigger>
 
-      <PopoverContent className="w-[220px] p-0">
-        <Command>
+      <PopoverContent className="w-[220px] bg-black p-0">
+        <Command className="dark:bg-zinc-700/50">
           <CommandInput placeholder="Search language..." />
 
           <CommandEmpty>No language found.</CommandEmpty>
 
-          <CommandGroup className="">
+          <CommandGroup>
             {courses.map((course) => {
               const Icon = DEVICONS[course]
               return (
                 <CommandItem
                   value={course}
                   key={course}
-                  className="h-10 text-sm"
+                  className="h-10 text-sm  dark:hover:!bg-blue-700/60"
+                  onSelect={(currentValue) => {
+                    router.push(`/c/${currentValue}`)
+                    setOpen(false)
+                  }}
                 >
-                  <Link
-                    href={`/c/${course}`}
-                    className="flex w-full items-center justify-between"
+                  <div
+                    // maybe use target
+                    // "https://tailwindcss.com/docs/hover-focus-and-other-states#target"
+                    id={course}
+                    className="flex h-full w-full items-center justify-between focus:outline-transparent focus:ring-0"
                   >
                     <div className="flex items-center gap-2">
                       <Icon className={cn("mr-2 h-5 w-5")} />
@@ -74,7 +83,7 @@ export function CoursesCombobox({ courses }: CoursesComboboxProps) {
                         params.slug[0] === course ? "opacity-100" : "opacity-0",
                       )}
                     />
-                  </Link>
+                  </div>
                 </CommandItem>
               )
             })}

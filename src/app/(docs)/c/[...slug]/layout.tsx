@@ -16,7 +16,7 @@ export default function CoursesLayout({ children }: CoursesLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-40 w-full border-b bg-black">
-        <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
+        <div className="container flex h-16 w-full items-center gap-x-4 sm:justify-between sm:space-x-0">
           {/* left side */}
           <DocsMainNavLeft items={docsConfig.mainNav}>
             {/* TODO: add nav for small screens */}

@@ -31,11 +31,12 @@ export function CourseSearch() {
     <>
       <Button
         variant="outline"
-        className="pointer-events-auto relative flex w-full flex-none justify-between gap-2 rounded-md bg-background bg-white text-sm text-muted-foreground dark:bg-gray-900 sm:w-64 lg:w-64 xl:w-96"
+        className="group pointer-events-auto relative flex h-auto w-full flex-1 flex-grow justify-between gap-2 rounded-lg border-zinc-800 bg-background bg-white  py-1.5 text-sm  text-white/60 group-hover:text-white dark:bg-transparent dark:hover:bg-zinc-800 sm:w-64 md:w-auto md:flex-none lg:w-64 xl:w-96"
         onClick={() => setOpen(true)}
       >
-        Search{" "}
-        <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
+        {/* TODO: dynamic text */}
+        <span>Search courses...</span>
+        <kbd className="pointer-events-none ml-0 inline-flex h-5 select-none items-center gap-1 rounded px-1.5 font-mono text-[10px] font-medium  opacity-100 dark:bg-zinc-800 ">
           <span className="text-xs">⌘</span>J
         </kbd>
       </Button>

@@ -1,6 +1,5 @@
 import Image from "next/image"
 import Link from "next/link"
-import testImage from "@public/projects/react-test-55k.png"
 import { Post } from "contentlayer/generated"
 import { format, parseISO } from "date-fns"
 
@@ -39,7 +38,7 @@ export function BlogCard({
         }}
       >
         <Image
-          src={image || testImage}
+          src={image}
           width={300}
           height={300}
           className="aspect-video h-full w-full scale-100 rounded-2xl object-cover object-center group-hover:rounded-md"

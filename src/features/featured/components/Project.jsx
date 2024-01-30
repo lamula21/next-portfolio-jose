@@ -1,11 +1,11 @@
 "use client"
 
-import { useRef } from "react"
 import Image from "next/image"
+import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import { cn } from "@/lib/utils"
 
-import { DEVICONS, Github, Link } from "@/components/icons"
+import { DEVICONS, Github, LaptopIcon } from "@/components/icons"
 import { Badge } from "@/components/Badge"
 
 export function Project({
@@ -15,6 +15,8 @@ export function Project({
   imageUrl,
   type,
   spinClass,
+  url,
+  github,
 }) {
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({
@@ -45,7 +47,7 @@ export function Project({
           "group/overlay relative flex h-auto  overflow-hidden rounded-2xl border border-white/10 p-8 transition lg:h-[20rem]",
         )}
       >
-        <div className="z-10 flex h-full w-full flex-col sm:group-even:order-2 lg:justify-start">
+        <div className="z-10 flex h-full w-full flex-col sm:group-odd:order-2 lg:justify-start">
           <div className="flex items-center gap-3">
             <span className="ml-1.5 flex h-2 w-2 items-center justify-center ">
               <span
@@ -67,9 +69,17 @@ export function Project({
             </span>
           </div>
 
-          <h1 className="mt-4 text-2xl font-semibold  tracking-tight dark:text-zinc-100">
+          <div className="mt-4 flex gap-4 text-2xl font-semibold  tracking-tight dark:text-zinc-100">
             {title}
-          </h1>
+            <div className="flex items-center justify-center gap-2">
+              <a href={url} rel="nonreferrer" target="_blank">
+                <LaptopIcon className="h-6 w-6 text-white group-hover/icon:text-zinc-400" />
+              </a>
+              <a href={github} rel="nonreferrer" target="_blank">
+                <Github className="h-5 w-5 text-white" />
+              </a>
+            </div>
+          </div>
 
           <motion.p
             style={{
@@ -96,11 +106,10 @@ export function Project({
           </ul>
         </div>
 
-        <div className="z-20 hidden h-full w-[450px] flex-col gap-4 group-odd:justify-end sm:flex sm:flex-row">
+        <div className="invisible z-20 hidden h-full w-[450px] flex-col gap-4 group-odd:justify-end sm:flex sm:flex-row">
           <span className="group/icon relative z-40 h-6 w-6 group-odd:order-2">
-            <Link className="h-6 w-6 text-white group-hover/icon:text-zinc-400" />
+            <LaptopIcon className="h-6 w-6 text-white group-hover/icon:text-zinc-400" />
           </span>
-
           <span>
             <Github className="h-6 w-6 text-white" />
           </span>
@@ -110,15 +119,15 @@ export function Project({
           src={imageUrl}
           alt="Project I worked on"
           quality={95}
-          className="absolute -right-60 top-8 z-10 hidden w-[24.25rem] rounded-t-lg shadow-2xl transition group-even:-left-[14rem] group-even:right-[initial]
+          className="absolute -right-60 top-8 z-10 hidden w-[24.25rem] rounded-t-lg shadow-2xl transition group-odd:-left-[14rem] group-odd:right-[initial]
         group-hover:-translate-x-3 
         group-hover:translate-y-3
         group-hover:-rotate-2
         group-hover:scale-[1.04]
-        group-even:group-hover:translate-x-3
+        group-odd:group-hover:translate-x-3
 
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
+        group-odd:group-hover:translate-y-3
+        group-odd:group-hover:rotate-2
         sm:block
 
         lg:top-20 lg:w-[28.25rem]"

@@ -3,7 +3,7 @@
 import { DocsSidebarNavItems } from "./DocsSidebarNavItems"
 import { Doc } from "contentlayer/generated"
 import { groupBy } from "lodash"
-import { usePathname } from "next/navigation"
+import { useParams, usePathname } from "next/navigation"
 import { useMemo } from "react"
 import { Button } from "../ui/button"
 import { CoursesCombobox } from "../CoursesCombobox"
@@ -14,6 +14,7 @@ interface DocsSidebarNavProps {
 
 export function DocsSidebarNav({ docs }: DocsSidebarNavProps) {
   const pathname = usePathname()
+  const currentCourseFromParams = useParams().slug[0]
 
   // generate all unique courses from Docs
   const allCourses = docs.map((doc) => doc.breadcrumbs[1])
@@ -23,14 +24,20 @@ export function DocsSidebarNav({ docs }: DocsSidebarNavProps) {
   const categoryDocsKV = useMemo(
     () =>
       groupBy(
-        docs.filter((doc) => doc.category !== "index").sort(),
+        docs
+          .filter(
+            (doc) =>
+              doc.category !== "index" &&
+              currentCourseFromParams === doc.breadcrumbs[1],
+          )
+          .sort(),
         (doc) => doc.category,
       ),
-    [],
+    [currentCourseFromParams],
   )
 
   return (
-    <aside className="fixed top-14 z-30 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 overflow-y-auto border-r py-6 pr-2 md:sticky md:block lg:py-10">
+    <aside className="fixed top-14 z-30 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 overflow-y-auto border-r py-6 pl-1 pr-2 md:sticky md:block lg:py-10">
       <div className="w-full">
         <CoursesCombobox courses={uniqueCourses} />
 

@@ -16,6 +16,19 @@ export function UnderWorkPage() {
               soon.`}
             </p>
           </div>
+
+          <div className="ml-4 flex text-sm text-gray-600 dark:text-gray-400 ">
+            <ul>
+              <li>Quick Links:</li>
+              <li>
+                <Link href="/c/javascript">- Course Javascript</Link>
+              </li>
+              <li>
+                <Link href="/b">- Blogs</Link>
+              </li>
+            </ul>
+          </div>
+
           <div className="mt-6 flex justify-center">
             <Link
               href="/"

@@ -1,6 +1,7 @@
-import SqlCrud from "@public/projects/next-sql-crud.png"
-import Twitter from "@public/projects/next-twitter-supabase.png"
-import Quizlet from "@public/projects/react-zustand-quizlet.png"
+import dccoa from "@public/projects/dccoa.png"
+import SandBoxTv from "@public/projects/sandboxtv.png"
+import TerpNet from "@public/projects/terpnet.png"
+
 import { TAGS } from "./tags"
 
 export const projectsData = [
@@ -8,35 +9,35 @@ export const projectsData = [
     title: "DCCOA Dashboard",
     type: "Work Experience",
     description:
-      "Developed a Content Management System for DCCOA, leading a team of four interns.",
+      "Developed a Content Management System for DCCOA. Team leader of four interns.",
     spinClass: "bg-green-400",
     url: "https://trevotv.vercel.app/",
     github: "https://github.com/lamula21/next-streaming",
-    imageUrl: SqlCrud,
+    imageUrl: dccoa,
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MONGODB],
   },
 
   {
-    title: "Trevo.tv",
+    title: "TerpNet",
+    type: "Personal Project",
+    spinClass: "bg-purple-400",
+    description:
+      "Created a high-speed messaging app with real-time features using Next.js, Next Auth, and Redis, emphasizing security, privacy, and optimized performance.",
+    url: "https://terpnet.vercel.app/",
+    github: "https://github.com/lamula21/next-realtimechat-websocket",
+    imageUrl: TerpNet,
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MONGODB],
+  },
+
+  {
+    title: "SandBox.tv",
     type: "Personal Project",
     spinClass: "bg-purple-400",
     description:
       "A platform for watching +10k content creators' live streams on Twitch and YouTube simultaneously.",
-    url: "",
-    github: "",
-    imageUrl: Twitter,
-    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND],
-  },
-
-  {
-    title: "Javascript Quiz",
-    type: "Personal Project",
-    spinClass: "bg-purple-400",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est sit expedita cupiditate a, cumque vitae aspernatur debitis consectetur eaque facilis.",
-    url: "",
-    github: "",
-    imageUrl: Quizlet,
-    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MONGODB],
+    url: "https://sandboxtv.vercel.app",
+    github: "https://github.com/lamula21/next-streaming",
+    imageUrl: SandBoxTv,
+    tags: [TAGS.REACT, TAGS.NEXT, TAGS.TAILWIND, TAGS.TWITCH, TAGS.YOUTUBE],
   },
 ]

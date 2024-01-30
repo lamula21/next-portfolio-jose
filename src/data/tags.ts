@@ -1,4 +1,15 @@
 export const TAGS = {
+  YOUTUBE: {
+    name: "YouTube API",
+    class: "bg-red-100 text-red-600",
+    icon: "youtube",
+  },
+  TWITCH: {
+    name: "Twitch API",
+    class: "bg-purple-100 text-purple-600",
+    icon: "twitch",
+  },
+
   JAVASCRIPT: {
     name: "JavaScript",
     class:
