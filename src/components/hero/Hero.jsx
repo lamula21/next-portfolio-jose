@@ -5,7 +5,7 @@ import { Title } from "./Title"
 import { DynamicDescription } from "./DynamicDescription"
 import { ButtonList } from "./ButtonList"
 import { Reels } from "@/features/reels/Reels"
-import { stories } from "@/data/stories"
+import { reels } from "@/data/reels"
 import { Section } from "../Section"
 import { NavigationButton } from "./NavigationButton"
 
@@ -24,7 +24,7 @@ export async function Hero() {
 
       <ButtonList />
 
-      <Reels stories={stories} />
+      <Reels stories={reels} />
     </Section>
   )
 }

@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 import { Callout } from "@/components/mdx/Callout"
 import { MdxCard } from "@/components/mdx/MdxCard"
 import { CodeBlockHeader } from "./CodeBlockHeader"
-import { LaptopIcon } from "../icons"
+import { LinkIcon } from "../icons"
 
 /**
  * Override HTML elements and create own  MDX components
@@ -83,7 +83,7 @@ const components = {
     return (
       <span className={className} {...props}>
         {isHeadline && (
-          <LaptopIcon className="absolute bottom-0 left-0 top-0 my-auto flex h-6 w-6 translate-x-[-150%] items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100" />
+          <LinkIcon className="absolute bottom-0 left-0 top-0 my-auto flex h-6 w-6 translate-x-[-150%] items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100" />
         )}
         {children}
       </span>

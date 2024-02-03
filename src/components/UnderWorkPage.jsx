@@ -21,10 +21,10 @@ export function UnderWorkPage() {
             <ul>
               <li>Quick Links:</li>
               <li>
-                <Link href="/c/javascript">- Course Javascript</Link>
+                <Link href="/c/javascript" className="hover:underline">- Course Javascript</Link>
               </li>
               <li>
-                <Link href="/b">- Blogs</Link>
+                <Link href="/b" className="hover:underline">- Blogs</Link>
               </li>
             </ul>
           </div>

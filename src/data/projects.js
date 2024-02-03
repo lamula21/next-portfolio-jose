@@ -11,8 +11,8 @@ export const projectsData = [
     description:
       "Developed a Content Management System for DCCOA. Team leader of four interns.",
     spinClass: "bg-green-400",
-    url: "https://trevotv.vercel.app/",
-    github: "https://github.com/lamula21/next-streaming",
+    url: "https://dccoa.vercel.app/",
+    github: "",
     imageUrl: dccoa,
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MONGODB],
   },

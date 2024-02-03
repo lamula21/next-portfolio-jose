@@ -1,30 +1,3 @@
-export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
-  {
-    name: "More",
-    hash: "#more",
-  },
-]
-
 export const links_navigation = [
   {
     name: "About",
