@@ -79,7 +79,7 @@ export function BlogCard({
         </div>
 
         {/* right: comments + heart + views */}
-        <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
+        {/* <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400">
           <div className="flex shrink-0 gap-1">
             <EyeIcon className="h-4 w-4" />
             <span>{views}</span>
@@ -94,7 +94,7 @@ export function BlogCard({
             <Heart className="h-4 w-4" />
             <span>{likes}</span>
           </div>
-        </div>
+        </div> */}
       </header>
 
       {/* title */}
