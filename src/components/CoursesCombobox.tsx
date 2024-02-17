@@ -20,6 +20,8 @@ interface CoursesComboboxProps {
   courses: Doc["breadcrumbs"]
 }
 
+const coursesToUppercase = ["css", "html"]
+
 export function CoursesCombobox({ courses }: CoursesComboboxProps) {
   const params = useParams()
   const [open, setOpen] = useState(false)
@@ -74,7 +76,16 @@ export function CoursesCombobox({ courses }: CoursesComboboxProps) {
                   >
                     <div className="flex items-center gap-2">
                       <Icon className={cn("mr-2 h-5 w-5")} />
-                      <span className="capitalize">{course}</span>
+                      <span
+                        className={cn(
+                          "capitalize",
+                          coursesToUppercase.find((e) => course === e)
+                            ? "uppercase"
+                            : "",
+                        )}
+                      >
+                        {course}
+                      </span>
                     </div>
 
                     <Check

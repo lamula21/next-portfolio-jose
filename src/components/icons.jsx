@@ -908,7 +908,7 @@ export const tanstack = ({ className, ...props }) => {
   )
 }
 
-export const nextjs = ({ className, ...props }) => {
+export const next = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -950,7 +950,7 @@ export const nextjs = ({ className, ...props }) => {
   )
 }
 
-export const reactjs = ({ className, ...props }) => {
+export const react = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -968,7 +968,7 @@ export const reactjs = ({ className, ...props }) => {
   )
 }
 
-export const expressjs = ({ className, ...props }) => {
+export const express = ({ className, ...props }) => {
   return (
     <svg
       className={className}
@@ -1451,11 +1451,11 @@ export const DEVICONS = {
   planetscale,
   redis,
   mongodb,
-  reactjs,
-  nextjs,
+  react,
+  next,
   tailwind,
   node,
-  expressjs,
+  express,
   astro,
   aws,
   // Railway,
@@ -1559,6 +1559,86 @@ export const DEVICONS = {
           d="M12 4c.855 0 1.732.022 2.582.058l1.004.048l.961.057l.9.061l.822.064a3.802 3.802 0 0 1 3.494 3.423l.04.425l.075.91c.07.943.122 1.971.122 2.954c0 .983-.052 2.011-.122 2.954l-.075.91c-.013.146-.026.287-.04.425a3.802 3.802 0 0 1-3.495 3.423l-.82.063l-.9.062l-.962.057l-1.004.048A61.59 61.59 0 0 1 12 20a61.59 61.59 0 0 1-2.582-.058l-1.004-.048l-.961-.057l-.9-.062l-.822-.063a3.802 3.802 0 0 1-3.494-3.423l-.04-.425l-.075-.91A40.662 40.662 0 0 1 2 12c0-.983.052-2.011.122-2.954l.075-.91c.013-.146.026-.287.04-.425A3.802 3.802 0 0 1 5.73 4.288l.821-.064l.9-.061l.962-.057l1.004-.048A61.676 61.676 0 0 1 12 4m-2 5.575v4.85c0 .462.5.75.9.52l4.2-2.425a.6.6 0 0 0 0-1.04l-4.2-2.424a.6.6 0 0 0-.9.52Z"
         />
       </g>
+    </svg>
+  ),
+  nextauth: ({ className, ...props }) => (
+    <svg
+      className={className}
+      {...props}
+      fill="none"
+      height="20"
+      viewBox="0 0 20 20"
+      width="20"
+    >
+      <path
+        d="M3.71875 3.92972C5.62789 3.36733 8.45568 2.52411 9.64828 2.16812C10.0173 2.05797 10.4075 2.05711 10.7771 2.16533C11.926 2.50173 14.5984 3.28783 16.6648 3.92349C17.0828 4.05209 17.3679 4.44593 17.3575 4.88319C17.1188 14.9867 12.0196 17.4105 10.5842 17.8936C10.3388 17.9762 10.0837 17.9764 9.83802 17.8945C8.39567 17.4137 3.25421 14.9951 3.00907 4.89714C2.9983 4.45317 3.29276 4.05521 3.71875 3.92972Z"
+        fill="#D9D9D9"
+      />
+      <mask
+        height="16"
+        id="mask0_156_252"
+        maskUnits="userSpaceOnUse"
+        style={{
+          maskType: "alpha",
+        }}
+        width="15"
+        x="3"
+        y="2"
+      >
+        <path
+          d="M3.71875 3.92972C5.62789 3.36733 8.45568 2.52411 9.64828 2.16812C10.0173 2.05797 10.4075 2.05711 10.7771 2.16533C11.926 2.50173 14.5984 3.28783 16.6648 3.92349C17.0828 4.05209 17.3679 4.44593 17.3575 4.88319C17.1188 14.9867 12.0196 17.4105 10.5842 17.8936C10.3388 17.9762 10.0837 17.9764 9.83802 17.8945C8.39567 17.4137 3.25421 14.9951 3.00907 4.89714C2.9983 4.45317 3.29276 4.05521 3.71875 3.92972Z"
+          fill="#D9D9D9"
+        />
+      </mask>
+      <g mask="url(#mask0_156_252)">
+        <path
+          d="M10.2112 9.77465L10.0986 1.71831L17.8169 3.80282L10.2112 9.77465Z"
+          fill="url(#paint0_linear_156_252)"
+        />
+        <path
+          d="M10.2113 9.77465V2L2.83098 3.97183L1.81689 8.76056L5.02816 13.7746L10.2113 9.77465Z"
+          fill="url(#paint1_linear_156_252)"
+        />
+        <path
+          d="M17.5915 3.97183L4.91547 13.7746V18.2254H17.4225L17.5915 3.97183Z"
+          fill="url(#paint2_linear_156_252)"
+        />
+      </g>
+      <defs>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="paint0_linear_156_252"
+          x1="10.2112"
+          x2="15.6197"
+          y1="2"
+          y2="5.5493"
+        >
+          <stop stopColor="#19AAE8" />
+          <stop offset="1" stopColor="#1EA5F1" />
+        </linearGradient>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="paint1_linear_156_252"
+          x1="3.05633"
+          x2="10.2113"
+          y1="4.14085"
+          y2="9.66197"
+        >
+          <stop stopColor="#2BE2B8" />
+          <stop offset="1" stopColor="#19B9E3" />
+        </linearGradient>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="paint2_linear_156_252"
+          x1="17.3098"
+          x2="7.95772"
+          y1="4.02817"
+          y2="16.9859"
+        >
+          <stop stopColor="#925CDF" />
+          <stop offset="1" stopColor="#CC42E5" />
+        </linearGradient>
+      </defs>
     </svg>
   ),
 }

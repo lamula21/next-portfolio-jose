@@ -16,7 +16,7 @@ description: All about Node.js
 
 Example:
 
-```javascript
+```bash
 npm i express
 ```
 
@@ -39,6 +39,7 @@ npm init
 
 To installl all dependencies of the project (**node_modules**)
 - Basically means install all the libraries with their specific version that this project uses
+
 ```bash
 npm i
 ```
@@ -47,7 +48,7 @@ npm i
 - If you want to run your project, already set up. We can use the next command:
 
 ```bash
-node <mainJSFile>.js
+node main-js-file.js
 ```
 *Note: usually called index.js or other name but must have the app.listen(PORT) in it. We will discuss how to set the PORT later*
 
@@ -65,7 +66,7 @@ npm i nodemon
 
 Once installed, add these lines to the **"package.json"** $\rightarrow$ **"scripts"**
 
-```javascripton
+```javascript
 ...
 "scripts" : {
   //"dev": "nodemon index.js",
@@ -87,11 +88,12 @@ To fix this:
 - Create in root directory: `nodemon.json`
 - Add a JSON
 
-```javascripton
+```javascript
 {
   "ext": "js,json,ejs,hbs, <otherFileExtensions>"
 }
 ```
+
 - Restart server to take effect: `Ctrl+C` then `npm run start`
 
 <Callout title="Deprecrated">
@@ -103,6 +105,7 @@ This feature is now deprecrated since Node.js v18.11.0 introduced the `--watch` 
 We usually run our project on a server. For example, Live Server uses PORT 3000 so we can view our project on `localhost:3000`.
 
 In NodeJS, we must set up manually. In index.js:
+
 ```javascript
 const express = require('express')
 const app = express()

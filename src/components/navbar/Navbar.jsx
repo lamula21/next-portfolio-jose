@@ -43,6 +43,7 @@ export function Navbar() {
                     "flex w-full cursor-pointer items-center justify-center p-3 text-sm text-black transition hover:text-black dark:text-gray-300 dark:hover:text-gray-50",
                     activeSection === link.name &&
                       "text-gray-950 dark:text-gray-200",
+                    link.name === "More" && "pointer-events-none opacity-50",
                   )}
                   href={link.src}
                   onClick={() => {

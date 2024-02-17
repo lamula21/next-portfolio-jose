@@ -85,8 +85,12 @@ export default async function DocPage({ params }: DocPageProps) {
   const toc = await getTableOfContents(doc.body.raw)
 
   return (
-    <main className="relative py-6  lg:gap-10 lg:py-10 xl:grid xl:grid-cols-[1fr_300px]">
-      <div className="pointer-events-none fixed left-[275px] top-7 z-10 h-[150px] w-[100%] select-none bg-[linear-gradient(to_top,transparent,#000000)] blur-sm will-change-transform [mask-image:linear-gradient(to_bottom,transparent,white_20%,white_80%,transparent)] xl:w-[53%]" />
+    // overflow-hidden??
+    <main className="relative max-w-full overflow-hidden py-6  lg:gap-10 lg:py-10 xl:grid xl:grid-cols-[1fr_300px] xl:overflow-visible">
+      <div
+        id="scroll-shadow"
+        className="pointer-events-none fixed left-[275px] top-7 z-10 h-[100px] w-[100%] select-none bg-[linear-gradient(to_top,transparent,#000000)] blur-sm will-change-transform [mask-image:linear-gradient(to_bottom,transparent,white_20%,white_80%,transparent)] xl:w-[53%]"
+      />
 
       <div className="relative mx-auto w-full min-w-0">
         <DocsPageHeader heading={doc.title} text={doc.description} />

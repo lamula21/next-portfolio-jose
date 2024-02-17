@@ -16,7 +16,7 @@ export function Work() {
       <ol className="mt-6 space-y-4">
         {experiencesData.map((experience, index) => (
           <li className="flex gap-4" key={index}>
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:ring-0">
+            <div className="relative flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:ring-0">
               <img
                 alt=""
                 className="h-7 w-7 rounded-full"

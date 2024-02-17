@@ -19,13 +19,13 @@ export const TAGS = {
   REACT: {
     name: "React",
     class: "bg-white text-black",
-    icon: "reactjs",
+    icon: "react",
   },
 
   NEXT: {
     name: "Next.js",
     class: "bg-black text-white font-medium",
-    icon: "nextjs",
+    icon: "next",
   },
 
   TAILWIND: {
@@ -56,4 +56,9 @@ export const TAGS = {
     class: "bg-blue-100 text-blue-900",
     icon: "prisma",
   },
-}
+  NEXTAUTH: {
+    name: "NextAuth.js",
+    class: "bg-white text-black",
+    icon: "nextauth",
+  },
+} as const

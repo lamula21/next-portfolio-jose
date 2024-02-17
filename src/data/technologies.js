@@ -112,7 +112,7 @@ export const technologies = [
 
   {
     name: "React.js",
-    icon: "reactjs",
+    icon: "react",
     color: "",
     shadow: "bg-gradient-to-r from-[#019ae9] to-[#00dfd8]",
     category: "frameworks",
@@ -120,7 +120,7 @@ export const technologies = [
 
   {
     name: "Next.js",
-    icon: "nextjs",
+    icon: "next",
     color: "",
     shadow: "bg-gradient-to-tr from-[#cbcccc] to-[#797979]",
     category: "frameworks",
@@ -136,7 +136,7 @@ export const technologies = [
 
   {
     name: "React Native",
-    icon: "reactjs",
+    icon: "react",
     color: "",
     shadow: "bg-gradient-to-r from-[#019ae9] to-[#00dfd8]",
     category: "frameworks",
@@ -152,7 +152,7 @@ export const technologies = [
 
   {
     name: "Express.js",
-    icon: "expressjs",
+    icon: "express",
     color: "text-black dark:text-white",
     shadow: "bg-gradient-to-r from-[#f7df1e] to-[#c3b017]",
     category: "frameworks",

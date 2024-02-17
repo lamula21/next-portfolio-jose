@@ -33,6 +33,7 @@ export function CourseSearch() {
         variant="outline"
         className="group pointer-events-auto relative flex h-auto w-full flex-1 flex-grow justify-between gap-2 rounded-lg border-zinc-800 bg-background bg-white  py-1.5 text-sm  text-white/60 group-hover:text-white dark:bg-transparent dark:hover:bg-zinc-800 sm:w-64 md:w-auto md:flex-none lg:w-64 xl:w-96"
         onClick={() => setOpen(true)}
+        disabled={true}
       >
         {/* TODO: dynamic text */}
         <span>Search courses...</span>

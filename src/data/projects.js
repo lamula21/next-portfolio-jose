@@ -8,8 +8,7 @@ export const projectsData = [
   {
     title: "DCCOA Dashboard",
     type: "Work Experience",
-    description:
-      "Developed a Content Management System for DCCOA. Team leader of four interns.",
+    description: "A Content Management System and MVP website for DCCOA org.",
     spinClass: "bg-green-400",
     url: "https://dccoa.vercel.app/",
     github: "",
@@ -22,11 +21,11 @@ export const projectsData = [
     type: "Personal Project",
     spinClass: "bg-purple-400",
     description:
-      "Created a high-speed messaging app with real-time features using Next.js, Next Auth, and Redis, emphasizing security, privacy, and optimized performance.",
+      "TerpNet is a social networking platform exclusively for UMD users, featuring real-time chat and notifications.",
     url: "https://terpnet.vercel.app/",
     github: "https://github.com/lamula21/next-realtimechat-websocket",
     imageUrl: TerpNet,
-    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.MONGODB],
+    tags: [TAGS.NEXT, TAGS.REDIS, TAGS.NEXTAUTH, TAGS.TAILWIND],
   },
 
   {
@@ -34,7 +33,7 @@ export const projectsData = [
     type: "Personal Project",
     spinClass: "bg-purple-400",
     description:
-      "A platform for watching +10k content creators' live streams on Twitch and YouTube simultaneously.",
+      "SandBox.tv is a platform for watching +10k content creators' live streams on Twitch and YouTube simultaneously.",
     url: "https://sandboxtv.vercel.app",
     github: "https://github.com/lamula21/next-streaming",
     imageUrl: SandBoxTv,
