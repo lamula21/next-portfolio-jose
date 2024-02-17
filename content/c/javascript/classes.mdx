@@ -4,14 +4,13 @@ category: data structures
 breadcrumbs: 
   - courses
   - javascript
-description: All about Classes
+description: Classes are a relatively new feature added in ES6 (ECMAScript 2015). It provides a way to define objects and their behavior using a syntax similar to classes in other OOP languages like Java, Python, etc.
+
 ---
 
-## Intro to Classes 🎬
 
-Classes are a relatively new feature added in ES6 (ECMAScript 2015) that provide a way to define objects and their behavior using a syntax that is similar to classes in other object-oriented programming languages like Java, Python, and C++. The new feature is well used in  modern frameworks such as React, Node.js, etc.
 
-The features of the object-oriented programming language include 
+The OOP principles include 
 -   Inheritance
 -   Polymorphism
 -   Data Encapsulation
@@ -19,15 +18,18 @@ The features of the object-oriented programming language include
 
 
 ## Class 🗳️ 
-- Describes in general what an `object` is with methods and variables.
-- Class declarations are NOT HOISTED
+
+Describes in general what an `object` is with methods and variables.
+
+- Class declarations are NOT HOISTED:
 	- Meaning declare class first and then access it  
 	- Otherwise, code like the following will throw a ReferenceError
-- Functions are HOISTED
+
+- Functions are HOISTED:
 	- You can call function first and then declare it
 	- No Error Thrown
 
-```javascript
+```javascript showLineNumbers
 class Person {
     name;
     age;
@@ -45,7 +47,7 @@ class Person {
 ## Constructor 📝
 - Useful when creating an `object` to specify default values of this instance
 - In inheritance, if child class does not provide a constructor, one will be created by default
-```javascript
+```javascript showLineNumbers {2-5,10-12}
 class Person {
     constructor(name, age) {
         this.name = name;
@@ -64,13 +66,13 @@ class Student extends Person{
 
 ## Objects 📃
 - `objects` are instances of the `class`.
-- An instance means that objects (`child`) are created based on their class (`parent`).
+- An instance means that an object is created based on the class.
 - Use keyword `new` to create a new instance of the class
 - Only one constructor is allowed
 
 ## Creating an Instance with Constructor
 
-```javascript
+```javascript {1}
 let person = new Person('John', 30);
 person.sayHello(); 
 // output: "Hello, my name is John and I am 30 years old."
@@ -87,7 +89,7 @@ person.sayHello();
 student_1.name = "Jose"
 student_2.name = "Kevin"
 ```
-- Instance Variables has **NO TYPES**
+- Instance Variables has **NO TYPES** (Javascript)
 
 ```javascript
 class Class {
@@ -99,20 +101,19 @@ class Class {
 
 
 ### Class Variables
-- `Class Variable` are shared between all objects.
+- `Class Variable` are shared between all objects, using the `static` keyword.
 - If the class variable from a object is modified, another object of the same class also updates it.
-- Instance variables are preceded by the `static` keyword.
-- All `static` needs to be called with their `Class` name, instead of `this`.
-```javascript
+- All `static` needs to be called with their `Class` name, instead of `this`. i.e line 10
+```javascript showLineNumbers {2-3,6,10}
 class Car {
-    static dealership = "Terp Cars"; // static public
-    static #instances = 0; // static private 
+    static dealership = "Terp Cars"; // static-public field
+    static #instances = 0; // static-private field
 
     info() {
         return `${Car.#printDealer()}`
     }
 
-    static #printDealer(){ //static-private function
+    static #printDealer(){ // can also make static-private functions
 	    Car.#instance++;
 		return `${Car.dealership}`;
     }
@@ -124,51 +125,62 @@ class Car {
 
 `Public`
 - In Javascript, **methods** and **data** are public by default
-	- Public: can be accessed outside of class
-- Public variables are accessible from outside the class and can be accessed using the dot notation (`<instance>.dataField`)
-- Public keyword not required.
-```javascript
+- Public variables are accessible from outside the class and can be accessed with the dot notation (`instanceObject.dataField`)
+
+```javascript {8}
 class Person { 
-    name; // public member
+    name; // public field
     constructor(name) { 
-        this.name = name; // Allowed access
+        this.name = name; // ✅ allowed access
     }
 }
 let person = new Person("Jose")
-student_1.name // Allowed access
+student_1.name // ✅ allowed access
 ```
 
 `Private`
-- Private: cannot be accessed outside of class, only accessible from inside the clas
+- Private: cannot be accessed outside of class, only accessible from inside the class
 - Defined using the (`#`) symbol before the ***variable*** or ***function*** name.
 
-```javascript
+```javascript {2,7}
 class Person { 
-    #age; // private member
+    #age; // private field
     constructor(age) { 
-        this.#age = age; // Allowed access
+        this.#age = age; // ✅ allowed
     }
     
-    #sayHello() {
+    #sayHello() { // private method
         console.log(`Hello, I am ${this.#age} years old.`);
     }
 }
 let person = new Person(30);
-console.log(person.age); // No Allowed since outside of class, Error
-person.constructor() // No Allowed since private, Error
+console.log(person.age); // ❌ No Allowed since outside of class, Error
+person.sayHello() // ❌ No Allowed since private, Error
 ```
 
 
-### Java toString
+### `toString()`
 
-`toString()`
-- Like toString in Java, returns default info when object is printed
+- Like toString in Java, returns default information when object is printed
 - `Symbol` is a primitive data type, called special symbol
 - This is a way to add `properties` to an object
-```javascript
-[Symbol.toPrimitive]() {
-    return `Dealership: ${Car.dealership}`;
+
+```javascript {11-13}
+class Person { 
+    #age; // private field
+    constructor(age) { 
+        this.#age = age; // Allowed
+    }
+    
+    #sayHello() { // private method
+        console.log(`Hello, I am ${this.#age} years old.`);
+    }
+
+    [Symbol.toPrimitive]() {
+        return `Person name: ${Person.age}`;
+    }
 }
+
 
 let new_car = new Car()
 console.log(new_car) // Dealership: Terp Cars
@@ -186,7 +198,7 @@ console.log(new_car) // Dealership: Terp Cars
 - In JavaScript, inheritance can be achieved using the `extends` keyword.
 - **Rule**: `child` extends `parent` class
 
-```javascript
+```javascript showLineNumbers
 class Car {
     model;
     year;
@@ -227,7 +239,7 @@ class Car {
 }
 ```
 
-```javascript
+```javascript showLineNumbers
 class SportsCar extends Car {
     #engine;
     
@@ -243,7 +255,6 @@ class SportsCar extends Car {
     // Overrides info() from Car
     info() {
         super.info(); // call parent Class method
-        document.writeln(this.#engine);
     }
 
 	// Overrides toString()
@@ -260,7 +271,7 @@ class SportsCar extends Car {
 - Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as if they were objects of the same class, as long as they share a common interface or inheritance hierarchy. 
 - This means that a method can behave differently depending on the object it is called on.
 - This can be achieved through method overriding. 
-- In the example above, the `SportsCar` class overrides the `info` method inherited from the `Car` class to provide a different implementation specific to sport car. This method behaves differently depending on the object it is called on, even though the method has the same name.
+- In the example above, the `SportsCar` class overrides the `info()` method inherited from `Car` class, providing a different implementation for sport car. This method behaves differently depending on the object it is called on, even though the method has the same name `info()`.
 
 ```javascript
 function carInfo(car) {

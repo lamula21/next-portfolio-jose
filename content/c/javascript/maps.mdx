@@ -4,7 +4,135 @@ category: data structures
 breadcrumbs: 
   - courses
   - javascript
-description: All about Javascript
+description: All about Maps in JavaScript
 ---
 
-This is Maps
+- Similar to `Objects` in JavaScript
+- Same as `dictionaries` in Python
+- Same as `hashes` in Ruby
+- Collection of `key`-`value` pairs
+	- `key`'s can be any value (including objects)
+	- `value`'s can be any data
+
+```javascript
+const myMap = new Map();
+```
+
+## Maps vs Objects
+
+|   | Maps  | Objects  |
+|---|---|---|
+| Keys  | Any data type  | Strings only  |
+| Iteration  | Easy  | Tricky  |
+| Size  | Easy to get  | Tricky  |
+| Performance  | Better for large data  | Better for small data  |
+
+## Built-in Functions 🔨
+
+### `set()`
+
+Add key-value pairs to a `Map`
+
+```javascript
+myMap.set('key1', 'value1'); 
+myMap.set('key2', 'value2');
+
+// myMap => { 'key1':'value1' , 'key2':'value2' }
+```
+
+
+### `get()`
+
+Get `value` by a given `key`
+
+```javascript
+myMap.get('key1');
+// => 'value1'
+```
+
+
+### `has()`
+
+Checks if a key exists in the map.
+
+```javascript
+myMap.has('key1'); // output: true 
+myMap.has('key2'); // output: false
+```
+
+
+### `keys()`
+
+Returns an iterator over the keys in the map
+
+```javascript
+for (const key of myMap.keys()) { 
+    console.log(key);
+}
+// =>
+// key1
+// key2
+```
+
+
+### `values()`
+```javascript
+for (const value of myMap.values() ) { 
+    console.log(value); 
+}
+// =>
+// value1
+// value2
+```
+
+
+### `entries()`
+
+Returns an iterator object (e.g **Array**) with the [key, value] pairs in a Map
+
+```javascript
+for (const [key, value] of myMap.entries() ) { 
+   console.log(`${key} = ${value}`);
+}
+// =>
+// key1 = value1 
+// key2 = value2
+```
+
+
+### `forEach()`
+
+Allows iterate over `key`-`value` pairs in the Map
+
+```javascript
+myMap.forEach( (value, key) => { 
+    console.log(`${key} = ${value}`);
+});
+// =>
+// key1 = value1 
+// key2 = value2
+```
+
+### `size`
+
+Property: Returns the number of key-value pairs in the map.
+
+```javascript
+myMap.size; 
+// => 2
+```
+
+### `delete()`
+- Removes a pair in the Map
+```javascript
+fruits.delete("key1");
+```
+
+
+### `clear()`
+
+Removes all the elements from the Map
+
+```javascript
+fruits.remove()
+```

@@ -1,0 +1,102 @@
+---
+title: Objects
+category: data structures
+breadcrumbs: 
+  - courses
+  - javascript
+description: All about Objects in JavaScript
+---
+
+
+Suppose we have the following object:
+
+```javascript
+const data = {
+  id: "2",
+  company: "Example Inc.",
+  status: "Active",
+  notes: "This is a note about the job."
+};
+```
+
+## Built-in methods
+
+### `for of`
+
+- Iterates over an array
+- `Object.entries(data)` returns an array of key-value pairs
+
+```javascript
+for (const [key, value] of Object.entries(data)) {
+  console.log(key, value);
+}
+```
+
+### `for in`
+
+Iterates over the `keys` of an object
+
+```javascript
+for (const key in data) { 
+  const value = data[key]; 
+  console.log(key, value); 
+}
+```
+
+### `forEach()`
+```javascript
+Object.entries(data).forEach(([key, value]) => {
+  console.log(key, value);
+});
+```
+
+## Restrict Object Behavior ⛔️
+
+In JavaScript, you can add properties and methods to an object at any time (**extensible**). How can we stop this?
+
+
+### Nonextensible Object
+We can restrict **adding** properties and methods  by using `Object.preventExtensions()`. But we can modify the existing properties and methods
+
+
+```javascript {4}
+let student = new Object();
+student.name = "Rose";
+
+Object.preventExtensions(student); // prevent adding
+Object.isExtensible(student) // False
+
+student.gpa = 3.2; // ADDING, ❌ Allowed
+student.name = "Mark"; // MODIFYING, ✅ Allowed
+```
+
+### Seal Object
+What if we don't want properties deleted as well? Seal the Object
+
+```javascript {4}
+let game = new Object();
+game.name = "SuperTetris";
+
+Object.seal(game); // prevent deleting 
+Object.isSealed(game) // True
+
+delete game.name; // ❌ Allowed
+```
+
+### Freeze Object
+
+Strictest protection: No extensible, sealed, and data properties can not be modified
+
+```javascript {5}
+let school = new Object();
+school.name = "UMCP";
+school.city = "College Park";
+
+Object.freeze(school); // no modifying, no deleting, no adding
+
+school.name = "UMD"; // MODIFYING, ❌ Allowed (Generates error)
+delete school.city; // DELETING, ❌ Allowed (Generates error)
+school.mascot = "terp"; // ADDING, ❌ Allowed (Generates error)
+```
+
+

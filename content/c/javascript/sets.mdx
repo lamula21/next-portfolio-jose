@@ -1,0 +1,73 @@
+---
+title: Sets
+category: data structures
+breadcrumbs: 
+  - courses
+  - javascript
+description: All about Arrays
+---
+
+Set is a built-in object collection of unique values, where **duplicates are not allowed**. 
+
+A Set can store any type of value, including objects, and provides methods to add, remove, and check if a value exists in the set.
+
+
+```javascript
+const mySet = new Set();
+```
+
+## Built-in Methods
+
+### `add()`
+```javascript
+mySet.add(1);
+mySet.add('two'); 
+mySet.add(true);
+```
+
+### `delete()`
+```javascript
+mySet.delete(2);
+// => {1, "two"}
+```
+
+### `size`
+```javascript
+mySet.size;
+// => 2
+```
+
+### `has()`
+```javascript
+mySet.has(1); // => true 
+mySet.has('three'); // => false
+```
+
+### `forEach()`
+```javascript
+mySet.forEach( (value) => { console.log(value); } );
+// 1
+// "two"
+```
+
+### `for of`
+```javascript
+for (let value of mySet) {
+    console.log(value);
+}
+// 1
+// "two"
+```
+
+### `clear()`
+```javascript
+mySet.clear() // => {}
+```
+
+### Array => Set
+
+Yes, we can create a Set from an array.
+
+```javascript
+let arrayToSet = new Set(arr);
+```

@@ -1,0 +1,116 @@
+---
+title: Selectors
+category: client side
+breadcrumbs: 
+  - courses
+  - javascript
+description: All about Selectors in JavaScript
+---
+
+
+
+## Selecting an Element ☝
+- `document`: the DOM or tree representation of the HTML
+- `querySelector` - selects ID like in css
+```javascript
+document.getElementByClassName("elementClass")  // returns NodeList
+document.getElementById("elementId")    // returns NodeList
+document.getElementsByTagName('div')    // Returns NodeList
+document.getElementsByName('interests') // <input name="interests">
+// returns NodeList
+
+document.querySelector("#elementId")    // returns the first instance
+document.querySelector('.elementClass') // returns the first instance
+```
+
+## Retrieving Text ↩
+
+Retrieve the text of an HTML element using `.value`
+
+```javascript
+let login = document.getElementId("loginId").value;
+// => "Sign In"
+```
+
+
+## Modify Attribute ⬆️
+
+
+### `getAttribute()` - `setAttribute()`
+We can get any attribute of any HTML element: src, class, id, href, data-*, etc.
+
+```javascript
+document.querySelector("#theImage").getAttribute("src")
+// => images/Testudo01.jpg
+
+document.querySelector("#theImage").setAttribute("src", "images/Testudo02.jpg")
+```
+
+### Access/Modify the attribute directly
+```javascript
+document.querySelector("#myImage").src = "testudo1.jpg"
+```
+
+###  `getAttribute` vs `querySelector().src`
+
+```javascript
+imageElement.getAttribute("src"); // value of src
+// images/Testudo1.jpg
+
+document.querySelector("#myImage").src // full path
+// http://url/to/path/Testudo1.jpg
+```
+
+
+
+
+## Modify Class Attribute ⬆️ 
+
+Suppose we have the following HTML element:
+```html
+<p id="my-paragraph" class="red">Hello, world!</p>
+```
+
+### `replace()`
+
+```javascript
+element.classList.replace("red", "blue");
+```
+### `remove()` and `add()`
+
+```javascript
+element.classList.remove("red"); 
+element.classList.add("blue");
+```
+
+### `toggle(<name>)`
+- If the element has the `<name>` class, it removes it (returns `false`)
+- if it doesn't have it, it adds it (returns `true`)
+
+```javascript
+element.classList.toggle("blue");
+```
+
+
+## Modify Page with innerHTML 📑
+- `document.querySelector().innerHTML` - add/replace HTML code inside an element by ID (e.g div)
+```javascript
+document.querySelector("#mydiv").innerHTML = table // replace a new content to the element
+
+document.querySelector("#mydiv").innerHTML += table // add new content to the element
+```
+
+### `document.writeln()` 
+- Write a string of text or HTML code to the document, followed by a line break.
+- It is typically used to add new content to the end of a document or a specific element
+
+```javascript
+// Write a string to the end of document
+document.writeln("Hello, world!");
+
+// Write HTML code at the end to a specific element
+document.getElementById("myElement").writeln("<p>Hello, world!</p>");
+
+```
+
+

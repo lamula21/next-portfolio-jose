@@ -1,0 +1,191 @@
+---
+title: Operators
+category: syntax
+breadcrumbs: 
+  - courses
+  - javascript
+description: Special keywords/shortcuts that are useful for specific scenarios 
+---
+
+
+## Rest Operator 1️⃣
+
+Stores the remaining arguments as an array
+
+### Functions
+```javascript /...others/
+function partyInfo(name, director, ...others) {
+	// ...others <=> others = type array
+	return others;
+}
+
+partyInfo("FirstParty", "Ali", "Theresa", "Arushi");
+// => ["Theresa", "Arushi"];
+```
+
+## Spread Operator 2️⃣ 
+- Allows to extracts elements from  an iterable object
+- The spread syntax can be used with arrays, objects, and function arguments.
+
+### Combining Arrays
+
+Combines arr1 and arr2 into a new array
+
+```javascript {4}
+let arr1 = [1, -21];
+let arr2 = [10, 7];
+
+const arr3 = [...arr1, ...arr2]; 
+// => [1, -21, 10, 7]
+
+Math.max(...arr1, ...arr2)
+// => 10
+```
+
+### Break Strings
+```javascript {2}
+let string = "CMSCXYZ";
+let charArray = [...string]
+// => [C,M,S,C,X,Y,Z]
+```
+
+### Function Params
+```javascript {3}
+let arr = [1,2,3]
+
+callFun(...arr, "World") // callFun(1,2,3, "World")
+```
+
+### Objects
+```javascript {9}
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 30,
+  city: 'New York'
+};
+
+const employee = {
+  ...person, // extracts person Obj
+  position: 'Software Engineer',
+  salary: 100000
+};
+
+// => 
+// {
+//  firstName: 'John',
+//  lastName: 'Doe',
+//  age: 30,
+//  city: 'New York',
+//  position: 'Software Engineer',
+//  salary: 100000
+// }
+```
+
+
+## Chaining (`?`) Operator 3️⃣
+- Prevents access to the next level if the property does not exist
+- If Chaining prevents the next call, ends the function call as if it had never been called
+
+
+### Usage
+Access objects without crashing the program
+
+Let's defined two objects:
+```javascript
+const mary = {
+    name: "Mary",
+    address: {
+        city: "College Park",
+        state: "Maryland",
+        budget: {
+            local: 340,
+            federal: 500,
+        },
+     },
+};
+```
+
+```javascript
+const peter = { name: "Peter" };
+```
+
+### Issue
+```javascript
+function printInfo(student) {
+    document.writeln(`
+        ${student.name}, ${student.address.city}, ${student.adress.state}`
+    );
+}
+
+printInfo(peter); // ❌ TypeError, undefined adress.city
+printInfo(mary); // ✅, but previous error crashed program
+```
+
+
+### Solution
+```javascript
+function printInfo(student) {
+    document.writeln(`
+        ${student?.name}, ${student.address?.city}, ${student.adress?.state}`
+        // notice ? operator here
+    );
+}
+
+printInfo(peter); // Peter, undefined, undefined
+printInfo(mary);  // Mary, College Park, Maryland
+```
+
+
+##  Logical Operators 4️⃣
+
+### `&&`
+
+**Idea**: `&&` stops when there is one FALSE, then return that value. Otherwise, return the last value in the `&&` chain.
+
+```javascript {8-9}
+10 && 20         // 20  
+true && 10       // 10  
+false && 10      // false  
+undefined && 10  // undefined  
+null && 10       // null
+10 && null && 20 // null
+10 && 5 && 20    // 20
+// 👀 issue
+0 && true        // 0 is considered false, returns 0
+```
+
+### `||` 
+
+**Idea**: `||` stops when there is at least one `true`, then return that value. Otherwise, return the last value in the `||` chain.
+
+```javascript {6-7}
+10 || 20         // 10  
+true || 10       // true  
+false || false   // false
+undefined || 10  // 10  
+null || 10       // 10
+// 👀 issue
+0 || true          // 0 is considered FALSE, so return true
+
+// quantity = quantity || 20;
+quantity ||= 20
+```
+
+
+### `??` nullish coalescing operator
+Returns the value of the second operand if the left operand is `null` or `undefined`. 
+
+**Idea**: Pick left first, if left is NULL or UNDEFINED, then pick right operand.
+
+```javascript {4-5}
+20 ?? 18        // 20
+null ?? 18      // 18
+undefined ?? 18 // 18
+// no issue
+0 ?? 18         // 0 
+
+// quantity = quantity ?? 18;
+quantity ??= 18;
+```
+
