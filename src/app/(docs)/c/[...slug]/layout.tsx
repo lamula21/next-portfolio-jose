@@ -32,7 +32,7 @@ export default function CoursesLayout({ children }: CoursesLayoutProps) {
       </header>
 
       <div className="container flex-1">
-        <div className="flex-1 md:grid md:grid-cols-[220px_1fr] md:gap-6 lg:grid-cols-[240px_1fr] lg:gap-10">
+        <div className="flex-1 md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10">
           {/* left side */}
           <DocsSidebarNav docs={allDocs} />
 

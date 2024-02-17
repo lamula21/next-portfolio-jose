@@ -1,6 +1,7 @@
 import { cn } from "@/lib/utils"
 import { Doc } from "contentlayer/generated"
 import Link from "next/link"
+import { useEffect, useRef } from "react"
 
 interface DocsSidebarNavItemsProps {
   items: Doc[]
@@ -13,12 +14,11 @@ export function DocsSidebarNavItems({
 }: DocsSidebarNavItemsProps) {
   return items?.length ? (
     <ul className="ml-4 mr-2 grid grid-flow-row auto-rows-max border-l pl-3 text-sm">
-      {items.map((item, index) => {
+      {items.map((item) => {
         return (
           item.slugAsParams && (
             <li key={item._id} className="my-1.5 transition-colors">
               <Link
-                key={index}
                 href={item.slug}
                 className={cn(
                   "relative flex w-full items-center rounded-md p-2 pl-3 transition-colors duration-300 dark:text-mdx-text/80 dark:hover:text-white",

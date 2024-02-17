@@ -11,7 +11,6 @@ import {
 } from "./ui/command"
 import { Doc } from "contentlayer/generated"
 import { DEVICONS } from "./icons"
-import Link from "next/link"
 import { useParams } from "next/navigation"
 import { useState } from "react"
 import { useRouter } from "next/navigation"
