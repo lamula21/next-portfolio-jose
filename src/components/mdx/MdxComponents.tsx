@@ -214,7 +214,7 @@ const components = {
     return (
       <code
         className={cn(
-          "relative my-4 overflow-x-auto rounded-lg border border-zinc-800 px-[0.3rem] py-[0.2rem] font-mono text-inherit text-white dark:bg-white/10",
+          "relative my-4 overflow-x-auto rounded-lg border border-zinc-800 px-[0.3rem] py-[0.2rem] font-mono text-inherit text-white [scrollbar-width:none] dark:bg-white/10",
           isCodeBlock && "dark:bg-inherit",
           className,
         )}
