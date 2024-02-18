@@ -10,9 +10,9 @@ interface CodeHeaderProps {
 export function CodeBlockHeader({ language, filepath, raw }: CodeHeaderProps) {
   const Icon = DEVICONS[language]
   return (
-    <div className="flex h-14 w-full items-center justify-between border-b border-zinc-700/40 px-5">
+    <div className="flex h-12 w-full items-center justify-between border-b border-zinc-700/40 px-5">
       <div className="flex items-center gap-3">
-        <Icon className="inline-flex h-6 w-6" />
+        <Icon className="inline-flex h-[18px] w-[18px]" />
         <span className="font-geist-sans text-sm text-zinc-400">
           {filepath}
         </span>

@@ -6,6 +6,7 @@ import { groupBy } from "lodash"
 import { useParams, usePathname } from "next/navigation"
 import { useMemo } from "react"
 import { CoursesCombobox } from "../CoursesCombobox"
+import { ScrollArea } from "../ui/scroll-area"
 
 interface DocsSidebarNavProps {
   docs: Doc[]
@@ -34,27 +35,27 @@ export function DocsSidebarNav({ docs }: DocsSidebarNavProps) {
   )
 
   return (
-    <aside className="fixed top-14 z-30 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 border-r py-6 pl-1 pr-2 md:sticky md:block lg:py-10">
-      <div className="relative h-full w-full overflow-hidden overflow-y-auto [scrollbar-width:none]">
-        <CoursesCombobox courses={uniqueCourses} />
-
-        {Object.keys(categoryDocsKV)
-          .sort()
-          .map((category) => (
-            <div key={category} className="pb-8">
-              <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-bold capitalize text-white">
-                {category}
-              </h4>
-
-              {categoryDocsKV[category].length > 0 && (
-                <DocsSidebarNavItems
-                  items={categoryDocsKV[category]}
-                  pathname={pathname}
-                />
-              )}
-            </div>
-          ))}
-      </div>
+    <aside className="fixed top-14 z-30 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 border-r py-6 pl-1 pr-1 md:sticky md:block lg:py-10">
+      <ScrollArea className="relative h-full w-full overflow-hidden pr-4">
+        <div className="w-full">
+          <CoursesCombobox courses={uniqueCourses} />
+          {Object.keys(categoryDocsKV)
+            .sort()
+            .map((category) => (
+              <div key={category} className="pb-8">
+                <h4 className="mb-1 rounded-md px-2 py-1 text-sm font-bold capitalize text-white">
+                  {category}
+                </h4>
+                {categoryDocsKV[category].length > 0 && (
+                  <DocsSidebarNavItems
+                    items={categoryDocsKV[category]}
+                    pathname={pathname}
+                  />
+                )}
+              </div>
+            ))}
+        </div>
+      </ScrollArea>
     </aside>
   )
 }
