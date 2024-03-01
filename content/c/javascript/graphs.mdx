@@ -1,0 +1,44 @@
+---
+title: Graphs
+category: data structures
+breadcrumbs: 
+  - courses
+  - javascript
+description: All about Graphs in Javascript
+---
+
+A graph is a connection of nodes data structure. Each node is called a `vertex` and the connection between them are called `edges`.
+
+Formally, a graph G=(V, E) is a finite set of vertices V and a set of edges E. Each edge is a pair (v, u) where v, u are elements of V.
+
+A graph can be represented in two ways:
+
+- Adjacent Matrix:
+  A 2-D array of size V x V where V is the number of vertices in the graph and the value of an entry `adj[i][j]` is either 1 or 0. A value of 1 indicates that there is an edge from vertex i to vertex j, otherwise 0.
+
+- Adjacent List:
+ An array of list. In Javascript, this can be easily represnted using an object of key values, where the key is the node and the value are the nodes it is connected to. **I would highly recommend using this representation for Graphs.**
+
+
+It is also important to note that there are two types of graphs:
+
+- Directed Graphs: Edges have a direction.
+
+![Directed Graph](https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Directed_graph_no_background.svg/1200px-Directed_graph_no_background.svg.png) 
+
+V = {V1, V2, V3, V4}
+E = {(V1, V2), (V1, V3), (V3, V2), (V3, V4), (V4, V3)}
+
+- Undirected Graphs: Edges do not have a direction.
+
+![Undirected Graph](https://i0.wp.com/pediaa.com/wp-content/uploads/2019/01/Difference-Between-Directed-and-Undirected-Graph_Figure-2.png?resize=550%2C400)
+
+V = {V1, V2, V3, V4}
+E = {(V1, V2), (V1, V3), (V2, V3), (V3, V4)}
+
+
+## From Edges to Adjacent List
+
+## Depth First Search (DFS)
+
+## Breadth First Search (BFS)
