@@ -15,14 +15,11 @@ export function Callout({
 }: CalloutProps) {
   return (
     <div
-      className={cn(
-        "my-6 flex items-start rounded-md border border-l-4 p-4 font-geist-mono",
-        {
-          "border-red-900 bg-red-800/30": type === "danger",
-          "border-blue-900 bg-blue-800/30": type === "default",
-          "border-yellow-300/30 dark:bg-[#2f2b02]": type === "warning",
-        },
-      )}
+      className={cn("my-6 flex items-start rounded-md border border-l-4 p-4", {
+        "border-red-900 bg-red-800/30": type === "danger",
+        "border-blue-900 bg-blue-800/30": type === "default",
+        "border-yellow-300/30 dark:bg-[#2f2b02]": type === "warning",
+      })}
       {...props}
     >
       <div className="flex gap-x-3">

@@ -35,9 +35,9 @@ export function DocsSidebarNav({ docs }: DocsSidebarNavProps) {
   )
 
   return (
-    <aside className="fixed top-14 z-30 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 border-r py-6 pl-1 pr-1 md:sticky md:block lg:py-10">
-      <ScrollArea className="relative h-full w-full overflow-hidden pr-4">
-        <div className="w-full">
+    <aside className="fixed top-16 z-30 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 border-r pl-1 pr-1 md:sticky md:block">
+      <ScrollArea className="relative h-full w-full overflow-hidden pr-4 [mask-image:linear-gradient(to_top,transparent,white_10%,white_100%,transparent)]">
+        <div className="w-full py-6 lg:py-10">
           <CoursesCombobox courses={uniqueCourses} />
           {Object.keys(categoryDocsKV)
             .sort()

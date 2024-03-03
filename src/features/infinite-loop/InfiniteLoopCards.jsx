@@ -16,7 +16,7 @@ export const InfiniteLoopCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller  relative z-10 h-full w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-10 h-full w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
       )}
     >
       <ul
