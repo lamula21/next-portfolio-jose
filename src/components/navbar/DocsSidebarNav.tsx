@@ -8,11 +8,11 @@ import { useMemo } from "react"
 import { CoursesCombobox } from "../CoursesCombobox"
 import { ScrollArea } from "../ui/scroll-area"
 
-interface Props {
+interface DocsSidebarNavProps {
   docs: Doc[]
 }
 
-export function DocsSidebarNav({ docs }: Props) {
+export function DocsSidebarNav({ docs }: DocsSidebarNavProps) {
   const pathname = usePathname()
   const currentCourseFromParams = useParams().slug[0]
 
