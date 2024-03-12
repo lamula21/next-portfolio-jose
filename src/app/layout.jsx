@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/sonner"
 import { Footer } from "@/components/Footer"
 import { GeistMono } from "geist/font/mono"
 import { GeistSans } from "geist/font/sans"
+import "katex/dist/katex.min.css"
 
 export const metadata = {
   title: "Jose Valdivia",

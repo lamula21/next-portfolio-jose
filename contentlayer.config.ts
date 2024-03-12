@@ -1,14 +1,12 @@
-import {
-  defineDocumentType,
-  defineNestedType,
-  makeSource,
-} from "contentlayer/source-files"
+import { defineDocumentType, makeSource } from "contentlayer/source-files"
 import rehypeAutolinkHeadings from "rehype-autolink-headings"
 import rehypePrettyCode from "rehype-pretty-code"
 import rehypeSlug from "rehype-slug"
 import remarkGfm from "remark-gfm"
 // import { codeImport } from "remark-code-import"
 import { preProcess } from "./src/lib/rehype-code-props"
+import remarkMath from "remark-math"
+import rehypeKatex from "rehype-katex"
 
 /********************** Extraction  **********************/
 const computedFields: import("contentlayer/source-files").ComputedFields = {
@@ -157,7 +155,7 @@ export default makeSource({
   contentDirPath: "./content",
   documentTypes: [Post, Doc],
   mdx: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [remarkGfm, remarkMath],
 
     rehypePlugins: [
       rehypeSlug,
@@ -172,7 +170,8 @@ export default makeSource({
           },
         },
       ],
-      // postProcess,
+      // postProcess
+      rehypeKatex,
     ],
   },
 })

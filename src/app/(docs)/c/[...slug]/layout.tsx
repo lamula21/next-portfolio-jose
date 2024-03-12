@@ -1,4 +1,3 @@
-import Link from "next/link"
 import React from "react"
 import { docsConfig } from "@/config/docs"
 import { allDocs } from "contentlayer/generated"
